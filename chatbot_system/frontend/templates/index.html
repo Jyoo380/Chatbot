@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Q&A Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Document Q&A Chatbot</h1>
+        
+        <div class="upload-section">
+            <h2>Upload Document</h2>
+            <input type="file" id="pdfFile" accept=".pdf">
+            <button onclick="uploadPDF()">Upload</button>
+        </div>
+
+        <div class="chat-section" style="display: none;">
+            <div id="documentContent" class="document-content"></div>
+            
+            <div class="question-section">
+                <input type="text" id="questionInput" placeholder="Ask a question about the document...">
+                <button onclick="askQuestion()">Ask</button>
+            </div>
+
+            <div id="answer" class="answer-section"></div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
