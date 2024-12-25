@@ -106,47 +106,59 @@ def index():
 @app.route('/upload', methods=['POST'])
 @limiter.limit("10 per minute")
 def upload_file():
-    """Handle file upload and process the PDF."""
-    if 'file' not in request.files:
-        return jsonify({"error": "No file part"}), 400
+    """Handle file upload and process multiple PDFs."""
+    if 'files' not in request.files:
+        return jsonify({"error": "No files part"}), 400
 
-    file = request.files['file']
-    is_valid, error_message = validate_file(file)
-    
-    if not is_valid:
-        return jsonify({"error": error_message}), 400
+    files = request.files.getlist('files')  # Get all files
 
-    try:
-        # Generate secure filename and save
-        secure_name = secure_temp_file(file.filename)
-        pdf_path = os.path.join(app.config['UPLOAD_FOLDER'], secure_name)
-        file.save(pdf_path)
-        logger.info(f"File saved successfully: {secure_name}")
+    if not files:
+        return jsonify({"error": "No files selected"}), 400
 
-        # Extract text from the PDF
-        text = extract_text_from_pdf(pdf_path)
-        
-        if not text.strip():
-            return jsonify({"error": "No text could be extracted from the PDF"}), 400
+    # Process each file
+    all_texts = []
+    for file in files:
+        is_valid, error_message = validate_file(file)
+        if not is_valid:
+            return jsonify({"error": error_message}), 400
 
+        try:
+            # Generate secure filename and save
+            secure_name = secure_temp_file(file.filename)
+            pdf_path = os.path.join(app.config['UPLOAD_FOLDER'], secure_name)
+            file.save(pdf_path)
+            logger.info(f"File saved successfully: {secure_name}")
+
+            # Extract text from the PDF
+            text = extract_text_from_pdf(pdf_path)
+            
+            if not text.strip():
+                logger.warning(f"No text extracted from file: {secure_name}")
+                continue  # Skip files with no extracted text
+
+            all_texts.append(text)
+
+        except Exception as e:
+            logger.error(f"Error processing file {file.filename}: {str(e)}")
+            return jsonify({"error": f"Error processing file {file.filename}: {str(e)}"}), 500
+
+        finally:
+            # Clean up the temporary file
+            if 'pdf_path' in locals() and os.path.exists(pdf_path):
+                try:
+                    os.remove(pdf_path)
+                    logger.info(f"Temporary file removed: {secure_name}")
+                except Exception as e:
+                    logger.error(f"Error removing temporary file: {str(e)}")
+
+    if all_texts:
         return jsonify({
-            "message": "File processed successfully",
-            "text": text
+            "message": "Files processed successfully",
+            "texts": all_texts  # Return the extracted text from all PDFs
         }), 200
-
-    except Exception as e:
-        logger.error(f"Error processing file: {str(e)}")
-        return jsonify({"error": str(e)}), 500
-
-    finally:
-        # Clean up the temporary file
-        if 'pdf_path' in locals() and os.path.exists(pdf_path):
-            try:
-                os.remove(pdf_path)
-                logger.info(f"Temporary file removed: {secure_name}")
-            except Exception as e:
-                logger.error(f"Error removing temporary file: {str(e)}")
-
+    else:
+        return jsonify({"error": "No text extracted from any file"}), 400
+    
 @app.route('/ask', methods=['POST'])
 @limiter.limit("30 per minute")
 def ask_question():
@@ -174,7 +186,7 @@ def ask_question():
         # Validate for potentially malicious characters
         injection_characters = [
             "'", "\"", "--", "/*", "*/", ";", "(", ")", "=", "<", ">", "!=", 
-            "LIKE", "UNION", "||", "\\", "|", "&", "`", "$", "*", "?", "[", "]", 
+            "LIKE", "UNION", "||", "\\", "|", "&", "`", "$", "*", "[", "]", 
             "&&", ">", ">>", "\r", "\n", "{", "}", ":", ","
         ]
         if any(char in question for char in injection_characters):

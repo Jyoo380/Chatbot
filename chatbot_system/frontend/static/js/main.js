@@ -40,50 +40,58 @@ function showLoading(message = 'Processing...') {
 
 async function uploadPDF() {
     const fileInput = document.getElementById('pdfFile');
-    const file = fileInput.files[0];
-    
-    if (!file) {
-        showError('Please select a file first!');
+    const files = fileInput.files;
+
+    if (!files || files.length === 0) {
+        showError('Please select at least one file!');
         return;
     }
 
-    if (!file.name.toLowerCase().endsWith('.pdf')) {
-        showError('Please select a PDF file');
-        return;
+    for (const file of files) {
+        if (!file.name.toLowerCase().endsWith('.pdf')) {
+            showError('Only PDF files are allowed!');
+            return;
+        }
     }
 
-    showLoading('Uploading file...');
+    showLoading('Uploading files...');
 
     const formData = new FormData();
-    formData.append('file', file);
+    for (const file of files) {
+        formData.append('files', file); // Use 'files' to send multiple files
+    }
 
     try {
         const response = await fetch('/upload', {
             method: 'POST',
             headers: {
-                'X-CSRFToken': getCSRFToken()
+                'X-CSRFToken': getCSRFToken(),
             },
             body: formData,
-            credentials: 'same-origin'
+            credentials: 'same-origin',
         });
 
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-        const data = await response.json();
-        
-        documentText = data.text;
-        document.getElementById('documentContent').textContent = documentText;
-        
-        const chatSection = document.querySelector('.chat-section');
-        chatSection.style.opacity = '0';
-        chatSection.style.display = 'block';
-        setTimeout(() => {
-            chatSection.style.transition = 'opacity 0.5s ease-in-out';
-            chatSection.style.opacity = '1';
-        }, 10);
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
 
-        showSuccess('Files uploaded successfully!');
-        document.getElementById('questionInput').focus();
-        
+        const data = await response.json();
+        if (data.texts && Array.isArray(data.texts)) {
+            // Join all extracted text into one variable
+            documentText = data.texts.join('\n\n');
+            document.getElementById('documentContent').textContent = documentText;
+
+            const chatSection = document.querySelector('.chat-section');
+            chatSection.style.opacity = '0';
+            chatSection.style.display = 'block';
+            setTimeout(() => {
+                chatSection.style.transition = 'opacity 0.5s ease-in-out';
+                chatSection.style.opacity = '1';
+            }, 10);
+
+            showSuccess('Files uploaded successfully!');
+            document.getElementById('questionInput').focus();
+        } else {
+            showError(data.error || 'Error processing files.');
+        }
     } catch (error) {
         showError('Upload failed: ' + error.message);
         console.error('Upload error:', error);
@@ -157,9 +165,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const uploadSection = document.querySelector('.upload-section');
     
     fileInput.addEventListener('change', (e) => {
-        const file = e.target.files[0];
-        if (file) {
-            uploadLabel.textContent = file.name;
+        const files = e.target.files;
+        if (files.length > 0) {
+            const fileNames = Array.from(files).map(file => file.name).join(', ');
+            uploadLabel.textContent = fileNames;
             document.getElementById('uploadStatus').textContent = '';
         }
     });
@@ -185,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     uploadSection.addEventListener('drop', (e) => {
         const dt = e.dataTransfer;
-        const file = dt.files[0];
+        const files = dt.files;
         const fileInput = document.getElementById('pdfFile');
         fileInput.files = dt.files;
         fileInput.dispatchEvent(new Event('change'));
