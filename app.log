@@ -1298,3 +1298,757 @@
 2024-12-25 22:34:11,914 - __main__ - INFO - Initializing RAG Document QA System...
 2024-12-25 22:34:11,923 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
 2024-12-25 22:34:11,923 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-12-26 00:18:50,668 - __main__ - INFO - Starting application...
+2024-12-26 00:18:50,669 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 00:18:50,669 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 00:18:50,669 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 00:18:50,696 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-26 00:18:50,698 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-26 00:18:50,700 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 00:18:52,164 - __main__ - INFO - Starting application...
+2024-12-26 00:18:52,165 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 00:18:52,165 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 00:18:52,166 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 00:18:52,182 - werkzeug - WARNING -  * Debugger is active!
+2024-12-26 00:18:52,188 - werkzeug - INFO -  * Debugger PIN: 124-268-802
+2024-12-26 00:18:55,736 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:18:55] "GET / HTTP/1.1" 200 -
+2024-12-26 00:18:55,900 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:18:55] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-12-26 00:18:55,904 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:18:55] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-26 00:19:01,625 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:19:01] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2024-12-26 00:19:02,420 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:19:02] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2024-12-26 00:19:08,347 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:19:08] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2024-12-26 00:19:14,962 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:19:14] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2024-12-26 00:23:02,388 - werkzeug - INFO -  * Detected change in 'D:\\Chatbot\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-26 00:23:02,617 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 00:23:53,367 - __main__ - INFO - Loading QA system...
+2024-12-26 00:23:53,367 - __main__ - INFO - Initializing QA System on cpu...
+2024-12-26 00:23:53,370 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2024-12-26 00:23:53,370 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-12-26 00:24:12,349 - __main__ - INFO - SentenceTransformer model loaded successfully.
+2024-12-26 00:24:12,934 - __main__ - INFO - QA pipeline loaded successfully.
+2024-12-26 00:24:12,935 - __main__ - INFO - Creating new FAISS index and initializing chunks list...
+2024-12-26 00:24:12,935 - __main__ - INFO - FAISS index and chunks list initialized.
+2024-12-26 00:24:12,936 - __main__ - INFO - QA system loaded successfully.
+2024-12-26 00:24:12,938 - __main__ - INFO - Starting application...
+2024-12-26 00:24:12,938 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 00:24:12,940 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 00:24:12,940 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 00:24:12,964 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.35:5000
+2024-12-26 00:24:12,965 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-26 00:24:12,968 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 00:24:20,787 - __main__ - INFO - Loading QA system...
+2024-12-26 00:24:20,787 - __main__ - INFO - Initializing QA System on cpu...
+2024-12-26 00:24:20,790 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2024-12-26 00:24:20,790 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-12-26 00:24:24,602 - __main__ - INFO - SentenceTransformer model loaded successfully.
+2024-12-26 00:24:25,173 - __main__ - INFO - QA pipeline loaded successfully.
+2024-12-26 00:24:25,173 - __main__ - INFO - Creating new FAISS index and initializing chunks list...
+2024-12-26 00:24:25,174 - __main__ - INFO - FAISS index and chunks list initialized.
+2024-12-26 00:24:25,174 - __main__ - INFO - QA system loaded successfully.
+2024-12-26 00:24:25,176 - __main__ - INFO - Starting application...
+2024-12-26 00:24:25,176 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 00:24:25,176 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 00:24:25,178 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 00:24:25,186 - werkzeug - WARNING -  * Debugger is active!
+2024-12-26 00:24:25,191 - werkzeug - INFO -  * Debugger PIN: 124-268-802
+2024-12-26 00:24:25,214 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:24:25] "GET / HTTP/1.1" 200 -
+2024-12-26 00:24:34,646 - chatbot - WARNING - Forbidden (CSRF token missing or incorrect.): /upload
+2024-12-26 00:24:34,647 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:24:34] "[31m[1mPOST /upload HTTP/1.1[0m" 403 -
+2024-12-26 00:24:38,162 - chatbot - WARNING - Forbidden (CSRF token missing or incorrect.): /upload
+2024-12-26 00:24:38,163 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:24:38] "[31m[1mPOST /upload HTTP/1.1[0m" 403 -
+2024-12-26 00:24:52,642 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:24:52] "GET / HTTP/1.1" 200 -
+2024-12-26 00:24:52,729 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:24:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 00:24:52,746 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:24:52] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-26 00:24:58,160 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:24:58] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2024-12-26 00:33:27,418 - werkzeug - INFO -  * Detected change in 'D:\\Chatbot\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-26 00:33:28,389 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 00:33:29,074 - __main__ - INFO - Starting application...
+2024-12-26 00:33:29,075 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 00:33:29,075 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 00:33:29,075 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 00:33:29,097 - werkzeug - WARNING -  * Debugger is active!
+2024-12-26 00:33:29,104 - werkzeug - INFO -  * Debugger PIN: 124-268-802
+2024-12-26 00:33:37,702 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:33:37] "GET / HTTP/1.1" 200 -
+2024-12-26 00:33:37,834 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:33:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 00:33:37,836 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:33:37] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-26 00:33:41,847 - __main__ - INFO - File saved successfully: 875c389be7b34c4962d2b1e1d88510502cb3aa054a5a9595655510fbb43f5524.pdf
+2024-12-26 00:33:41,876 - __main__ - INFO - Temporary file removed: 875c389be7b34c4962d2b1e1d88510502cb3aa054a5a9595655510fbb43f5524.pdf
+2024-12-26 00:33:41,877 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:33:41] "POST /upload HTTP/1.1" 200 -
+2024-12-26 00:33:59,212 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:33:59] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-26 00:34:04,671 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:34:04] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-26 00:34:06,403 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:34:06] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-26 00:34:06,603 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:34:06] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-26 00:34:17,660 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:34:17] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-26 00:34:19,146 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:34:19] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-26 00:34:19,638 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:34:19] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-26 00:34:19,840 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:34:19] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-26 00:35:08,536 - werkzeug - INFO -  * Detected change in 'D:\\Chatbot\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-26 00:35:08,633 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 00:35:10,382 - __main__ - INFO - Starting application...
+2024-12-26 00:35:10,382 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 00:35:10,382 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 00:35:10,382 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 00:35:10,404 - werkzeug - WARNING -  * Debugger is active!
+2024-12-26 00:35:10,412 - werkzeug - INFO -  * Debugger PIN: 124-268-802
+2024-12-26 00:35:46,599 - werkzeug - INFO -  * Detected change in 'D:\\Chatbot\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-26 00:35:46,801 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 00:35:48,579 - __main__ - INFO - Starting application...
+2024-12-26 00:35:48,580 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 00:35:48,580 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 00:35:48,581 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 00:35:48,600 - werkzeug - WARNING -  * Debugger is active!
+2024-12-26 00:35:48,607 - werkzeug - INFO -  * Debugger PIN: 124-268-802
+2024-12-26 00:35:58,086 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:35:58] "GET / HTTP/1.1" 200 -
+2024-12-26 00:35:58,206 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:35:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 00:35:58,211 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:35:58] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-26 00:36:07,627 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:36:07] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2024-12-26 00:36:36,847 - werkzeug - INFO -  * Detected change in 'D:\\Chatbot\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-26 00:36:37,027 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 00:36:37,698 - __main__ - INFO - Starting application...
+2024-12-26 00:36:37,698 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 00:36:37,698 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 00:36:37,700 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 00:36:37,722 - werkzeug - WARNING -  * Debugger is active!
+2024-12-26 00:36:37,729 - werkzeug - INFO -  * Debugger PIN: 124-268-802
+2024-12-26 00:36:43,465 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:36:43] "GET / HTTP/1.1" 200 -
+2024-12-26 00:36:43,552 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:36:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 00:36:43,567 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:36:43] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-26 00:36:58,177 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:36:58] "GET / HTTP/1.1" 200 -
+2024-12-26 00:36:58,195 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:36:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 00:36:58,197 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:36:58] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-26 00:37:01,548 - __main__ - INFO - File saved successfully: 2f854a294350146e0ee0f22fecf69690f62a8f1f549b3772d02cc0fed37f9c18.pdf
+2024-12-26 00:37:01,575 - __main__ - INFO - Temporary file removed: 2f854a294350146e0ee0f22fecf69690f62a8f1f549b3772d02cc0fed37f9c18.pdf
+2024-12-26 00:37:01,577 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:37:01] "POST /upload HTTP/1.1" 200 -
+2024-12-26 00:37:13,181 - __main__ - INFO - File saved successfully: 291c2198c27e2a463f236f680bd7e6aa15d9757709bfc2c57dd29d95a452cb1f.pdf
+2024-12-26 00:37:13,205 - __main__ - INFO - Temporary file removed: 291c2198c27e2a463f236f680bd7e6aa15d9757709bfc2c57dd29d95a452cb1f.pdf
+2024-12-26 00:37:13,209 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:37:13] "POST /upload HTTP/1.1" 200 -
+2024-12-26 00:37:31,470 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:37:31] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-26 00:42:37,401 - werkzeug - INFO -  * Detected change in 'D:\\Chatbot\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-26 00:42:37,478 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 00:42:39,101 - __main__ - INFO - Starting application...
+2024-12-26 00:42:39,102 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 00:42:39,102 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 00:42:39,102 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 00:42:39,125 - werkzeug - WARNING -  * Debugger is active!
+2024-12-26 00:42:39,133 - werkzeug - INFO -  * Debugger PIN: 124-268-802
+2024-12-26 00:42:45,774 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:42:45] "GET / HTTP/1.1" 200 -
+2024-12-26 00:42:45,882 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:42:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 00:42:45,885 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:42:45] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-26 00:42:51,473 - __main__ - INFO - File saved successfully: 258ba48a00d4f24cd7784d860199f43bc3571d5f64308b16942535485a8ab1dc.pdf
+2024-12-26 00:42:51,509 - __main__ - INFO - Temporary file removed: 258ba48a00d4f24cd7784d860199f43bc3571d5f64308b16942535485a8ab1dc.pdf
+2024-12-26 00:42:51,509 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:42:51] "POST /upload HTTP/1.1" 200 -
+2024-12-26 00:42:57,575 - __main__ - ERROR - Error querying OpenAI GPT-3: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-26 00:42:57,575 - __main__ - ERROR - Error querying OpenAI GPT-3: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-26 00:42:57,575 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:42:57] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2024-12-26 00:42:57,575 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:42:57] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2024-12-26 00:42:59,971 - __main__ - ERROR - Error querying OpenAI GPT-3: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-26 00:42:59,971 - __main__ - ERROR - Error querying OpenAI GPT-3: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-26 00:42:59,973 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:42:59] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2024-12-26 00:42:59,974 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:42:59] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2024-12-26 00:43:00,875 - __main__ - ERROR - Error querying OpenAI GPT-3: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-26 00:43:00,876 - __main__ - ERROR - Error querying OpenAI GPT-3: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-26 00:43:00,877 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:43:00] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2024-12-26 00:43:00,878 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:43:00] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2024-12-26 00:43:01,168 - __main__ - ERROR - Error querying OpenAI GPT-3: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-26 00:43:01,170 - __main__ - ERROR - Error querying OpenAI GPT-3: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-26 00:43:01,170 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:43:01] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2024-12-26 00:43:01,171 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:43:01] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2024-12-26 00:43:01,421 - __main__ - ERROR - Error querying OpenAI GPT-3: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-26 00:43:01,422 - __main__ - ERROR - Error querying OpenAI GPT-3: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-26 00:43:01,423 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:43:01] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2024-12-26 00:43:01,424 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:43:01] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2024-12-26 00:43:01,627 - __main__ - ERROR - Error querying OpenAI GPT-3: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-26 00:43:01,627 - __main__ - ERROR - Error querying OpenAI GPT-3: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-26 00:43:01,629 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:43:01] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2024-12-26 00:43:01,631 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:43:01] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2024-12-26 00:43:07,160 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:43:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 00:43:14,747 - __main__ - ERROR - Error querying OpenAI GPT-3: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-26 00:43:14,750 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:43:14] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2024-12-26 00:45:49,135 - werkzeug - INFO -  * Detected change in 'D:\\Chatbot\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-26 00:45:49,333 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 00:45:51,071 - __main__ - INFO - Starting application...
+2024-12-26 00:45:51,071 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 00:45:51,071 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 00:45:51,071 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 00:45:51,094 - werkzeug - WARNING -  * Debugger is active!
+2024-12-26 00:45:51,101 - werkzeug - INFO -  * Debugger PIN: 124-268-802
+2024-12-26 00:45:58,641 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:45:58] "GET / HTTP/1.1" 200 -
+2024-12-26 00:45:58,759 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:45:58] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-26 00:45:58,764 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:45:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 00:46:03,486 - __main__ - INFO - File saved successfully: 86912b6f4857aa8e5e132291552b5a85a0987c2534e2c7b14b2c92004bef44a2.pdf
+2024-12-26 00:46:03,509 - __main__ - INFO - Temporary file removed: 86912b6f4857aa8e5e132291552b5a85a0987c2534e2c7b14b2c92004bef44a2.pdf
+2024-12-26 00:46:03,510 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:46:03] "POST /upload HTTP/1.1" 200 -
+2024-12-26 00:46:10,731 - __main__ - ERROR - Error querying OpenAI GPT-3: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-26 00:46:10,735 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:46:10] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2024-12-26 00:46:17,084 - __main__ - ERROR - Error querying OpenAI GPT-3: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-26 00:46:17,086 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:46:17] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2024-12-26 00:46:34,958 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:46:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 00:46:39,816 - __main__ - ERROR - Error querying OpenAI GPT-3: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-26 00:46:39,818 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:46:39] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2024-12-26 00:47:52,099 - __main__ - INFO - Starting application...
+2024-12-26 00:47:52,099 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 00:47:52,099 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 00:47:52,099 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 00:47:52,134 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-26 00:47:52,134 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-26 00:47:52,136 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 00:47:53,716 - __main__ - INFO - Starting application...
+2024-12-26 00:47:53,716 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 00:47:53,716 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 00:47:53,720 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 00:47:53,736 - werkzeug - WARNING -  * Debugger is active!
+2024-12-26 00:47:53,743 - werkzeug - INFO -  * Debugger PIN: 124-268-802
+2024-12-26 00:48:01,855 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:48:01] "GET / HTTP/1.1" 200 -
+2024-12-26 00:48:01,981 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:48:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 00:48:01,982 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:48:01] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-26 00:48:06,926 - __main__ - INFO - File saved successfully: cf63aef68a2273df522ea85db16b537da72ad819156bcad3770749f42e752da6.pdf
+2024-12-26 00:48:06,963 - __main__ - INFO - Temporary file removed: cf63aef68a2273df522ea85db16b537da72ad819156bcad3770749f42e752da6.pdf
+2024-12-26 00:48:06,964 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:48:06] "POST /upload HTTP/1.1" 200 -
+2024-12-26 00:48:15,403 - openai - INFO - error_code=model_not_found error_message='The model `text-davinci-003` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-12-26 00:48:15,404 - __main__ - ERROR - Error querying OpenAI GPT-3: The model `text-davinci-003` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations
+2024-12-26 00:48:15,405 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:48:15] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2024-12-26 00:50:53,591 - werkzeug - INFO -  * Detected change in 'D:\\Chatbot\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-26 00:50:53,865 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 00:50:55,644 - __main__ - INFO - Starting application...
+2024-12-26 00:50:55,645 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 00:50:55,645 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 00:50:55,646 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 00:50:55,666 - werkzeug - WARNING -  * Debugger is active!
+2024-12-26 00:50:55,673 - werkzeug - INFO -  * Debugger PIN: 124-268-802
+2024-12-26 00:50:59,027 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:50:59] "GET / HTTP/1.1" 200 -
+2024-12-26 00:50:59,133 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:50:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 00:50:59,141 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:50:59] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-26 00:51:02,686 - __main__ - INFO - File saved successfully: 754a44dfbcccdeb2fed37bc0beac97fd2d5600db1943752c8ba3d5133c9cda6a.pdf
+2024-12-26 00:51:02,716 - __main__ - INFO - Temporary file removed: 754a44dfbcccdeb2fed37bc0beac97fd2d5600db1943752c8ba3d5133c9cda6a.pdf
+2024-12-26 00:51:02,717 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:51:02] "POST /upload HTTP/1.1" 200 -
+2024-12-26 00:51:09,992 - openai - INFO - error_code=insufficient_quota error_message='You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.' error_param=None error_type=insufficient_quota message='OpenAI API error received' stream_error=False
+2024-12-26 00:51:09,998 - __main__ - ERROR - OpenAI API error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2024-12-26 00:51:09,998 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:51:09] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2024-12-26 00:58:52,927 - werkzeug - INFO -  * Detected change in 'D:\\Chatbot\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-26 00:58:53,080 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 00:59:33,319 - __main__ - INFO - Starting application...
+2024-12-26 00:59:33,319 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 00:59:33,319 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 00:59:33,321 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 00:59:33,330 - werkzeug - WARNING -  * Debugger is active!
+2024-12-26 00:59:33,336 - werkzeug - INFO -  * Debugger PIN: 124-268-802
+2024-12-26 00:59:33,370 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:59:33] "GET / HTTP/1.1" 200 -
+2024-12-26 00:59:33,476 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:59:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 00:59:33,496 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 00:59:33] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-26 01:00:00,674 - __main__ - INFO - File saved successfully: c8ba09f0185e4bc6345c6da2dd2d513c8ce36b648e5e3a1090f61a5ef8297b33.pdf
+2024-12-26 01:00:00,705 - __main__ - INFO - Temporary file removed: c8ba09f0185e4bc6345c6da2dd2d513c8ce36b648e5e3a1090f61a5ef8297b33.pdf
+2024-12-26 01:00:00,707 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:00:00] "POST /upload HTTP/1.1" 200 -
+2024-12-26 01:00:10,389 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:00:10] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:00:10,390 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:00:10] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:00:32,277 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:00:32] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:00:32,284 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:00:32] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:00:48,869 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:00:48] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:00:48,871 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:00:48] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:00:55,749 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:00:55] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:00:55,749 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:00:55] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:01:05,316 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:01:05] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:01:05,324 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:01:05] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:01:24,335 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:01:24] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:01:24,338 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:01:24] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:01:30,916 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:01:30] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:01:30,920 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:01:30] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:01:41,230 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:01:41] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:01:41,231 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:01:41] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:01:44,036 - __main__ - INFO - File saved successfully: d318acc9d75de68f0f33dd65485552883faabeaeab7925c7a0d723720ff6f3ce.pdf
+2024-12-26 01:01:44,061 - __main__ - INFO - Temporary file removed: d318acc9d75de68f0f33dd65485552883faabeaeab7925c7a0d723720ff6f3ce.pdf
+2024-12-26 01:01:44,062 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:01:44] "POST /upload HTTP/1.1" 200 -
+2024-12-26 01:01:55,129 - __main__ - INFO - File saved successfully: d43c0b6741e225f93f9146bd8d377dab68b6c2e5eee796217fd5644f92305a14.pdf
+2024-12-26 01:01:55,458 - __main__ - INFO - Temporary file removed: d43c0b6741e225f93f9146bd8d377dab68b6c2e5eee796217fd5644f92305a14.pdf
+2024-12-26 01:01:55,458 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:01:55] "POST /upload HTTP/1.1" 200 -
+2024-12-26 01:02:08,540 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:02:08] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:02:08,557 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:02:08] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:02:20,837 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:02:20] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:02:20,839 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:02:20] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:02:29,920 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:02:29] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:02:29,927 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:02:29] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:02:40,055 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:02:40] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:02:40,076 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:02:40] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:02:53,610 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:02:53] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:02:53,621 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:02:53] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:05:33,179 - werkzeug - INFO -  * Detected change in 'D:\\Chatbot\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-26 01:05:34,052 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 01:10:32,782 - __main__ - INFO - Starting application...
+2024-12-26 01:10:32,783 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 01:10:32,783 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 01:10:32,783 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 01:10:32,802 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-26 01:10:32,803 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-26 01:10:32,805 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 01:10:42,736 - __main__ - INFO - Starting application...
+2024-12-26 01:10:42,737 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 01:10:42,737 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 01:10:42,738 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 01:10:42,749 - werkzeug - WARNING -  * Debugger is active!
+2024-12-26 01:10:42,755 - werkzeug - INFO -  * Debugger PIN: 124-268-802
+2024-12-26 01:11:05,158 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:11:05] "GET / HTTP/1.1" 200 -
+2024-12-26 01:11:05,306 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:11:05] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-26 01:11:05,306 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:11:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 01:11:16,148 - __main__ - INFO - File saved successfully: 058207ebed06570143067dc28d4ef988fca8269f705f45c59c7ad33ac074e459.pdf
+2024-12-26 01:11:16,171 - __main__ - INFO - Temporary file removed: 058207ebed06570143067dc28d4ef988fca8269f705f45c59c7ad33ac074e459.pdf
+2024-12-26 01:11:16,172 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:11:16] "POST /upload HTTP/1.1" 200 -
+2024-12-26 01:11:30,030 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:11:30] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:11:30,056 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:11:30] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:11:42,743 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:11:42] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:11:42,745 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:11:42] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:11:54,141 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:11:54] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:11:54,142 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:11:54] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:12:12,286 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:12:12] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:12:12,288 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:12:12] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:12:43,673 - __main__ - INFO - File saved successfully: 5f1b1daa2d575cda1100a76b1b60f52786007d2ca24fc3cc6caf7ba2c05d1b9f.pdf
+2024-12-26 01:12:44,083 - __main__ - INFO - Temporary file removed: 5f1b1daa2d575cda1100a76b1b60f52786007d2ca24fc3cc6caf7ba2c05d1b9f.pdf
+2024-12-26 01:12:44,084 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:12:44] "POST /upload HTTP/1.1" 200 -
+2024-12-26 01:13:00,683 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:13:00] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:13:00,683 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:13:00] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:13:20,241 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:13:20] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:13:20,273 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:13:20] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:13:30,823 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:13:30] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:13:30,851 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:13:30] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:13:39,273 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:13:39] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:13:39,273 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:13:39] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:16:22,640 - werkzeug - INFO -  * Detected change in 'D:\\Chatbot\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-26 01:16:23,675 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 01:16:32,044 - __main__ - INFO - Starting application...
+2024-12-26 01:16:32,045 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 01:16:32,045 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 01:16:32,045 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 01:16:32,054 - werkzeug - WARNING -  * Debugger is active!
+2024-12-26 01:16:32,059 - werkzeug - INFO -  * Debugger PIN: 124-268-802
+2024-12-26 01:16:32,084 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:16:32] "GET / HTTP/1.1" 200 -
+2024-12-26 01:16:32,210 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:16:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 01:16:32,214 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:16:32] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-26 01:16:41,057 - __main__ - INFO - File saved successfully: 8627edfcfe1ba0de58d8966ed3c21e4cfbd7dfa6af0b0a5b90e92463e3f88a7a.pdf
+2024-12-26 01:16:41,085 - __main__ - INFO - Temporary file removed: 8627edfcfe1ba0de58d8966ed3c21e4cfbd7dfa6af0b0a5b90e92463e3f88a7a.pdf
+2024-12-26 01:16:41,087 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:16:41] "POST /upload HTTP/1.1" 200 -
+2024-12-26 01:16:47,327 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:16:47] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:16:47,328 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:16:47] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:16:54,911 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:16:54] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:16:54,927 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:16:54] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:17:01,923 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:17:01] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:17:01,942 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:17:01] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:17:07,207 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:17:07] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:17:07,226 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:17:07] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:17:40,747 - __main__ - INFO - File saved successfully: 6545c4489b19dfd9bf070c76bb58f7f1f68999d1d655eb9930b5ccc2545b26b0.pdf
+2024-12-26 01:17:41,089 - __main__ - INFO - Temporary file removed: 6545c4489b19dfd9bf070c76bb58f7f1f68999d1d655eb9930b5ccc2545b26b0.pdf
+2024-12-26 01:17:41,090 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:17:41] "POST /upload HTTP/1.1" 200 -
+2024-12-26 01:17:49,134 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:17:49] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:17:49,143 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:17:49] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:17:56,228 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:17:56] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:17:56,229 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:17:56] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:18:03,278 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:18:03] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:18:03,299 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:18:03] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:18:16,026 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:18:16] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:18:16,037 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:18:16] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:18:23,555 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:18:23] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:18:23,566 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:18:23] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:18:40,468 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:18:40] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:18:40,476 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:18:40] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:19:09,292 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:19:09] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:19:09,297 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:19:09] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:22:16,848 - werkzeug - INFO -  * Detected change in 'D:\\Chatbot\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-26 01:22:17,714 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 01:22:25,976 - __main__ - INFO - Starting application...
+2024-12-26 01:22:25,977 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 01:22:25,977 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 01:22:25,977 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 01:22:25,984 - werkzeug - WARNING -  * Debugger is active!
+2024-12-26 01:22:25,988 - werkzeug - INFO -  * Debugger PIN: 124-268-802
+2024-12-26 01:22:37,221 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:22:37] "GET / HTTP/1.1" 200 -
+2024-12-26 01:22:37,355 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:22:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 01:22:37,358 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:22:37] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-26 01:22:42,096 - __main__ - INFO - File saved successfully: b377ed961264170e7c75f7d0ab64882300ac3900257a7fdfcfc38724141a812d.pdf
+2024-12-26 01:22:42,417 - __main__ - INFO - Temporary file removed: b377ed961264170e7c75f7d0ab64882300ac3900257a7fdfcfc38724141a812d.pdf
+2024-12-26 01:22:42,418 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:22:42] "POST /upload HTTP/1.1" 200 -
+2024-12-26 01:22:58,771 - __main__ - ERROR - Error querying Hugging Face API: 400 Client Error: Bad Request for url: https://api-inference.huggingface.co/models/gpt2
+2024-12-26 01:22:58,774 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:22:58] "[33mPOST /ask HTTP/1.1[0m" 404 -
+2024-12-26 01:23:08,532 - __main__ - ERROR - Error querying Hugging Face API: 400 Client Error: Bad Request for url: https://api-inference.huggingface.co/models/gpt2
+2024-12-26 01:23:08,533 - __main__ - ERROR - Error querying Hugging Face API: 400 Client Error: Bad Request for url: https://api-inference.huggingface.co/models/gpt2
+2024-12-26 01:23:08,535 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:23:08] "[33mPOST /ask HTTP/1.1[0m" 404 -
+2024-12-26 01:23:08,536 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:23:08] "[33mPOST /ask HTTP/1.1[0m" 404 -
+2024-12-26 01:23:19,158 - __main__ - ERROR - Error querying Hugging Face API: 400 Client Error: Bad Request for url: https://api-inference.huggingface.co/models/gpt2
+2024-12-26 01:23:19,161 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:23:19] "[33mPOST /ask HTTP/1.1[0m" 404 -
+2024-12-26 01:23:19,188 - __main__ - ERROR - Error querying Hugging Face API: 400 Client Error: Bad Request for url: https://api-inference.huggingface.co/models/gpt2
+2024-12-26 01:23:19,189 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:23:19] "[33mPOST /ask HTTP/1.1[0m" 404 -
+2024-12-26 01:28:57,380 - werkzeug - INFO -  * Detected change in 'D:\\Chatbot\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-26 01:28:58,337 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 01:29:07,210 - __main__ - INFO - Starting application...
+2024-12-26 01:29:07,210 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 01:29:07,210 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 01:29:07,210 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 01:29:07,216 - werkzeug - WARNING -  * Debugger is active!
+2024-12-26 01:29:07,224 - werkzeug - INFO -  * Debugger PIN: 124-268-802
+2024-12-26 01:29:08,011 - chatbot - WARNING - Forbidden (CSRF token missing or incorrect.): /ask
+2024-12-26 01:29:08,013 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:29:08] "[31m[1mPOST /ask HTTP/1.1[0m" 403 -
+2024-12-26 01:29:09,117 - chatbot - WARNING - Forbidden (CSRF token missing or incorrect.): /ask
+2024-12-26 01:29:09,118 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:29:09] "[31m[1mPOST /ask HTTP/1.1[0m" 403 -
+2024-12-26 01:29:09,949 - chatbot - WARNING - Forbidden (CSRF token missing or incorrect.): /ask
+2024-12-26 01:29:09,950 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:29:09] "[31m[1mPOST /ask HTTP/1.1[0m" 403 -
+2024-12-26 01:29:12,848 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:29:12] "GET / HTTP/1.1" 200 -
+2024-12-26 01:29:12,979 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:29:12] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-26 01:29:12,981 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:29:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 01:29:22,464 - __main__ - INFO - File saved successfully: 94a041c7af010108a90ddbcad1bf317e7245a0449c2c7d6dce3e07960d3387c5.pdf
+2024-12-26 01:29:22,492 - __main__ - INFO - Temporary file removed: 94a041c7af010108a90ddbcad1bf317e7245a0449c2c7d6dce3e07960d3387c5.pdf
+2024-12-26 01:29:22,493 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:29:22] "POST /upload HTTP/1.1" 200 -
+2024-12-26 01:29:26,744 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:29:26] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:29:26,744 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:29:26] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:29:38,725 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:29:38] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:29:53,540 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:29:53] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:30:05,957 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:30:05] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:30:05,958 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:30:05] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:30:17,741 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:30:17] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:30:32,740 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:30:32] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:30:52,275 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:30:52] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:30:52,279 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:30:52] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:31:16,336 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:31:16] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:31:21,536 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:31:21] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:31:25,715 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:31:25] "GET / HTTP/1.1" 200 -
+2024-12-26 01:31:25,736 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:31:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 01:31:25,745 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:31:25] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-26 01:31:42,754 - __main__ - INFO - File saved successfully: 691eb2989e0dbb7bef93b9811b712f173ddd494489e072551c6d4d1d25a86511.pdf
+2024-12-26 01:31:43,059 - __main__ - INFO - Temporary file removed: 691eb2989e0dbb7bef93b9811b712f173ddd494489e072551c6d4d1d25a86511.pdf
+2024-12-26 01:31:43,060 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:31:43] "POST /upload HTTP/1.1" 200 -
+2024-12-26 01:32:03,011 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:32:03] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:32:10,234 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:32:10] "GET / HTTP/1.1" 200 -
+2024-12-26 01:32:10,252 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:32:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 01:32:10,258 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:32:10] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-26 01:34:37,784 - werkzeug - INFO -  * Detected change in 'D:\\Chatbot\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-26 01:34:38,778 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 01:34:46,748 - __main__ - INFO - Starting application...
+2024-12-26 01:34:46,750 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 01:34:46,750 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 01:34:46,751 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 01:34:46,761 - werkzeug - WARNING -  * Debugger is active!
+2024-12-26 01:34:46,768 - werkzeug - INFO -  * Debugger PIN: 124-268-802
+2024-12-26 01:35:02,088 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:35:02] "GET / HTTP/1.1" 200 -
+2024-12-26 01:35:02,216 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:35:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 01:35:02,217 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:35:02] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-26 01:35:08,848 - __main__ - INFO - File saved successfully: 470533ef9459e1f290004841076180c0d36f0383db79adde9811e97b9d42e091.pdf
+2024-12-26 01:35:09,149 - __main__ - INFO - Temporary file removed: 470533ef9459e1f290004841076180c0d36f0383db79adde9811e97b9d42e091.pdf
+2024-12-26 01:35:09,151 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:35:09] "POST /upload HTTP/1.1" 200 -
+2024-12-26 01:35:24,311 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:35:24] "[33mPOST /ask HTTP/1.1[0m" 404 -
+2024-12-26 01:35:39,413 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:35:39] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:35:56,567 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:35:56] "[33mPOST /ask HTTP/1.1[0m" 404 -
+2024-12-26 01:35:56,584 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:35:56] "[33mPOST /ask HTTP/1.1[0m" 404 -
+2024-12-26 01:36:02,824 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:36:02] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:39:03,991 - werkzeug - INFO -  * Detected change in 'D:\\Chatbot\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-26 01:39:04,851 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 01:39:13,338 - __main__ - INFO - Starting application...
+2024-12-26 01:39:13,338 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 01:39:13,339 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 01:39:13,339 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 01:39:13,347 - werkzeug - WARNING -  * Debugger is active!
+2024-12-26 01:39:13,354 - werkzeug - INFO -  * Debugger PIN: 124-268-802
+2024-12-26 01:39:23,455 - werkzeug - INFO -  * Detected change in 'D:\\Chatbot\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-26 01:39:24,493 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 01:39:36,832 - __main__ - INFO - Starting application...
+2024-12-26 01:39:36,832 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 01:39:36,840 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 01:39:36,840 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 01:39:36,850 - werkzeug - WARNING -  * Debugger is active!
+2024-12-26 01:39:36,860 - werkzeug - INFO -  * Debugger PIN: 124-268-802
+2024-12-26 01:39:36,898 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:39:36] "GET / HTTP/1.1" 200 -
+2024-12-26 01:39:37,061 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:39:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 01:39:37,075 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:39:37] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-26 01:39:43,115 - __main__ - INFO - File saved successfully: 16f224610d20653cc52c4e5d2114fed88d5558f7afe110c796fe6695388c33c5.pdf
+2024-12-26 01:39:43,559 - __main__ - INFO - Temporary file removed: 16f224610d20653cc52c4e5d2114fed88d5558f7afe110c796fe6695388c33c5.pdf
+2024-12-26 01:39:43,560 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:39:43] "POST /upload HTTP/1.1" 200 -
+2024-12-26 01:39:58,142 - __main__ - ERROR - Error querying LLM API: 422 Client Error: Unprocessable Entity for url: https://api-inference.huggingface.co/models/gpt2
+2024-12-26 01:39:58,143 - __main__ - ERROR - Error querying LLM API: 422 Client Error: Unprocessable Entity for url: https://api-inference.huggingface.co/models/gpt2
+2024-12-26 01:39:58,145 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:39:58] "[33mPOST /ask HTTP/1.1[0m" 404 -
+2024-12-26 01:39:58,145 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:39:58] "[33mPOST /ask HTTP/1.1[0m" 404 -
+2024-12-26 01:40:16,560 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:40:16] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:40:16,580 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:40:16] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:40:37,220 - __main__ - ERROR - Error querying LLM API: 422 Client Error: Unprocessable Entity for url: https://api-inference.huggingface.co/models/gpt2
+2024-12-26 01:40:37,220 - __main__ - ERROR - Error querying LLM API: 422 Client Error: Unprocessable Entity for url: https://api-inference.huggingface.co/models/gpt2
+2024-12-26 01:40:37,220 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:40:37] "[33mPOST /ask HTTP/1.1[0m" 404 -
+2024-12-26 01:40:37,223 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:40:37] "[33mPOST /ask HTTP/1.1[0m" 404 -
+2024-12-26 01:40:40,599 - __main__ - INFO - File saved successfully: 6aeb6d3887c36179f0bc615bc4f31327c8a75165cd0bc89843682d44f68cc63c.pdf
+2024-12-26 01:40:41,059 - __main__ - INFO - Temporary file removed: 6aeb6d3887c36179f0bc615bc4f31327c8a75165cd0bc89843682d44f68cc63c.pdf
+2024-12-26 01:40:41,062 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:40:41] "POST /upload HTTP/1.1" 200 -
+2024-12-26 01:40:57,342 - __main__ - INFO - File saved successfully: c79a640b93d57c4f912e7c857ce7baa2c432a2d8fc7c513c16b43183e30ed6b4.pdf
+2024-12-26 01:40:57,376 - __main__ - INFO - Temporary file removed: c79a640b93d57c4f912e7c857ce7baa2c432a2d8fc7c513c16b43183e30ed6b4.pdf
+2024-12-26 01:40:57,377 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:40:57] "POST /upload HTTP/1.1" 200 -
+2024-12-26 01:41:04,014 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:41:04] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:41:04,033 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:41:04] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:41:17,388 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:41:17] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:41:29,808 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:41:29] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:42:05,401 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:42:05] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:42:05,421 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:42:05] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:42:23,715 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:42:23] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:42:23,728 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:42:23] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:42:41,827 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:42:41] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:42:57,696 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:42:57] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:45:36,297 - werkzeug - INFO -  * Detected change in 'D:\\Chatbot\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-26 01:45:37,299 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 01:54:55,234 - __main__ - INFO - Successfully loaded QA model
+2024-12-26 01:54:55,238 - __main__ - INFO - Starting application...
+2024-12-26 01:54:55,239 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 01:54:55,239 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 01:54:55,239 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 01:54:55,265 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-26 01:54:55,265 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-26 01:54:55,269 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 01:55:07,887 - __main__ - INFO - Successfully loaded QA model
+2024-12-26 01:55:07,895 - __main__ - INFO - Starting application...
+2024-12-26 01:55:07,895 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 01:55:07,898 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 01:55:07,899 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 01:55:07,920 - werkzeug - WARNING -  * Debugger is active!
+2024-12-26 01:55:07,931 - werkzeug - INFO -  * Debugger PIN: 124-268-802
+2024-12-26 01:55:07,970 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:55:07] "GET / HTTP/1.1" 200 -
+2024-12-26 01:55:08,095 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:55:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 01:55:08,125 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:55:08] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-26 01:55:13,358 - __main__ - INFO - File saved successfully: 5055071e97b113284b803970340db4208a2e7de540b00df83a1a69e3a0d3da48.pdf
+2024-12-26 01:55:13,390 - __main__ - INFO - Temporary file removed: 5055071e97b113284b803970340db4208a2e7de540b00df83a1a69e3a0d3da48.pdf
+2024-12-26 01:55:13,395 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:55:13] "POST /upload HTTP/1.1" 200 -
+2024-12-26 01:55:17,477 - __main__ - WARNING - Malicious input detected in question: who is elara?
+2024-12-26 01:55:17,477 - __main__ - WARNING - Malicious input detected in question: who is elara?
+2024-12-26 01:55:17,481 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:55:17] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-26 01:55:17,481 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:55:17] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-26 01:55:27,967 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:55:27] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:55:27,967 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:55:27] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:55:35,474 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:55:35] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:55:35,479 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:55:35] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:55:40,482 - __main__ - WARNING - Malicious input detected in question: what did elara discover?
+2024-12-26 01:55:40,484 - __main__ - WARNING - Malicious input detected in question: what did elara discover?
+2024-12-26 01:55:40,484 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:55:40] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-26 01:55:40,485 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:55:40] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-26 01:55:47,119 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:55:47] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:55:47,134 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:55:47] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:56:17,262 - __main__ - INFO - File saved successfully: ecb2b16c8d3a39d52157a55eebdba99641ee3af2a8fc731e5962977f4dc13a3b.pdf
+2024-12-26 01:56:17,739 - __main__ - INFO - Temporary file removed: ecb2b16c8d3a39d52157a55eebdba99641ee3af2a8fc731e5962977f4dc13a3b.pdf
+2024-12-26 01:56:17,740 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:56:17] "POST /upload HTTP/1.1" 200 -
+2024-12-26 01:56:25,955 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:56:25] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:56:26,000 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:56:26] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:56:48,710 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:56:48] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:56:49,304 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:56:49] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:57:21,952 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:57:21] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:57:23,632 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:57:23] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:57:24,182 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:57:24] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:57:24,200 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:57:24] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:57:31,843 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:57:31] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:57:32,134 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:57:32] "POST /ask HTTP/1.1" 200 -
+2024-12-26 01:59:41,702 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:59:41] "GET / HTTP/1.1" 200 -
+2024-12-26 01:59:41,836 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:59:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 01:59:41,839 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 01:59:41] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-26 02:00:02,075 - __main__ - INFO - File saved successfully: 83d157f99be21c8a6ab5dd627921f75560e0c141162794d8e7c97af38e405dbd.pdf
+2024-12-26 02:00:05,886 - __main__ - INFO - Temporary file removed: 83d157f99be21c8a6ab5dd627921f75560e0c141162794d8e7c97af38e405dbd.pdf
+2024-12-26 02:00:05,892 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:00:05] "POST /upload HTTP/1.1" 200 -
+2024-12-26 02:01:17,177 - __main__ - WARNING - Malicious input detected in question: select * from users?
+2024-12-26 02:01:17,189 - __main__ - WARNING - Malicious input detected in question: select * from users?
+2024-12-26 02:01:17,192 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:01:17] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-26 02:01:17,198 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:01:17] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-26 02:01:21,152 - __main__ - WARNING - Malicious input detected in question: select * from users
+2024-12-26 02:01:21,170 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:01:21] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-26 02:01:21,172 - __main__ - WARNING - Malicious input detected in question: select * from users
+2024-12-26 02:01:21,180 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:01:21] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-26 02:01:50,983 - __main__ - WARNING - Malicious input detected in question: what are the languages known?
+2024-12-26 02:01:50,999 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:01:50] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-26 02:01:51,000 - __main__ - WARNING - Malicious input detected in question: what are the languages known?
+2024-12-26 02:01:51,008 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:01:51] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-26 02:02:07,360 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:02:07] "POST /ask HTTP/1.1" 200 -
+2024-12-26 02:02:07,405 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:02:07] "POST /ask HTTP/1.1" 200 -
+2024-12-26 02:02:27,719 - werkzeug - INFO -  * Detected change in 'D:\\Chatbot\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-26 02:02:34,758 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 02:03:48,626 - __main__ - INFO - Successfully loaded QA model
+2024-12-26 02:03:48,642 - __main__ - INFO - Starting application...
+2024-12-26 02:03:48,646 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 02:03:48,649 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 02:03:48,653 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 02:03:48,729 - werkzeug - WARNING -  * Debugger is active!
+2024-12-26 02:03:48,774 - werkzeug - INFO -  * Debugger PIN: 124-268-802
+2024-12-26 02:03:48,915 - chatbot - WARNING - Forbidden (CSRF token missing or incorrect.): /ask
+2024-12-26 02:03:48,918 - chatbot - WARNING - Forbidden (CSRF token missing or incorrect.): /ask
+2024-12-26 02:03:48,931 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:03:48] "[31m[1mPOST /ask HTTP/1.1[0m" 403 -
+2024-12-26 02:03:48,941 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:03:48] "[31m[1mPOST /ask HTTP/1.1[0m" 403 -
+2024-12-26 02:07:39,452 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:07:39] "GET / HTTP/1.1" 200 -
+2024-12-26 02:07:40,412 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:07:40] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-26 02:07:40,428 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:07:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 02:09:14,883 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:09:14] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2024-12-26 02:09:18,604 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:09:18] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2024-12-26 02:09:19,530 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:09:19] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2024-12-26 02:09:19,718 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:09:19] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2024-12-26 02:09:24,703 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:09:24] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2024-12-26 02:09:25,333 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:09:25] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2024-12-26 02:09:25,576 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:09:25] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2024-12-26 02:09:57,057 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:09:57] "GET / HTTP/1.1" 200 -
+2024-12-26 02:09:57,071 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:09:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 02:09:57,074 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:09:57] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-26 02:10:00,610 - __main__ - INFO - File saved successfully: 51e7344d3e0c4ca32e192b4661d6bf3a8c1515745bc821a556d8fbe5ebdea73f.pdf
+2024-12-26 02:10:00,623 - __main__ - INFO - Temporary file removed: 51e7344d3e0c4ca32e192b4661d6bf3a8c1515745bc821a556d8fbe5ebdea73f.pdf
+2024-12-26 02:10:00,623 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:10:00] "POST /upload HTTP/1.1" 200 -
+2024-12-26 02:10:16,404 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:10:16] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-26 02:10:16,405 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:10:16] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-26 02:10:19,252 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:10:19] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-26 02:10:19,253 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:10:19] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-26 02:10:34,397 - __main__ - INFO - File saved successfully: 8c5f85ce5666ebcf6510837bc3accc57ba18c390f8318b860f4b144740f29f69.pdf
+2024-12-26 02:10:34,581 - __main__ - INFO - Temporary file removed: 8c5f85ce5666ebcf6510837bc3accc57ba18c390f8318b860f4b144740f29f69.pdf
+2024-12-26 02:10:34,583 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:10:34] "POST /upload HTTP/1.1" 200 -
+2024-12-26 02:10:48,788 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:10:48] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-26 02:10:51,801 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:10:51] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-26 02:10:52,790 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:10:52] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-26 02:10:53,020 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:10:53] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-26 02:11:20,498 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:11:20] "GET / HTTP/1.1" 200 -
+2024-12-26 02:11:20,508 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:11:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 02:11:20,510 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:11:20] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-26 02:11:33,673 - __main__ - INFO - File saved successfully: e706fd409952fa412d6a0ca20d5e682e6546110adef019bfd6b5fdeef2b82256.pdf
+2024-12-26 02:11:34,010 - __main__ - INFO - Temporary file removed: e706fd409952fa412d6a0ca20d5e682e6546110adef019bfd6b5fdeef2b82256.pdf
+2024-12-26 02:11:34,010 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:11:34] "POST /upload HTTP/1.1" 200 -
+2024-12-26 02:11:57,012 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:11:57] "POST /ask HTTP/1.1" 200 -
+2024-12-26 02:12:07,808 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:12:07] "POST /ask HTTP/1.1" 200 -
+2024-12-26 02:12:14,992 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:12:14] "POST /ask HTTP/1.1" 200 -

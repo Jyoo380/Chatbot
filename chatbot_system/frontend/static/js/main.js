@@ -3,10 +3,10 @@ let documentText = '';
 function setTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
-    
+   
     const sunIcon = document.querySelector('.sun-icon');
     const moonIcon = document.querySelector('.moon-icon');
-    
+   
     if (theme === 'dark') {
         sunIcon.style.display = 'none';
         moonIcon.style.display = 'block';
@@ -41,7 +41,7 @@ function showLoading(message = 'Processing...') {
 async function uploadPDF() {
     const fileInput = document.getElementById('pdfFile');
     const file = fileInput.files[0];
-    
+   
     if (!file) {
         showError('Please select a file first!');
         return;
@@ -69,10 +69,10 @@ async function uploadPDF() {
 
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         const data = await response.json();
-        
+       
         documentText = data.text;
         document.getElementById('documentContent').textContent = documentText;
-        
+       
         const chatSection = document.querySelector('.chat-section');
         chatSection.style.opacity = '0';
         chatSection.style.display = 'block';
@@ -83,7 +83,7 @@ async function uploadPDF() {
 
         showSuccess('File uploaded successfully!');
         document.getElementById('questionInput').focus();
-        
+       
     } catch (error) {
         showError('Upload failed: ' + error.message);
         console.error('Upload error:', error);
@@ -94,7 +94,7 @@ async function askQuestion() {
     const questionInput = document.getElementById('questionInput');
     const answerDiv = document.getElementById('answer');
     const question = questionInput.value.trim();
-    
+   
     if (!question) {
         answerDiv.className = 'answer-section error-message';
         answerDiv.textContent = 'Please enter a question!';
@@ -119,16 +119,16 @@ async function askQuestion() {
         });
 
         const data = await response.json();
-        
+       
         if (response.ok) {
             answerDiv.className = 'answer-section';
-            let answerHTML = `
+            const confidencePercentage = (data.confidence * 100).toFixed(1);
+            answerDiv.innerHTML = `
                 <div class="answer-content">
                     <p class="answer-text">${data.answer}</p>
+                    <div class="confidence-score">Confidence: ${confidencePercentage}%</div>
                 </div>
             `;
-            
-            answerDiv.innerHTML = answerHTML;
             questionInput.value = '';
             questionInput.focus();
             answerDiv.scrollIntoView({ behavior: 'smooth' });
@@ -143,32 +143,19 @@ async function askQuestion() {
     }
 }
 
-// Dynamic Background
-let currentBackground = 0;
-const backgrounds = ['background-1', 'background-2'];
-
-function changeBackground() {
-    document.body.classList.remove(...backgrounds);
-    currentBackground = (currentBackground + 1) % backgrounds.length;
-    document.body.classList.add(backgrounds[currentBackground]);
-}
-
-// Change background every 5 seconds
-setInterval(changeBackground, 5000);
-
 document.addEventListener('DOMContentLoaded', function() {
     const savedTheme = localStorage.getItem('theme') || 'light';
     setTheme(savedTheme);
-    
+   
     document.getElementById('themeToggle').addEventListener('click', () => {
         const currentTheme = document.documentElement.getAttribute('data-theme');
         setTheme(currentTheme === 'dark' ? 'light' : 'dark');
     });
-    
+   
     const fileInput = document.getElementById('pdfFile');
     const uploadLabel = document.querySelector('.file-upload-label');
     const uploadSection = document.querySelector('.upload-section');
-    
+   
     fileInput.addEventListener('change', (e) => {
         const file = e.target.files[0];
         if (file) {
@@ -211,3 +198,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
