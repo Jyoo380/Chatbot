@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Q&A Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="themeToggle" aria-label="Toggle dark mode">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <path d="M12 1v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 12 3a9 9 0 0 1 9.21 8.79"></path>
+            </svg>
+        </button>
+    </div>
+    
+    <div class="container">
+        <h1>Document Q&A Chatbot</h1>
+        
+        <div class="upload-section">
+            <h2>Upload Document</h2>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <div class="file-upload-wrapper">
+                    <input type="file" id="pdfFile" name="file" accept=".pdf" multiple>
+                    <label for="pdfFile" class="file-upload-label">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                        Choose PDF file
+                    </label>
+                </div>
+                <button type="button" onclick="uploadPDF()" class="upload-button">Upload</button>
+            </form>
+            <div id="uploadStatus"></div>
+        </div>
+
+        <div class="chat-section" style="display: none;">
+            <div id="documentContent" class="document-content"></div>
+            
+            <div class="question-section">
+                <div class="question-wrapper">
+                    <input type="text" 
+                           id="questionInput" 
+                           placeholder="Ask a question about the document..."
+                           onkeypress="if(event.key === 'Enter') askQuestion()">
+                    <button onclick="askQuestion()" class="ask-button">Ask</button>
+                </div>
+            </div>
+
+            <div id="answer" class="answer-section"></div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

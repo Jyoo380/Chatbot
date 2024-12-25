@@ -1,0 +1,673 @@
+2024-12-25 11:40:25,462 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 11:40:25,470 - __main__ - INFO - Starting application...
+2024-12-25 11:40:25,470 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 11:40:25,470 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 11:40:25,470 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 11:40:25,510 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 11:40:25,510 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 11:40:25,521 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 11:40:38,741 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 11:40:38,749 - __main__ - INFO - Starting application...
+2024-12-25 11:40:38,749 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 11:40:38,767 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 11:40:38,769 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 11:40:38,814 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 11:40:38,823 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 11:40:38,910 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:40:38] "GET / HTTP/1.1" 200 -
+2024-12-25 11:40:39,066 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:40:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 11:40:39,407 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:40:39] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-25 11:41:04,513 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:41:04] "GET / HTTP/1.1" 200 -
+2024-12-25 11:41:04,564 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:41:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 11:41:04,580 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:41:04] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-25 11:41:14,756 - chatbot - WARNING - Forbidden (CSRF token missing or incorrect.): /upload
+2024-12-25 11:41:14,756 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:41:14] "[31m[1mPOST /upload HTTP/1.1[0m" 403 -
+2024-12-25 11:41:43,923 - chatbot - WARNING - Forbidden (CSRF token missing or incorrect.): /upload
+2024-12-25 11:41:43,928 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:41:43] "[31m[1mPOST /upload HTTP/1.1[0m" 403 -
+2024-12-25 11:41:47,894 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:41:47] "GET / HTTP/1.1" 200 -
+2024-12-25 11:41:47,943 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:41:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 11:41:47,968 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:41:47] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-25 11:41:53,935 - chatbot - WARNING - Forbidden (CSRF token missing or incorrect.): /upload
+2024-12-25 11:41:53,943 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:41:53] "[31m[1mPOST /upload HTTP/1.1[0m" 403 -
+2024-12-25 11:43:26,049 - werkzeug - INFO -  * Detected change in 'C:\\Users\\nanda\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-25 11:43:27,320 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 11:43:41,413 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 11:43:41,413 - __main__ - INFO - Starting application...
+2024-12-25 11:43:41,413 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 11:43:41,413 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 11:43:41,413 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 11:43:41,470 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 11:43:41,478 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 11:47:32,641 - werkzeug - INFO -  * Detected change in 'C:\\Users\\nanda\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-25 11:47:34,115 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 11:49:14,684 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 11:49:14,684 - __main__ - INFO - Starting application...
+2024-12-25 11:49:14,684 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 11:49:14,692 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 11:49:14,692 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 11:49:14,741 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 11:49:14,741 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 11:49:14,749 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 11:49:29,807 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 11:49:29,815 - __main__ - INFO - Starting application...
+2024-12-25 11:49:29,815 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 11:49:29,841 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 11:49:29,841 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 11:49:29,876 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 11:49:29,889 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 11:49:30,028 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:49:30] "GET / HTTP/1.1" 200 -
+2024-12-25 11:49:30,309 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:49:30] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-25 11:49:30,317 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:49:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 11:50:08,529 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:50:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 11:51:17,704 - werkzeug - INFO -  * Detected change in 'C:\\Users\\nanda\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-25 11:51:19,035 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 11:51:31,075 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 11:51:31,078 - __main__ - INFO - Starting application...
+2024-12-25 11:51:31,078 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 11:51:31,078 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 11:51:31,078 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 11:51:31,087 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 11:51:31,094 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 11:51:31,152 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:51:31] "GET / HTTP/1.1" 200 -
+2024-12-25 11:51:31,314 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:51:31] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-25 11:51:31,314 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:51:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 11:51:44,336 - __main__ - INFO - File saved successfully: 9f2be57f421b7c83a789183258d2fe4451a3a28feb33cee6bfedbcdce25cc450.pdf
+2024-12-25 11:51:45,133 - __main__ - INFO - Temporary file removed: 9f2be57f421b7c83a789183258d2fe4451a3a28feb33cee6bfedbcdce25cc450.pdf
+2024-12-25 11:51:45,133 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:51:45] "POST /upload HTTP/1.1" 200 -
+2024-12-25 11:52:01,140 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:52:01] "POST /ask HTTP/1.1" 200 -
+2024-12-25 11:52:23,893 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:52:23] "POST /ask HTTP/1.1" 200 -
+2024-12-25 11:52:40,255 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:52:40] "POST /ask HTTP/1.1" 200 -
+2024-12-25 11:56:10,234 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:56:10] "GET / HTTP/1.1" 200 -
+2024-12-25 11:56:10,282 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:56:10] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-12-25 11:56:10,282 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:56:10] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-25 11:56:22,280 - __main__ - INFO - File saved successfully: 9af2e75196204095b1934b4d495e7cb4f6c049ee0a15e1b547dbe7319204eebd.pdf
+2024-12-25 11:56:23,052 - __main__ - INFO - Temporary file removed: 9af2e75196204095b1934b4d495e7cb4f6c049ee0a15e1b547dbe7319204eebd.pdf
+2024-12-25 11:56:23,053 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:56:23] "POST /upload HTTP/1.1" 200 -
+2024-12-25 11:56:32,577 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:56:32] "POST /ask HTTP/1.1" 200 -
+2024-12-25 11:56:32,593 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:56:32] "POST /ask HTTP/1.1" 200 -
+2024-12-25 11:56:49,887 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 11:56:49] "POST /ask HTTP/1.1" 200 -
+2024-12-25 12:39:29,682 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 12:39:29,684 - __main__ - INFO - Starting application...
+2024-12-25 12:39:29,685 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 12:39:29,685 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 12:39:29,685 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 12:39:29,709 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 12:39:29,710 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 12:39:29,712 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 12:39:35,315 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 12:39:35,316 - __main__ - INFO - Starting application...
+2024-12-25 12:39:35,316 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 12:39:35,317 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 12:39:35,317 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 12:39:35,321 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 12:39:35,323 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 12:39:35,367 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 12:39:35] "GET / HTTP/1.1" 200 -
+2024-12-25 12:39:35,524 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 12:39:35] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-12-25 12:39:35,524 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 12:39:35] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-25 12:39:47,914 - __main__ - INFO - File saved successfully: 0e5e57f1b8832d71b53ddf45c53bb58bd506d2293d6a432a0fed295ab38393c7.pdf
+2024-12-25 12:39:48,720 - __main__ - INFO - Temporary file removed: 0e5e57f1b8832d71b53ddf45c53bb58bd506d2293d6a432a0fed295ab38393c7.pdf
+2024-12-25 12:39:48,722 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 12:39:48] "POST /upload HTTP/1.1" 200 -
+2024-12-25 12:40:10,700 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 12:40:10] "POST /ask HTTP/1.1" 200 -
+2024-12-25 12:40:10,705 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 12:40:10] "POST /ask HTTP/1.1" 200 -
+2024-12-25 12:45:17,608 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 12:45:17] "GET / HTTP/1.1" 200 -
+2024-12-25 12:45:17,650 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 12:45:17] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-12-25 12:49:46,846 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 12:49:46] "GET / HTTP/1.1" 200 -
+2024-12-25 12:49:46,862 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 12:49:46] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-12-25 12:49:46,873 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 12:49:46] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-25 12:50:01,628 - __main__ - INFO - File saved successfully: b70fe5dc461eeb82b5ed198c9900c3c58d43222525ce84ba602201e986c1292f.pdf
+2024-12-25 12:50:02,940 - __main__ - INFO - Temporary file removed: b70fe5dc461eeb82b5ed198c9900c3c58d43222525ce84ba602201e986c1292f.pdf
+2024-12-25 12:50:02,947 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 12:50:02] "POST /upload HTTP/1.1" 200 -
+2024-12-25 12:50:23,334 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 12:50:23] "POST /ask HTTP/1.1" 200 -
+2024-12-25 16:16:55,433 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 16:16:55,437 - __main__ - INFO - Starting application...
+2024-12-25 16:16:55,437 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 16:16:55,437 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 16:16:55,437 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 16:16:55,475 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 16:16:55,475 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 16:16:55,476 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 16:16:59,274 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 16:16:59,276 - __main__ - INFO - Starting application...
+2024-12-25 16:16:59,276 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 16:16:59,276 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 16:16:59,276 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 16:16:59,300 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 16:16:59,319 - werkzeug - INFO -  * Debugger PIN: 134-368-699
+2024-12-25 16:17:28,966 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:17:28] "GET / HTTP/1.1" 200 -
+2024-12-25 16:17:28,983 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:17:28] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-25 16:17:28,983 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:17:28] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-12-25 16:17:29,594 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:17:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-25 16:17:50,654 - __main__ - INFO - File saved successfully: d5a0ae9b30f21f3c3e729454cf4061294ec1882894f674708fbfdd47fa1a22b0.pdf
+2024-12-25 16:17:50,763 - __main__ - INFO - Temporary file removed: d5a0ae9b30f21f3c3e729454cf4061294ec1882894f674708fbfdd47fa1a22b0.pdf
+2024-12-25 16:17:50,763 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:17:50] "POST /upload HTTP/1.1" 200 -
+2024-12-25 16:18:00,896 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:18:00] "POST /ask HTTP/1.1" 200 -
+2024-12-25 16:18:00,974 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:18:00] "POST /ask HTTP/1.1" 200 -
+2024-12-25 16:18:29,885 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:18:29] "POST /ask HTTP/1.1" 200 -
+2024-12-25 16:18:52,460 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:18:52] "POST /ask HTTP/1.1" 200 -
+2024-12-25 16:18:52,480 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:18:52] "POST /ask HTTP/1.1" 200 -
+2024-12-25 16:19:00,751 - __main__ - INFO - File saved successfully: 1a7c60854bf64a920a954f9099e4c1c45f6140c658b7c88231d5cd05cab2afc7.pdf
+2024-12-25 16:19:00,856 - __main__ - INFO - Temporary file removed: 1a7c60854bf64a920a954f9099e4c1c45f6140c658b7c88231d5cd05cab2afc7.pdf
+2024-12-25 16:19:00,856 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:19:00] "POST /upload HTTP/1.1" 200 -
+2024-12-25 16:19:11,809 - __main__ - INFO - File saved successfully: 73353ffc85c49b1431106a0ddcb7ab7aa1bdb9953056f8836bcb8f5ee147f688.pdf
+2024-12-25 16:19:11,936 - __main__ - INFO - Temporary file removed: 73353ffc85c49b1431106a0ddcb7ab7aa1bdb9953056f8836bcb8f5ee147f688.pdf
+2024-12-25 16:19:11,936 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:19:11] "POST /upload HTTP/1.1" 200 -
+2024-12-25 16:19:26,567 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:19:26] "POST /ask HTTP/1.1" 200 -
+2024-12-25 16:19:26,660 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:19:26] "POST /ask HTTP/1.1" 200 -
+2024-12-25 16:19:40,118 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:19:40] "POST /ask HTTP/1.1" 200 -
+2024-12-25 16:19:40,238 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:19:40] "POST /ask HTTP/1.1" 200 -
+2024-12-25 16:19:58,061 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:19:58] "POST /ask HTTP/1.1" 200 -
+2024-12-25 16:19:58,129 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:19:58] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:10:29,478 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 19:10:29,480 - __main__ - INFO - Starting application...
+2024-12-25 19:10:29,480 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 19:10:29,480 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 19:10:29,480 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 19:10:29,554 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 19:10:29,554 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 19:10:29,555 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 19:10:33,640 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 19:10:33,642 - __main__ - INFO - Starting application...
+2024-12-25 19:10:33,642 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 19:10:33,643 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 19:10:33,643 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 19:10:33,661 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 19:10:33,674 - werkzeug - INFO -  * Debugger PIN: 134-368-699
+2024-12-25 19:21:06,447 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:21:06] "GET / HTTP/1.1" 200 -
+2024-12-25 19:21:06,477 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:21:06] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-12-25 19:21:06,477 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:21:06] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-25 19:21:15,275 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:21:15] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2024-12-25 19:21:17,275 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:21:17] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2024-12-25 19:21:32,397 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:21:32] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2024-12-25 19:22:03,450 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 19:22:03,451 - __main__ - INFO - Starting application...
+2024-12-25 19:22:03,451 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 19:22:03,451 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 19:22:03,451 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 19:22:03,513 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 19:22:03,514 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 19:22:03,515 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 19:22:05,969 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 19:22:05,970 - __main__ - INFO - Starting application...
+2024-12-25 19:22:05,970 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 19:22:05,970 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 19:22:05,970 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 19:22:05,988 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 19:22:06,005 - werkzeug - INFO -  * Debugger PIN: 134-368-699
+2024-12-25 19:22:16,284 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:22:16] "GET / HTTP/1.1" 200 -
+2024-12-25 19:22:16,318 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:22:16] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-12-25 19:22:16,318 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:22:16] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-25 19:27:30,508 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 19:27:30,509 - __main__ - INFO - Starting application...
+2024-12-25 19:27:30,509 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 19:27:30,509 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 19:27:30,509 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 19:27:30,545 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 19:27:30,545 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 19:27:30,546 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 19:27:33,063 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 19:27:33,064 - __main__ - INFO - Starting application...
+2024-12-25 19:27:33,064 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 19:27:33,064 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 19:27:33,064 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 19:27:33,086 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 19:27:33,100 - werkzeug - INFO -  * Debugger PIN: 134-368-699
+2024-12-25 19:27:38,074 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:27:38] "GET / HTTP/1.1" 200 -
+2024-12-25 19:27:38,087 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:27:38] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-25 19:27:38,087 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:27:38] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-12-25 19:28:12,099 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:28:12] "GET / HTTP/1.1" 200 -
+2024-12-25 19:28:12,105 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:28:12] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-12-25 19:28:12,106 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:28:12] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-25 19:28:51,307 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 19:28:51,308 - __main__ - INFO - Starting application...
+2024-12-25 19:28:51,308 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 19:28:51,308 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 19:28:51,308 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 19:28:51,343 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 19:28:51,343 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 19:28:51,344 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 19:28:53,429 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 19:28:53,430 - __main__ - INFO - Starting application...
+2024-12-25 19:28:53,430 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 19:28:53,430 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 19:28:53,430 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 19:28:53,452 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 19:28:53,464 - werkzeug - INFO -  * Debugger PIN: 134-368-699
+2024-12-25 19:28:58,626 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:28:58] "GET / HTTP/1.1" 200 -
+2024-12-25 19:28:58,638 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:28:58] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-12-25 19:28:58,639 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:28:58] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-25 19:29:03,784 - __main__ - INFO - File saved successfully: 515ff925e5ece382f602f7fb955bd916789ee62f61f9d1c6e674c409eda6c4f5.pdf
+2024-12-25 19:29:03,881 - __main__ - INFO - Temporary file removed: 515ff925e5ece382f602f7fb955bd916789ee62f61f9d1c6e674c409eda6c4f5.pdf
+2024-12-25 19:29:03,881 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:29:03] "POST /upload HTTP/1.1" 200 -
+2024-12-25 19:34:35,574 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 19:34:35,575 - __main__ - INFO - Starting application...
+2024-12-25 19:34:35,575 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 19:34:35,575 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 19:34:35,575 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 19:34:35,616 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 19:34:35,616 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 19:34:35,617 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 19:34:37,658 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 19:34:37,659 - __main__ - INFO - Starting application...
+2024-12-25 19:34:37,659 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 19:34:37,659 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 19:34:37,659 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 19:34:37,681 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 19:34:37,693 - werkzeug - INFO -  * Debugger PIN: 134-368-699
+2024-12-25 19:34:42,965 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:34:42] "GET / HTTP/1.1" 200 -
+2024-12-25 19:34:42,975 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:34:42] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-12-25 19:34:42,975 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:34:42] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-25 19:34:50,056 - __main__ - INFO - File saved successfully: 7c37fd5a902995bda58e08ddbdba01be457414080ab7a93687468862039d421e.pdf
+2024-12-25 19:34:50,161 - __main__ - INFO - Temporary file removed: 7c37fd5a902995bda58e08ddbdba01be457414080ab7a93687468862039d421e.pdf
+2024-12-25 19:34:50,162 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:34:50] "POST /upload HTTP/1.1" 200 -
+2024-12-25 19:35:09,292 - __main__ - INFO - File saved successfully: e969d8eec35f82901c7add8ec4092bcb3306747534ce23fc7e991b9362d0af24.pdf
+2024-12-25 19:35:09,396 - __main__ - INFO - Temporary file removed: e969d8eec35f82901c7add8ec4092bcb3306747534ce23fc7e991b9362d0af24.pdf
+2024-12-25 19:35:09,397 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:35:09] "POST /upload HTTP/1.1" 200 -
+2024-12-25 19:35:33,507 - __main__ - INFO - File saved successfully: 44da9bcdb5b15a00380172c45ffb73c9e25c3af43387c363e7bcbfddbdae9e39.pdf
+2024-12-25 19:35:33,671 - __main__ - INFO - Temporary file removed: 44da9bcdb5b15a00380172c45ffb73c9e25c3af43387c363e7bcbfddbdae9e39.pdf
+2024-12-25 19:35:33,672 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:35:33] "POST /upload HTTP/1.1" 200 -
+2024-12-25 19:35:40,041 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:35:40] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 19:35:40,042 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:35:40] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 19:35:41,498 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:35:41] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 19:35:42,342 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:35:42] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 19:35:44,412 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:35:44] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 19:35:47,329 - __main__ - INFO - File saved successfully: bf7416daf1d9ccbdb512c434f2830c761d29cec5cdee9d7ad64874c317cdf091.pdf
+2024-12-25 19:35:47,580 - __main__ - INFO - Temporary file removed: bf7416daf1d9ccbdb512c434f2830c761d29cec5cdee9d7ad64874c317cdf091.pdf
+2024-12-25 19:35:47,581 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:35:47] "POST /upload HTTP/1.1" 200 -
+2024-12-25 19:35:48,611 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:35:48] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 19:38:21,694 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 19:38:21,695 - __main__ - INFO - Starting application...
+2024-12-25 19:38:21,695 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 19:38:21,695 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 19:38:21,695 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 19:38:21,730 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 19:38:21,730 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 19:38:21,731 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 19:38:24,261 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 19:38:24,266 - __main__ - INFO - Starting application...
+2024-12-25 19:38:24,266 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 19:38:24,266 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 19:38:24,266 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 19:38:24,289 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 19:38:24,302 - werkzeug - INFO -  * Debugger PIN: 134-368-699
+2024-12-25 19:38:38,894 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:38:38] "GET / HTTP/1.1" 200 -
+2024-12-25 19:38:38,904 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:38:38] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-12-25 19:38:38,905 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:38:38] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-25 19:38:50,672 - __main__ - INFO - File saved successfully: c89502c8981be82a9e0cf259818c9036d6634afd445e74f22ced5afa1ccb0e9c.pdf
+2024-12-25 19:38:51,618 - __main__ - INFO - Temporary file removed: c89502c8981be82a9e0cf259818c9036d6634afd445e74f22ced5afa1ccb0e9c.pdf
+2024-12-25 19:38:51,619 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:38:51] "POST /upload HTTP/1.1" 200 -
+2024-12-25 19:38:58,218 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:38:58] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 19:38:58,218 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:38:58] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 19:38:59,020 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:38:59] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 19:38:59,023 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:38:59] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 19:38:59,209 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:38:59] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 19:38:59,209 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:38:59] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 19:38:59,397 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:38:59] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 19:38:59,398 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:38:59] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 19:38:59,549 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:38:59] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 19:38:59,550 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:38:59] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 19:39:00,586 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:39:00] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 19:39:00,735 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:39:00] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 19:39:00,870 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:39:00] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 19:39:05,840 - werkzeug - INFO -  * Detected change in '/Users/varunselvaraj/Chatbot/chatbot_system/backend/chatbot.py', reloading
+2024-12-25 19:39:06,193 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 19:39:09,188 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 19:39:09,190 - __main__ - INFO - Starting application...
+2024-12-25 19:39:09,190 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 19:39:09,190 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 19:39:09,190 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 19:39:09,210 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 19:39:09,221 - werkzeug - INFO -  * Debugger PIN: 134-368-699
+2024-12-25 19:39:18,343 - werkzeug - INFO -  * Detected change in '/Users/varunselvaraj/Chatbot/chatbot_system/backend/chatbot.py', reloading
+2024-12-25 19:39:18,733 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 19:39:21,260 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 19:39:21,261 - __main__ - INFO - Starting application...
+2024-12-25 19:39:21,261 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 19:39:21,261 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 19:39:21,261 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 19:39:21,281 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 19:39:21,291 - werkzeug - INFO -  * Debugger PIN: 134-368-699
+2024-12-25 20:03:23,393 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:03:23] "GET / HTTP/1.1" 200 -
+2024-12-25 20:03:23,406 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:03:23] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-25 20:03:23,406 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:03:23] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-12-25 20:03:23,412 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:03:23] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+2024-12-25 20:03:23,414 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:03:23] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+2024-12-25 20:03:28,029 - __main__ - INFO - File saved successfully: aac8c1bb8eef6defccc8fba57e01bf247189047468ee30d05f6d2b1209f02f55.pdf
+2024-12-25 20:03:28,149 - __main__ - INFO - Temporary file removed: aac8c1bb8eef6defccc8fba57e01bf247189047468ee30d05f6d2b1209f02f55.pdf
+2024-12-25 20:03:28,149 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:03:28] "POST /upload HTTP/1.1" 200 -
+2024-12-25 20:03:41,428 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:03:41] "POST /ask HTTP/1.1" 200 -
+2024-12-25 20:03:41,445 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:03:41] "POST /ask HTTP/1.1" 200 -
+2024-12-25 20:04:15,012 - __main__ - INFO - File saved successfully: 1ec5bfcf1cd9aa02e9d665176d01d857a0c9ddb6cef6fd45e6c85e939d446667.pdf
+2024-12-25 20:04:15,129 - __main__ - INFO - Temporary file removed: 1ec5bfcf1cd9aa02e9d665176d01d857a0c9ddb6cef6fd45e6c85e939d446667.pdf
+2024-12-25 20:04:15,130 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:04:15] "POST /upload HTTP/1.1" 200 -
+2024-12-25 20:04:40,827 - __main__ - INFO - File saved successfully: 462a5f75cc81ec5a9fd7f26a16b1dcae3f8bb28f95f24f2d8929f01cc1a3588e.pdf
+2024-12-25 20:04:40,933 - __main__ - INFO - Temporary file removed: 462a5f75cc81ec5a9fd7f26a16b1dcae3f8bb28f95f24f2d8929f01cc1a3588e.pdf
+2024-12-25 20:04:40,933 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:04:40] "POST /upload HTTP/1.1" 200 -
+2024-12-25 20:05:10,282 - __main__ - INFO - File saved successfully: 05317644ab1f85d6d1ec660c132d57d19e45c84db78c36def1a304d036607bfb.pdf
+2024-12-25 20:05:11,245 - __main__ - INFO - Temporary file removed: 05317644ab1f85d6d1ec660c132d57d19e45c84db78c36def1a304d036607bfb.pdf
+2024-12-25 20:05:11,246 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:05:11] "POST /upload HTTP/1.1" 200 -
+2024-12-25 20:05:45,092 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:05:45] "POST /ask HTTP/1.1" 200 -
+2024-12-25 20:05:45,195 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:05:45] "POST /ask HTTP/1.1" 200 -
+2024-12-25 20:06:32,480 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:06:32] "POST /ask HTTP/1.1" 200 -
+2024-12-25 20:06:32,483 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:06:32] "POST /ask HTTP/1.1" 200 -
+2024-12-25 20:06:33,453 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:06:33] "POST /ask HTTP/1.1" 200 -
+2024-12-25 20:07:21,041 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:07:21] "POST /ask HTTP/1.1" 200 -
+2024-12-25 20:07:21,330 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:07:21] "POST /ask HTTP/1.1" 200 -
+2024-12-25 20:30:39,248 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 20:30:39,249 - __main__ - INFO - Starting application...
+2024-12-25 20:30:39,249 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 20:30:39,249 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 20:30:39,249 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 20:30:39,287 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 20:30:39,287 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 20:30:39,288 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 20:30:41,370 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 20:30:41,370 - __main__ - INFO - Starting application...
+2024-12-25 20:30:41,370 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 20:30:41,370 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 20:30:41,370 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 20:30:41,388 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 20:30:41,400 - werkzeug - INFO -  * Debugger PIN: 134-368-699
+2024-12-25 20:30:54,525 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:30:54] "GET / HTTP/1.1" 200 -
+2024-12-25 20:30:54,550 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:30:54] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-12-25 20:30:54,551 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:30:54] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-25 20:31:03,441 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:31:03] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2024-12-25 20:31:05,280 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:31:05] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2024-12-25 20:31:05,495 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:31:05] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2024-12-25 20:31:05,668 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:31:05] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2024-12-25 20:53:38,880 - werkzeug - INFO -  * Detected change in '/Users/varunselvaraj/Chatbot/chatbot_system/backend/chatbot.py', reloading
+2024-12-25 20:53:39,360 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 20:53:42,731 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 20:53:42,732 - __main__ - INFO - Starting application...
+2024-12-25 20:53:42,732 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 20:53:42,732 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 20:53:42,732 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 20:53:42,752 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 20:53:42,764 - werkzeug - INFO -  * Debugger PIN: 134-368-699
+2024-12-25 20:53:46,896 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 20:53:46,897 - __main__ - INFO - Starting application...
+2024-12-25 20:53:46,897 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 20:53:46,897 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 20:53:46,897 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 20:53:46,936 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 20:53:46,936 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 20:53:46,936 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 20:53:49,068 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 20:53:49,069 - __main__ - INFO - Starting application...
+2024-12-25 20:53:49,069 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 20:53:49,069 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 20:53:49,069 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 20:53:49,089 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 20:53:49,099 - werkzeug - INFO -  * Debugger PIN: 134-368-699
+2024-12-25 20:54:00,643 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:54:00] "GET / HTTP/1.1" 200 -
+2024-12-25 20:54:00,695 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:54:00] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-12-25 20:54:00,697 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:54:00] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-25 20:54:07,829 - __main__ - INFO - File saved successfully: 74fcdaa8fd9e7820991f416516d109d6fcfddecada89c2e5b553819746e711a0.pdf
+2024-12-25 20:54:07,937 - __main__ - INFO - Temporary file removed: 74fcdaa8fd9e7820991f416516d109d6fcfddecada89c2e5b553819746e711a0.pdf
+2024-12-25 20:54:07,938 - __main__ - INFO - File saved successfully: ba3fe79e523b3f607943e17e53534cc3eeeeea4079fce2279e903680fc57285b.pdf
+2024-12-25 20:54:08,022 - __main__ - INFO - Temporary file removed: ba3fe79e523b3f607943e17e53534cc3eeeeea4079fce2279e903680fc57285b.pdf
+2024-12-25 20:54:08,023 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:54:08] "POST /upload HTTP/1.1" 200 -
+2024-12-25 20:54:12,469 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:54:12] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 20:54:13,274 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:54:13] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 20:54:13,450 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:54:13] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 20:54:13,615 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:54:13] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 20:54:15,618 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:54:15] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 20:54:15,765 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:54:15] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 20:54:15,931 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:54:15] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 20:54:16,117 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:54:16] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 20:54:16,265 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:54:16] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 20:54:17,744 - __main__ - INFO - File saved successfully: 99580f7f5bd4149c2d6be84208408237545b93b10e2ad6038890213990660536.pdf
+2024-12-25 20:54:17,849 - __main__ - INFO - Temporary file removed: 99580f7f5bd4149c2d6be84208408237545b93b10e2ad6038890213990660536.pdf
+2024-12-25 20:54:17,849 - __main__ - INFO - File saved successfully: a836e4a7a5df1e9917ab297c282c8f93e95f9d4965815910379c28e0496fdd3e.pdf
+2024-12-25 20:54:17,934 - __main__ - INFO - Temporary file removed: a836e4a7a5df1e9917ab297c282c8f93e95f9d4965815910379c28e0496fdd3e.pdf
+2024-12-25 20:54:17,934 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:54:17] "POST /upload HTTP/1.1" 200 -
+2024-12-25 20:54:19,948 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:54:19] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 20:54:20,782 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:54:20] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 20:54:20,965 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:54:20] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 20:54:27,581 - werkzeug - INFO -  * Detected change in '/Users/varunselvaraj/Chatbot/chatbot_system/backend/chatbot.py', reloading
+2024-12-25 20:54:27,944 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 20:54:31,422 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 20:54:31,423 - __main__ - INFO - Starting application...
+2024-12-25 20:54:31,423 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 20:54:31,423 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 20:54:31,423 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 20:54:31,438 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 20:54:31,448 - werkzeug - INFO -  * Debugger PIN: 134-368-699
+2024-12-25 20:54:50,502 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 20:54:50,503 - __main__ - INFO - Starting application...
+2024-12-25 20:54:50,503 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 20:54:50,503 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 20:54:50,503 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 20:54:50,538 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 20:54:50,538 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 20:54:50,539 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 20:54:52,644 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 20:54:52,645 - __main__ - INFO - Starting application...
+2024-12-25 20:54:52,645 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 20:54:52,645 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 20:54:52,645 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 20:54:52,662 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 20:54:52,672 - werkzeug - INFO -  * Debugger PIN: 134-368-699
+2024-12-25 20:54:52,690 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:54:52] "GET / HTTP/1.1" 200 -
+2024-12-25 20:54:52,704 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:54:52] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-12-25 20:54:52,704 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:54:52] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-25 20:54:58,230 - __main__ - INFO - File saved successfully: d1e6707ca4ee3fc206c034749ff2e815a0a415099ece0a7fccf84ff3cf2fec8f.pdf
+2024-12-25 20:54:58,334 - __main__ - INFO - Temporary file removed: d1e6707ca4ee3fc206c034749ff2e815a0a415099ece0a7fccf84ff3cf2fec8f.pdf
+2024-12-25 20:54:58,335 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:54:58] "POST /upload HTTP/1.1" 200 -
+2024-12-25 20:55:06,623 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:55:06] "POST /ask HTTP/1.1" 200 -
+2024-12-25 20:55:06,764 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:55:06] "POST /ask HTTP/1.1" 200 -
+2024-12-25 22:03:14,973 - werkzeug - INFO -  * Detected change in '/Users/varunselvaraj/Chatbot/chatbot_system/backend/chatbot.py', reloading
+2024-12-25 22:03:15,474 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 22:03:18,680 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 22:03:18,682 - __main__ - INFO - Starting application...
+2024-12-25 22:03:18,682 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 22:03:18,682 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 22:03:18,682 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 22:03:18,703 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 22:03:18,715 - werkzeug - INFO -  * Debugger PIN: 134-368-699
+2024-12-25 22:03:29,905 - werkzeug - INFO -  * Detected change in '/Users/varunselvaraj/Chatbot/chatbot_system/backend/chatbot.py', reloading
+2024-12-25 22:03:30,255 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 22:03:33,519 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 22:03:33,521 - __main__ - INFO - Starting application...
+2024-12-25 22:03:33,521 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 22:03:33,521 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 22:03:33,521 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 22:03:33,541 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 22:03:33,555 - werkzeug - INFO -  * Debugger PIN: 134-368-699
+2024-12-25 22:03:58,245 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 22:03:58,246 - __main__ - INFO - Starting application...
+2024-12-25 22:03:58,246 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 22:03:58,246 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 22:03:58,246 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 22:03:58,283 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 22:03:58,283 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 22:03:58,284 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 22:04:00,488 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 22:04:00,489 - __main__ - INFO - Starting application...
+2024-12-25 22:04:00,489 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 22:04:00,489 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 22:04:00,489 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 22:04:00,515 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 22:04:00,541 - werkzeug - INFO -  * Debugger PIN: 134-368-699
+2024-12-25 22:04:02,994 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:04:02] "GET / HTTP/1.1" 200 -
+2024-12-25 22:04:03,030 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:04:03] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-12-25 22:04:03,033 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:04:03] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-25 22:04:41,381 - __main__ - INFO - File saved successfully: 4fdad42607e2a2370586633c87484505af0e2be5ad10cc4592309b90c20caed0.pdf
+2024-12-25 22:04:41,486 - __main__ - INFO - Temporary file removed: 4fdad42607e2a2370586633c87484505af0e2be5ad10cc4592309b90c20caed0.pdf
+2024-12-25 22:04:41,486 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:04:41] "POST /upload HTTP/1.1" 200 -
+2024-12-25 22:04:49,898 - __main__ - WARNING - Malicious input detected in question: select * from users
+2024-12-25 22:04:49,898 - __main__ - WARNING - Malicious input detected in question: select * from users
+2024-12-25 22:04:49,899 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:04:49] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 22:04:49,899 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:04:49] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 22:05:06,176 - __main__ - WARNING - Malicious input detected in question: select ' from users
+2024-12-25 22:05:06,177 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:05:06] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 22:05:13,156 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:05:13] "POST /ask HTTP/1.1" 200 -
+2024-12-25 22:05:13,190 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:05:13] "POST /ask HTTP/1.1" 200 -
+2024-12-25 22:05:55,607 - __main__ - WARNING - Malicious input detected in question: select * from users
+2024-12-25 22:05:55,608 - __main__ - WARNING - Malicious input detected in question: select * from users
+2024-12-25 22:05:55,609 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:05:55] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 22:05:55,610 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:05:55] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 22:06:50,296 - __main__ - WARNING - Malicious input detected in question: <alert(1)>
+2024-12-25 22:06:50,297 - __main__ - WARNING - Malicious input detected in question: <alert(1)>
+2024-12-25 22:06:50,298 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:06:50] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 22:06:50,298 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:06:50] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 22:06:52,959 - __main__ - WARNING - Malicious input detected in question: <alert(1)>
+2024-12-25 22:06:52,960 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:06:52] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 22:06:54,430 - __main__ - WARNING - Malicious input detected in question: <alert(1)>
+2024-12-25 22:06:54,431 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:06:54] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 22:39:58,107 - werkzeug - INFO -  * Detected change in '/Users/varunselvaraj/Chatbot/chatbot_system/backend/chatbot.py', reloading
+2024-12-25 22:39:58,587 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 22:40:02,449 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 22:40:02,450 - __main__ - INFO - Starting application...
+2024-12-25 22:40:02,450 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 22:40:02,450 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 22:40:02,450 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 22:40:02,469 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 22:40:02,482 - werkzeug - INFO -  * Debugger PIN: 134-368-699
+2024-12-25 22:40:11,398 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 22:40:11,399 - __main__ - INFO - Starting application...
+2024-12-25 22:40:11,399 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 22:40:11,399 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 22:40:11,399 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 22:40:11,434 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 22:40:11,434 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 22:40:11,435 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 22:40:13,543 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 22:40:13,544 - __main__ - INFO - Starting application...
+2024-12-25 22:40:13,544 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 22:40:13,544 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 22:40:13,544 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 22:40:13,588 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 22:40:13,598 - werkzeug - INFO -  * Debugger PIN: 134-368-699
+2024-12-25 22:40:19,439 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:40:19] "GET / HTTP/1.1" 200 -
+2024-12-25 22:40:19,474 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:40:19] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-12-25 22:40:19,478 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:40:19] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-25 22:40:26,967 - __main__ - INFO - File saved successfully: c1efd0b5ef76180bb465da63eb0f3f5ca4fdcef2a44be3fe1b86acc7fa4fc41d.pdf
+2024-12-25 22:40:27,074 - __main__ - INFO - Temporary file removed: c1efd0b5ef76180bb465da63eb0f3f5ca4fdcef2a44be3fe1b86acc7fa4fc41d.pdf
+2024-12-25 22:40:27,075 - __main__ - INFO - File saved successfully: 098eb2b22f18e4e790c60d25bf6a60bda6e22c78e0e4badc83d874dc1872397d.pdf
+2024-12-25 22:40:27,160 - __main__ - INFO - Temporary file removed: 098eb2b22f18e4e790c60d25bf6a60bda6e22c78e0e4badc83d874dc1872397d.pdf
+2024-12-25 22:40:27,160 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:40:27] "POST /upload HTTP/1.1" 200 -
+2024-12-25 22:41:07,043 - __main__ - INFO - File saved successfully: 12cbe90c1feea92835be50d111f153ecaed21002db3a48beca64c8a026561cbf.pdf
+2024-12-25 22:41:07,150 - __main__ - INFO - Temporary file removed: 12cbe90c1feea92835be50d111f153ecaed21002db3a48beca64c8a026561cbf.pdf
+2024-12-25 22:41:07,151 - __main__ - INFO - File saved successfully: a13c4e52e5e9d31294df228f2e009ca62f416b28e82aae742d447c1ecfcfecb3.pdf
+2024-12-25 22:41:07,244 - __main__ - INFO - Temporary file removed: a13c4e52e5e9d31294df228f2e009ca62f416b28e82aae742d447c1ecfcfecb3.pdf
+2024-12-25 22:41:07,244 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:41:07] "POST /upload HTTP/1.1" 200 -
+2024-12-25 22:41:27,828 - __main__ - INFO - File saved successfully: 266bb8d54d29bfaabb40eb3cfd11ee58406f45738d3033ae0105c32c81d96569.pdf
+2024-12-25 22:41:28,005 - __main__ - INFO - Temporary file removed: 266bb8d54d29bfaabb40eb3cfd11ee58406f45738d3033ae0105c32c81d96569.pdf
+2024-12-25 22:41:28,006 - __main__ - INFO - File saved successfully: 8f4f579190f73b49ed482fa1cb429bb2a77f7d71f26d389f35c339719ed68880.pdf
+2024-12-25 22:41:28,099 - __main__ - INFO - Temporary file removed: 8f4f579190f73b49ed482fa1cb429bb2a77f7d71f26d389f35c339719ed68880.pdf
+2024-12-25 22:41:28,100 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:41:28] "POST /upload HTTP/1.1" 200 -
+2024-12-25 22:42:16,593 - __main__ - INFO - File saved successfully: 517bf706741c75951cb20eeb6bc8cfe0844b8d3e9030f8d5eeb34446a80e2c02.pdf
+2024-12-25 22:42:16,699 - __main__ - INFO - Temporary file removed: 517bf706741c75951cb20eeb6bc8cfe0844b8d3e9030f8d5eeb34446a80e2c02.pdf
+2024-12-25 22:42:16,700 - __main__ - INFO - File saved successfully: 3d500054c5caa5f4c4abfe224648fcd738e071b5c26fb4825b0e6d871305dfbf.pdf
+2024-12-25 22:42:16,794 - __main__ - INFO - Temporary file removed: 3d500054c5caa5f4c4abfe224648fcd738e071b5c26fb4825b0e6d871305dfbf.pdf
+2024-12-25 22:42:16,794 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:42:16] "POST /upload HTTP/1.1" 200 -
+2024-12-25 22:42:27,214 - __main__ - INFO - File saved successfully: b342e07c1f10b2982f1bc39860dc1ac10c55f9085cb7022e628268e238017088.pdf
+2024-12-25 22:42:27,393 - __main__ - INFO - Temporary file removed: b342e07c1f10b2982f1bc39860dc1ac10c55f9085cb7022e628268e238017088.pdf
+2024-12-25 22:42:27,396 - __main__ - INFO - File saved successfully: 182b88ed3cb079d1647fe1bd9a3edf0d080086511a33fe227a039c575b7ae315.pdf
+2024-12-25 22:42:27,482 - __main__ - INFO - Temporary file removed: 182b88ed3cb079d1647fe1bd9a3edf0d080086511a33fe227a039c575b7ae315.pdf
+2024-12-25 22:42:27,483 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:42:27] "POST /upload HTTP/1.1" 200 -
+2024-12-25 22:48:44,842 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 22:48:44,843 - __main__ - INFO - Starting application...
+2024-12-25 22:48:44,843 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 22:48:44,843 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 22:48:44,843 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 22:48:44,889 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 22:48:44,889 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 22:48:44,890 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 22:48:47,008 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 22:48:47,008 - __main__ - INFO - Starting application...
+2024-12-25 22:48:47,009 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 22:48:47,009 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 22:48:47,009 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 22:48:47,028 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 22:48:47,040 - werkzeug - INFO -  * Debugger PIN: 134-368-699
+2024-12-25 22:48:58,458 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:48:58] "GET / HTTP/1.1" 200 -
+2024-12-25 22:48:58,500 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:48:58] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-12-25 22:48:58,501 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:48:58] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-25 22:49:05,759 - __main__ - INFO - File saved successfully: 98e7cd85e0551d1f3eeff079442cef8161ed803311fe3a7d96f6833196613a3d.pdf
+2024-12-25 22:49:05,869 - __main__ - INFO - Temporary file removed: 98e7cd85e0551d1f3eeff079442cef8161ed803311fe3a7d96f6833196613a3d.pdf
+2024-12-25 22:49:05,870 - __main__ - INFO - File saved successfully: 49da1f60ca011c0ec3835a145775ac2363beb24172ddd433048de0a62651d178.pdf
+2024-12-25 22:49:05,949 - __main__ - INFO - Temporary file removed: 49da1f60ca011c0ec3835a145775ac2363beb24172ddd433048de0a62651d178.pdf
+2024-12-25 22:49:05,949 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:49:05] "POST /upload HTTP/1.1" 200 -
+2024-12-25 22:49:42,947 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:49:42] "POST /ask HTTP/1.1" 200 -
+2024-12-25 22:49:43,089 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:49:43] "POST /ask HTTP/1.1" 200 -
+2024-12-25 22:50:00,891 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:50:00] "POST /ask HTTP/1.1" 200 -
+2024-12-25 22:50:00,965 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:50:00] "POST /ask HTTP/1.1" 200 -
+2024-12-25 22:50:35,410 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:50:35] "POST /ask HTTP/1.1" 200 -
+2024-12-25 22:50:35,500 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:50:35] "POST /ask HTTP/1.1" 200 -
+2024-12-25 22:51:23,976 - __main__ - WARNING - Malicious input detected in question: is anyone the placement representative?
+2024-12-25 22:51:23,978 - __main__ - WARNING - Malicious input detected in question: is anyone the placement representative?
+2024-12-25 22:51:23,979 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:51:23] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 22:51:23,979 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:51:23] "[31m[1mPOST /ask HTTP/1.1[0m" 400 -
+2024-12-25 22:51:31,345 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:51:31] "POST /ask HTTP/1.1" 200 -
+2024-12-25 22:51:31,416 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:51:31] "POST /ask HTTP/1.1" 200 -
+2024-12-25 22:52:19,203 - werkzeug - INFO -  * Detected change in '/Users/varunselvaraj/Chatbot/chatbot_system/backend/chatbot.py', reloading
+2024-12-25 22:52:19,711 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 22:52:23,397 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 22:52:23,399 - __main__ - INFO - Starting application...
+2024-12-25 22:52:23,399 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 22:52:23,399 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 22:52:23,399 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 22:52:23,421 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 22:52:23,433 - werkzeug - INFO -  * Debugger PIN: 134-368-699
+2024-12-25 22:52:46,154 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 22:52:46,155 - __main__ - INFO - Starting application...
+2024-12-25 22:52:46,155 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 22:52:46,155 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 22:52:46,155 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 22:52:46,196 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 22:52:46,196 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 22:52:46,197 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 22:52:48,424 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 22:52:48,424 - __main__ - INFO - Starting application...
+2024-12-25 22:52:48,424 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 22:52:48,424 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 22:52:48,424 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 22:52:48,443 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 22:52:48,454 - werkzeug - INFO -  * Debugger PIN: 134-368-699
+2024-12-25 22:52:54,623 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:52:54] "GET / HTTP/1.1" 200 -
+2024-12-25 22:52:54,659 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:52:54] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-12-25 22:52:54,659 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:52:54] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-25 22:53:04,897 - __main__ - INFO - File saved successfully: 2520631110c749656194637e06eead5dd3f25e946f3bff29eed2a68e88361456.pdf
+2024-12-25 22:53:05,007 - __main__ - INFO - Temporary file removed: 2520631110c749656194637e06eead5dd3f25e946f3bff29eed2a68e88361456.pdf
+2024-12-25 22:53:05,008 - __main__ - INFO - File saved successfully: 479b7481ec577c6a50caadcff5a1a9f56c0be95de3771f44196a581088b43dd6.pdf
+2024-12-25 22:53:05,094 - __main__ - INFO - Temporary file removed: 479b7481ec577c6a50caadcff5a1a9f56c0be95de3771f44196a581088b43dd6.pdf
+2024-12-25 22:53:05,094 - __main__ - INFO - File saved successfully: 2f67bbdd7992d2e250d3a155876d17a64ac1953a2937b53e89adcacc8b902481.pdf
+2024-12-25 22:53:05,176 - __main__ - INFO - Temporary file removed: 2f67bbdd7992d2e250d3a155876d17a64ac1953a2937b53e89adcacc8b902481.pdf
+2024-12-25 22:53:05,176 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:53:05] "POST /upload HTTP/1.1" 200 -
+2024-12-25 22:53:37,989 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:53:37] "POST /ask HTTP/1.1" 200 -
+2024-12-25 22:53:38,022 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:53:38] "POST /ask HTTP/1.1" 200 -
+2024-12-25 22:54:43,015 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:54:43] "POST /ask HTTP/1.1" 200 -
+2024-12-25 22:54:43,059 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:54:43] "POST /ask HTTP/1.1" 200 -
+2024-12-25 22:59:26,305 - __main__ - INFO - File saved successfully: 681fada32bb236eeec1890e1c13bbdff4259954eb2577dff598bb173eeaa76de.pdf
+2024-12-25 22:59:26,409 - __main__ - INFO - Temporary file removed: 681fada32bb236eeec1890e1c13bbdff4259954eb2577dff598bb173eeaa76de.pdf
+2024-12-25 22:59:26,411 - __main__ - INFO - File saved successfully: efb5ee94dbd7be48f565a4c1a4bac83b55191f79b14722c0407e6e78ce93c4fe.pdf
+2024-12-25 22:59:26,605 - __main__ - INFO - Temporary file removed: efb5ee94dbd7be48f565a4c1a4bac83b55191f79b14722c0407e6e78ce93c4fe.pdf
+2024-12-25 22:59:26,607 - __main__ - INFO - File saved successfully: a03ade5b2da4e40cb618b69205fa9656b3d54a7d6f8f53d59a60cd67d9192ae8.pdf
+2024-12-25 22:59:26,686 - __main__ - INFO - Temporary file removed: a03ade5b2da4e40cb618b69205fa9656b3d54a7d6f8f53d59a60cd67d9192ae8.pdf
+2024-12-25 22:59:26,686 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:59:26] "POST /upload HTTP/1.1" 200 -
+2024-12-25 22:59:42,224 - __main__ - INFO - File saved successfully: 622ceae01507da77faf3a694f5016b008fe98ca2a59c2065f3050677dca45b95.pdf
+2024-12-25 22:59:42,333 - __main__ - INFO - Temporary file removed: 622ceae01507da77faf3a694f5016b008fe98ca2a59c2065f3050677dca45b95.pdf
+2024-12-25 22:59:42,333 - __main__ - INFO - File saved successfully: 1c1cf3577092d958f045762f452d3135f5178cde2ce2d85f5b0379c571c98e8f.pdf
+2024-12-25 22:59:42,413 - __main__ - INFO - Temporary file removed: 1c1cf3577092d958f045762f452d3135f5178cde2ce2d85f5b0379c571c98e8f.pdf
+2024-12-25 22:59:42,413 - __main__ - INFO - File saved successfully: 2f8c6bf299ba1e382d876ef9e60c0a427d767f5bd0a71323f6d755fedfcc8ec4.pdf
+2024-12-25 22:59:42,507 - __main__ - INFO - Temporary file removed: 2f8c6bf299ba1e382d876ef9e60c0a427d767f5bd0a71323f6d755fedfcc8ec4.pdf
+2024-12-25 22:59:42,507 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:59:42] "POST /upload HTTP/1.1" 200 -
+2024-12-25 23:02:18,232 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 23:02:18] "POST /ask HTTP/1.1" 200 -
+2024-12-25 23:02:18,590 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 23:02:18] "POST /ask HTTP/1.1" 200 -
