@@ -4,12 +4,31 @@ from flask_limiter.util import get_remote_address
 from flask_seasurf import SeaSurf
 from werkzeug.utils import secure_filename
 from document_processor import extract_text_from_pdf
-from transformers import pipeline
 import os
-import hashlib
 import secrets
 import logging
-from datetime import datetime
+from transformers import (
+    AutoTokenizer, 
+    AutoModelForQuestionAnswering,
+    pipeline
+)
+from sentence_transformers import SentenceTransformer
+import torch
+import faiss
+import numpy as np
+from typing import List, Tuple, Dict, Optional
+import re
+
+# Constants - Updated for better models
+EMBEDDING_MODEL = "microsoft/mpnet-base"  # Faster & more accurate embeddings
+QA_MODEL = "facebook/bart-large-qa"       # Better for QA tasks
+EMBEDDING_DIM = 768                       # MPNet dimension
+CHUNK_SIZE = 384                          # Optimized for BART
+TOP_K = 4                                 # Number of chunks to consider
+MAX_FILE_SIZE = 16 * 1024 * 1024         # 16MB
+
+# Get the absolute path to the project root directory
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Configure logging
 logging.basicConfig(
@@ -22,212 +41,131 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Get the absolute path to the project root directory
-ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-app = Flask(__name__,
-    template_folder=os.path.join(ROOT_DIR, 'frontend', 'templates'),
-    static_folder=os.path.join(ROOT_DIR, 'frontend', 'static')
-)
-
-# Security configurations
-app.config.update(
-    MAX_CONTENT_LENGTH=16 * 1024 * 1024,  # 16MB max file size
-    SECRET_KEY=secrets.token_hex(32),
-    UPLOAD_FOLDER=os.path.join(ROOT_DIR, "temp"),
-    ALLOWED_EXTENSIONS={'pdf'},
-    SESSION_COOKIE_SECURE=False,
-    SESSION_COOKIE_HTTPONLY=True,
-    SESSION_COOKIE_SAMESITE='Lax',
-    PERMANENT_SESSION_LIFETIME=1800,  # 30 minutes
-    # Add CSRF settings
-    WTF_CSRF_ENABLED=True,
-    WTF_CSRF_SSL_STRICT=True
-)
-
-# Initialize security extensions
-csrf = SeaSurf(app)
-
-# Add CSRF error handler
-@app.errorhandler(400)
-def csrf_error(reason):
-    logger.warning(f"CSRF Error: {reason}")
-    return jsonify({
-        "error": "CSRF validation failed. Please refresh the page and try again."
-    }), 400
-
-# Initialize rate limiter
-limiter = Limiter(
-    app=app,
-    key_func=get_remote_address,
-    default_limits=["200 per day", "50 per hour"],
-    storage_uri="memory://"
-)
-
-# Create temp directory if it doesn't exist
-os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
-
-# Load the question-answering model
-try:
-    qa_pipeline = pipeline("question-answering", model="deepset/roberta-base-squad2")
-    logger.info("Successfully loaded QA model")
-except Exception as e:
-    logger.error(f"Error loading QA model: {str(e)}")
-    qa_pipeline = None
-
-def secure_temp_file(filename):
-    """Generate secure temporary filename."""
-    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-    hash_name = hashlib.sha256(
-        f"{filename}{secrets.token_hex(16)}{timestamp}".encode()
-    ).hexdigest()
-    return f"{hash_name}.pdf"
-
-def validate_file(file):
-    """Validate file type and content."""
-    if not file or file.filename == '':
-        return False, "No file selected"
-    
-    # Check file extension
-    if not file.filename.lower().endswith('.pdf'):
-        return False, "Only PDF files are supported"
-    
-    return True, None
-
-@app.route('/')
-def index():
-    """Render the main page."""
-    try:
-        return render_template('index.html')
-    except Exception as e:
-        logger.error(f"Error rendering template: {str(e)}")
-        return f"Error: {str(e)}", 500
-
-@app.route('/upload', methods=['POST'])
-@limiter.limit("10 per minute")
-def upload_file():
-    """Handle file upload and process the PDF."""
-    if 'file' not in request.files:
-        return jsonify({"error": "No file part"}), 400
-
-    file = request.files['file']
-    is_valid, error_message = validate_file(file)
-    
-    if not is_valid:
-        return jsonify({"error": error_message}), 400
-
-    try:
-        # Generate secure filename and save
-        secure_name = secure_temp_file(file.filename)
-        pdf_path = os.path.join(app.config['UPLOAD_FOLDER'], secure_name)
-        file.save(pdf_path)
-        logger.info(f"File saved successfully: {secure_name}")
-
-        # Extract text from the PDF
-        text = extract_text_from_pdf(pdf_path)
+class EnhancedRAG:
+    def __init__(self):
+        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        logger.info(f"Initializing Enhanced RAG System on {self.device}...")
         
-        if not text.strip():
-            return jsonify({"error": "No text could be extracted from the PDF"}), 400
-
-        return jsonify({
-            "message": "File processed successfully",
-            "text": text
-        }), 200
-
-    except Exception as e:
-        logger.error(f"Error processing file: {str(e)}")
-        return jsonify({"error": str(e)}), 500
-
-    finally:
-        # Clean up the temporary file
-        if 'pdf_path' in locals() and os.path.exists(pdf_path):
-            try:
-                os.remove(pdf_path)
-                logger.info(f"Temporary file removed: {secure_name}")
-            except Exception as e:
-                logger.error(f"Error removing temporary file: {str(e)}")
-
-@app.route('/ask', methods=['POST'])
-@limiter.limit("30 per minute")
-def ask_question():
-    """Answer a question based on the uploaded document's text."""
-    try:
-        if not qa_pipeline:
-            return jsonify({"error": "QA model not available"}), 503
-
-        data = request.get_json()
-        if not data:
-            return jsonify({"error": "Invalid JSON"}), 400
-
-        question = data.get("question", "").strip()
-        context = data.get("context", "").strip()
-
-        if not question or not context:
-            return jsonify({"error": "Question and context are required"}), 400
-
-        # Validate input lengths
-        if len(question) > 1000:
-            return jsonify({"error": "Question too long (max 1000 characters)"}), 400
-        if len(context) > 100000:
-            return jsonify({"error": "Context too long (max 100000 characters)"}), 400
-
-        logger.debug(f"Processing question: {question}")
-        
-        # Get answer from model
         try:
-            answer = qa_pipeline(question=question, context=context)
-            logger.debug(f"Generated answer: {answer}")
+            # Initialize embedding model (MPNet)
+            self.embed_model = SentenceTransformer(EMBEDDING_MODEL)
+            self.embed_model.to(self.device)
             
-            return jsonify({
-                "answer": answer['answer'],
-                "confidence": round(answer['score'], 4)
-            }), 200
+            # Initialize QA pipeline (BART)
+            self.qa_pipeline = pipeline(
+                'question-answering',
+                model=QA_MODEL,
+                tokenizer=QA_MODEL,
+                device=-1 if self.device.type == 'cpu' else 0,
+                max_length=512,
+                min_length=20,
+                handle_long_generation=True
+            )
+            
+            # Initialize FAISS index
+            self.index = faiss.IndexFlatL2(EMBEDDING_DIM)
+            
+            # Storage for text chunks and their embeddings
+            self.chunks: List[str] = []
+            self.chunk_embeddings = None
+            
+            logger.info("Enhanced RAG System initialized successfully")
+        except Exception as e:
+            logger.error(f"Model initialization error: {str(e)}")
+            raise
+
+    def preprocess_text(self, text: str) -> str:
+        """Clean and preprocess text with enhanced cleaning."""
+        # Basic cleaning
+        text = re.sub(r'\s+', ' ', text)
+        text = text.replace('\n', ' ')
+        
+        # Fix common PDF extraction issues
+        text = re.sub(r'([a-z])([A-Z])', r'\1. \2', text)  # Split likely sentences
+        text = re.sub(r'\.{2,}', '.', text)                # Fix multiple periods
+        text = re.sub(r'\s*\.\s*', '. ', text)            # Standardize period spacing
+        
+        # Remove special characters but keep essential punctuation
+        text = re.sub(r'[^a-zA-Z0-9\s\.,;:?!-]', '', text)
+        
+        return text.strip()
+
+    def create_chunks(self, text: str) -> List[str]:
+        """Create overlapping chunks with improved sentence handling."""
+        text = self.preprocess_text(text)
+        sentences = re.split(r'(?<=[.!?])\s+', text)
+        chunks = []
+        current_chunk = []
+        current_length = 0
+        
+        for sentence in sentences:
+            sentence_length = len(sentence.split())
+            
+            # Handle very long sentences
+            if sentence_length > CHUNK_SIZE:
+                if current_chunk:
+                    chunks.append(' '.join(current_chunk))
+                    current_chunk = []
+                    current_length = 0
+                
+                # Split long sentence into smaller parts
+                words = sentence.split()
+                for i in range(0, len(words), CHUNK_SIZE):
+                    chunk = ' '.join(words[i:i + CHUNK_SIZE])
+                    chunks.append(chunk)
+                continue
+            
+            if current_length + sentence_length > CHUNK_SIZE:
+                chunks.append(' '.join(current_chunk))
+                # Keep last sentence for overlap
+                current_chunk = [current_chunk[-1], sentence] if current_chunk else [sentence]
+                current_length = len(' '.join(current_chunk).split())
+            else:
+                current_chunk.append(sentence)
+                current_length += sentence_length
+        
+        if current_chunk:
+            chunks.append(' '.join(current_chunk))
+        
+        return chunks
+
+    def index_document(self, text: str) -> bool:
+        """Index document with improved error handling and chunking."""
+        try:
+            # Create chunks
+            self.chunks = self.create_chunks(text)
+            
+            if not self.chunks:
+                raise ValueError("No chunks created from document")
+            
+            logger.info(f"Created {len(self.chunks)} chunks")
+            
+            # Generate embeddings with batching
+            chunk_embeddings = []
+            batch_size = 8
+            
+            for i in range(0, len(self.chunks), batch_size):
+                batch = self.chunks[i:i + batch_size]
+                batch_embeddings = self.embed_model.encode(
+                    batch,
+                    convert_to_tensor=True,
+                    show_progress_bar=False
+                )
+                chunk_embeddings.append(batch_embeddings)
+            
+            # Combine all embeddings
+            self.chunk_embeddings = torch.cat(chunk_embeddings).cpu().numpy()
+            
+            # Normalize embeddings
+            faiss.normalize_L2(self.chunk_embeddings)
+            
+            # Reset and add to FAISS index
+            self.index = faiss.IndexFlatL2(EMBEDDING_DIM)
+            self.index.add(self.chunk_embeddings)
+            
+            logger.info(f"Successfully indexed {len(self.chunks)} chunks")
+            return True
             
         except Exception as e:
-            logger.error(f"Model error: {str(e)}")
-            return jsonify({"error": "Error processing question"}), 500
-
-    except Exception as e:
-        logger.error(f"Ask question error: {str(e)}")
-        return jsonify({"error": "Internal server error"}), 500
-
-@app.route('/health')
-def health_check():
-    """Health check endpoint."""
-    return jsonify({
-        "status": "healthy",
-        "model": "loaded" if qa_pipeline else "not loaded"
-    }), 200
-
-# Error handlers
-@app.errorhandler(404)
-def not_found_error(error):
-    return jsonify({"error": "Resource not found"}), 404
-
-@app.errorhandler(405)
-def method_not_allowed_error(error):
-    return jsonify({"error": "Method not allowed"}), 405
-
-@app.errorhandler(413)
-def request_entity_too_large(error):
-    return jsonify({"error": "File too large (max 16MB)"}), 413
-
-@app.errorhandler(429)
-def ratelimit_handler(e):
-    return jsonify({
-        "error": "Rate limit exceeded",
-        "retry_after": int(e.description.split('in')[1].split('seconds')[0].strip())
-    }), 429
-
-@app.errorhandler(500)
-def internal_error(error):
-    logger.error(f"Internal server error: {str(error)}")
-    return jsonify({"error": "Internal server error"}), 500
-
-if __name__ == '__main__':
-    logger.info("Starting application...")
-    logger.info(f"Template folder: {app.template_folder}")
-    logger.info(f"Static folder: {app.static_folder}")
-    logger.info(f"Upload folder: {app.config['UPLOAD_FOLDER']}")
-    
-    app.run(debug=True)  # Set to False in production
+            logger.error(f"Indexing error: {str(e)}")
+            return False

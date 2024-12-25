@@ -122,13 +122,13 @@ async function askQuestion() {
         
         if (response.ok) {
             answerDiv.className = 'answer-section';
-            const confidencePercentage = (data.confidence * 100).toFixed(1);
-            answerDiv.innerHTML = `
+            let answerHTML = `
                 <div class="answer-content">
                     <p class="answer-text">${data.answer}</p>
-                    <div class="confidence-score">Confidence: ${confidencePercentage}%</div>
                 </div>
             `;
+            
+            answerDiv.innerHTML = answerHTML;
             questionInput.value = '';
             questionInput.focus();
             answerDiv.scrollIntoView({ behavior: 'smooth' });
@@ -142,6 +142,19 @@ async function askQuestion() {
         console.error('Question error:', error);
     }
 }
+
+// Dynamic Background
+let currentBackground = 0;
+const backgrounds = ['background-1', 'background-2'];
+
+function changeBackground() {
+    document.body.classList.remove(...backgrounds);
+    currentBackground = (currentBackground + 1) % backgrounds.length;
+    document.body.classList.add(backgrounds[currentBackground]);
+}
+
+// Change background every 5 seconds
+setInterval(changeBackground, 5000);
 
 document.addEventListener('DOMContentLoaded', function() {
     const savedTheme = localStorage.getItem('theme') || 'light';
