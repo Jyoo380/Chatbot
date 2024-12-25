@@ -120,3 +120,43 @@
 2024-12-25 12:50:02,940 - __main__ - INFO - Temporary file removed: b70fe5dc461eeb82b5ed198c9900c3c58d43222525ce84ba602201e986c1292f.pdf
 2024-12-25 12:50:02,947 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 12:50:02] "POST /upload HTTP/1.1" 200 -
 2024-12-25 12:50:23,334 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 12:50:23] "POST /ask HTTP/1.1" 200 -
+2024-12-25 16:16:55,433 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 16:16:55,437 - __main__ - INFO - Starting application...
+2024-12-25 16:16:55,437 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 16:16:55,437 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 16:16:55,437 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 16:16:55,475 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 16:16:55,475 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 16:16:55,476 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 16:16:59,274 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 16:16:59,276 - __main__ - INFO - Starting application...
+2024-12-25 16:16:59,276 - __main__ - INFO - Template folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/templates
+2024-12-25 16:16:59,276 - __main__ - INFO - Static folder: /Users/varunselvaraj/Chatbot/chatbot_system/frontend/static
+2024-12-25 16:16:59,276 - __main__ - INFO - Upload folder: /Users/varunselvaraj/Chatbot/chatbot_system/temp
+2024-12-25 16:16:59,300 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 16:16:59,319 - werkzeug - INFO -  * Debugger PIN: 134-368-699
+2024-12-25 16:17:28,966 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:17:28] "GET / HTTP/1.1" 200 -
+2024-12-25 16:17:28,983 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:17:28] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-25 16:17:28,983 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:17:28] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-12-25 16:17:29,594 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:17:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-25 16:17:50,654 - __main__ - INFO - File saved successfully: d5a0ae9b30f21f3c3e729454cf4061294ec1882894f674708fbfdd47fa1a22b0.pdf
+2024-12-25 16:17:50,763 - __main__ - INFO - Temporary file removed: d5a0ae9b30f21f3c3e729454cf4061294ec1882894f674708fbfdd47fa1a22b0.pdf
+2024-12-25 16:17:50,763 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:17:50] "POST /upload HTTP/1.1" 200 -
+2024-12-25 16:18:00,896 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:18:00] "POST /ask HTTP/1.1" 200 -
+2024-12-25 16:18:00,974 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:18:00] "POST /ask HTTP/1.1" 200 -
+2024-12-25 16:18:29,885 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:18:29] "POST /ask HTTP/1.1" 200 -
+2024-12-25 16:18:52,460 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:18:52] "POST /ask HTTP/1.1" 200 -
+2024-12-25 16:18:52,480 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:18:52] "POST /ask HTTP/1.1" 200 -
+2024-12-25 16:19:00,751 - __main__ - INFO - File saved successfully: 1a7c60854bf64a920a954f9099e4c1c45f6140c658b7c88231d5cd05cab2afc7.pdf
+2024-12-25 16:19:00,856 - __main__ - INFO - Temporary file removed: 1a7c60854bf64a920a954f9099e4c1c45f6140c658b7c88231d5cd05cab2afc7.pdf
+2024-12-25 16:19:00,856 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:19:00] "POST /upload HTTP/1.1" 200 -
+2024-12-25 16:19:11,809 - __main__ - INFO - File saved successfully: 73353ffc85c49b1431106a0ddcb7ab7aa1bdb9953056f8836bcb8f5ee147f688.pdf
+2024-12-25 16:19:11,936 - __main__ - INFO - Temporary file removed: 73353ffc85c49b1431106a0ddcb7ab7aa1bdb9953056f8836bcb8f5ee147f688.pdf
+2024-12-25 16:19:11,936 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:19:11] "POST /upload HTTP/1.1" 200 -
+2024-12-25 16:19:26,567 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:19:26] "POST /ask HTTP/1.1" 200 -
+2024-12-25 16:19:26,660 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:19:26] "POST /ask HTTP/1.1" 200 -
+2024-12-25 16:19:40,118 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:19:40] "POST /ask HTTP/1.1" 200 -
+2024-12-25 16:19:40,238 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:19:40] "POST /ask HTTP/1.1" 200 -
+2024-12-25 16:19:58,061 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:19:58] "POST /ask HTTP/1.1" 200 -
+2024-12-25 16:19:58,129 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 16:19:58] "POST /ask HTTP/1.1" 200 -
