@@ -1,125 +1,116 @@
 let documentText = '';
 
-// Show/hide loading overlay
-function showLoading(message = 'Processing...') {
-    document.getElementById('loadingText').textContent = message;
-    document.getElementById('loadingOverlay').style.display = 'flex';
+function setTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+    
+    const sunIcon = document.querySelector('.sun-icon');
+    const moonIcon = document.querySelector('.moon-icon');
+    
+    if (theme === 'dark') {
+        sunIcon.style.display = 'none';
+        moonIcon.style.display = 'block';
+    } else {
+        sunIcon.style.display = 'block';
+        moonIcon.style.display = 'none';
+    }
 }
 
-function hideLoading() {
-    document.getElementById('loadingOverlay').style.display = 'none';
+function getCSRFToken() {
+    return document.querySelector('meta[name="csrf-token"]').getAttribute('content');
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    const dropZone = document.getElementById('dropZone');
-    const fileInput = document.getElementById('pdfFile');
-    const fileInfo = document.getElementById('fileInfo');
+function showSuccess(message) {
     const uploadStatus = document.getElementById('uploadStatus');
+    uploadStatus.className = 'success-message';
+    uploadStatus.textContent = message;
+}
 
-    // File input change handler
-    fileInput.addEventListener('change', function(e) {
-        const file = e.target.files[0];
-        if (file) {
-            if (file.type !== 'application/pdf') {
-                uploadStatus.innerHTML = '<span class="error">Please select a PDF file</span>';
-                return;
-            }
-            fileInfo.textContent = `Selected: ${file.name}`;
-            uploadPDF(file);
-        }
-    });
+function showError(message) {
+    const uploadStatus = document.getElementById('uploadStatus');
+    uploadStatus.className = 'error-message';
+    uploadStatus.textContent = message;
+}
 
-    // Drag and drop handlers
-    dropZone.addEventListener('dragover', (e) => {
-        e.preventDefault();
-        dropZone.classList.add('upload-area-active');
-    });
+function showLoading(message = 'Processing...') {
+    const uploadStatus = document.getElementById('uploadStatus');
+    uploadStatus.className = 'loading';
+    uploadStatus.textContent = message;
+}
 
-    dropZone.addEventListener('dragleave', () => {
-        dropZone.classList.remove('upload-area-active');
-    });
+async function uploadPDF() {
+    const fileInput = document.getElementById('pdfFile');
+    const file = fileInput.files[0];
+    
+    if (!file) {
+        showError('Please select a file first!');
+        return;
+    }
 
-    dropZone.addEventListener('drop', (e) => {
-        e.preventDefault();
-        dropZone.classList.remove('upload-area-active');
-       
-        const file = e.dataTransfer.files[0];
-        if (file && file.type === 'application/pdf') {
-            fileInfo.textContent = `Selected: ${file.name}`;
-            uploadPDF(file);
-        } else {
-            uploadStatus.innerHTML = '<span class="error">Please upload a PDF file</span>';
-        }
-    });
-});
+    if (!file.name.toLowerCase().endsWith('.pdf')) {
+        showError('Please select a PDF file');
+        return;
+    }
 
-async function uploadPDF(file) {
+    showLoading('Uploading file...');
+
     const formData = new FormData();
     formData.append('file', file);
 
     try {
-        showLoading('Uploading and processing PDF...');
-        const uploadStatus = document.getElementById('uploadStatus');
-
         const response = await fetch('/upload', {
             method: 'POST',
-            body: formData
+            headers: {
+                'X-CSRFToken': getCSRFToken()
+            },
+            body: formData,
+            credentials: 'same-origin'
         });
 
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         const data = await response.json();
-       
-        if (response.ok) {
-            documentText = data.text;
-            document.getElementById('documentContent').textContent = documentText;
-            document.querySelector('.chat-section').style.display = 'block';
-            uploadStatus.innerHTML = '<span class="success">File uploaded successfully!</span>';
-           
-            // Clear previous messages
-            document.getElementById('messageArea').innerHTML = '';
-           
-            // Add system message
-            addMessage("I've processed your document. Feel free to ask any questions about it!", false);
-        } else {
-            uploadStatus.innerHTML = `<span class="error">${data.error || 'Error uploading file'}</span>`;
-        }
-    } catch (error) {
-        console.error('Upload error:', error);
-        document.getElementById('uploadStatus').innerHTML =
-            `<span class="error">Error uploading file: ${error.message}</span>`;
-    } finally {
-        hideLoading();
-    }
-}
+        
+        documentText = data.text;
+        document.getElementById('documentContent').textContent = documentText;
+        
+        const chatSection = document.querySelector('.chat-section');
+        chatSection.style.opacity = '0';
+        chatSection.style.display = 'block';
+        setTimeout(() => {
+            chatSection.style.transition = 'opacity 0.5s ease-in-out';
+            chatSection.style.opacity = '1';
+        }, 10);
 
-function addMessage(content, isUser = false) {
-    const messageArea = document.getElementById('messageArea');
-    const messageDiv = document.createElement('div');
-    messageDiv.className = `message ${isUser ? 'user-message' : 'bot-message'} fade-in`;
-    messageDiv.textContent = content;
-    messageArea.appendChild(messageDiv);
-    messageArea.scrollTop = messageArea.scrollHeight;
+        showSuccess('File uploaded successfully!');
+        document.getElementById('questionInput').focus();
+        
+    } catch (error) {
+        showError('Upload failed: ' + error.message);
+        console.error('Upload error:', error);
+    }
 }
 
 async function askQuestion() {
     const questionInput = document.getElementById('questionInput');
+    const answerDiv = document.getElementById('answer');
     const question = questionInput.value.trim();
-   
+    
     if (!question) {
+        answerDiv.className = 'answer-section error-message';
+        answerDiv.textContent = 'Please enter a question!';
+        questionInput.focus();
         return;
     }
 
-    try {
-        // Add user's question to chat
-        addMessage(question, true);
-       
-        // Clear input and show loading
-        questionInput.value = '';
-        showLoading('Thinking...');
+    answerDiv.className = 'answer-section loading';
+    answerDiv.textContent = 'Thinking...';
 
+    try {
         const response = await fetch('/ask', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'X-CSRFToken': getCSRFToken()
             },
             body: JSON.stringify({
                 question: question,
@@ -128,40 +119,82 @@ async function askQuestion() {
         });
 
         const data = await response.json();
-       
+        
         if (response.ok) {
-            addMessage(data.answer, false);
+            answerDiv.className = 'answer-section';
+            const confidencePercentage = (data.confidence * 100).toFixed(1);
+            answerDiv.innerHTML = `
+                <div class="answer-content">
+                    <p class="answer-text">${data.answer}</p>
+                    <div class="confidence-score">Confidence: ${confidencePercentage}%</div>
+                </div>
+            `;
+            questionInput.value = '';
+            questionInput.focus();
+            answerDiv.scrollIntoView({ behavior: 'smooth' });
         } else {
-            addMessage(`Error: ${data.error || 'Failed to get answer'}`, false);
+            answerDiv.className = 'answer-section error-message';
+            answerDiv.textContent = data.error || 'Error getting answer';
         }
     } catch (error) {
+        answerDiv.className = 'answer-section error-message';
+        answerDiv.textContent = 'Error getting answer: ' + error.message;
         console.error('Question error:', error);
-        addMessage(`Error: ${error.message}`, false);
-    } finally {
-        hideLoading();
     }
 }
 
-function toggleContent() {
-    const content = document.getElementById('documentContent');
-    const button = document.querySelector('.document-header button i');
-   
-    if (content.style.display === 'none') {
-        content.style.display = 'block';
-        button.className = 'fas fa-chevron-down';
-    } else {
-        content.style.display = 'none';
-        button.className = 'fas fa-chevron-up';
-    }
-}
+document.addEventListener('DOMContentLoaded', function() {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    setTheme(savedTheme);
+    
+    document.getElementById('themeToggle').addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+    });
+    
+    const fileInput = document.getElementById('pdfFile');
+    const uploadLabel = document.querySelector('.file-upload-label');
+    const uploadSection = document.querySelector('.upload-section');
+    
+    fileInput.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        if (file) {
+            uploadLabel.textContent = file.name;
+            document.getElementById('uploadStatus').textContent = '';
+        }
+    });
 
-// Add keyboard shortcut for asking questions
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Enter' && !e.shiftKey) {
-        const questionInput = document.getElementById('questionInput');
-        if (document.activeElement === questionInput) {
+    ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+        uploadSection.addEventListener(eventName, (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+        });
+    });
+
+    ['dragenter', 'dragover'].forEach(eventName => {
+        uploadSection.addEventListener(eventName, () => {
+            uploadSection.classList.add('highlight');
+        });
+    });
+
+    ['dragleave', 'drop'].forEach(eventName => {
+        uploadSection.addEventListener(eventName, () => {
+            uploadSection.classList.remove('highlight');
+        });
+    });
+
+    uploadSection.addEventListener('drop', (e) => {
+        const dt = e.dataTransfer;
+        const file = dt.files[0];
+        const fileInput = document.getElementById('pdfFile');
+        fileInput.files = dt.files;
+        fileInput.dispatchEvent(new Event('change'));
+    });
+
+    document.getElementById('questionInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
             e.preventDefault();
             askQuestion();
         }
-    }
+    });
 });
