@@ -125,18 +125,8 @@ async function askQuestion() {
             let answerHTML = `
                 <div class="answer-content">
                     <p class="answer-text">${data.answer}</p>
-                    <div class="confidence-score">Confidence: ${(data.confidence * 100).toFixed(1)}%</div>
+                </div>
             `;
-
-            if (data.hallucination_warning) {
-                answerHTML += `<div class="hallucination-warning">${data.hallucination_warning}</div>`;
-            }
-
-            if (data.inconsistency_warning) {
-                answerHTML += `<div class="inconsistency-warning">${data.inconsistency_warning}</div>`;
-            }
-
-            answerHTML += `</div>`;
             
             answerDiv.innerHTML = answerHTML;
             questionInput.value = '';
@@ -164,7 +154,7 @@ function changeBackground() {
 }
 
 // Change background every 5 seconds
-setInterval(changeBackground, 50000);
+setInterval(changeBackground, 5000);
 
 document.addEventListener('DOMContentLoaded', function() {
     const savedTheme = localStorage.getItem('theme') || 'light';

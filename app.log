@@ -333,3 +333,968 @@
 2024-12-25 15:15:53,564 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 15:15:53] "POST /ask HTTP/1.1" 200 -
 2024-12-25 15:15:53,564 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 15:15:53] "POST /ask HTTP/1.1" 200 -
 2024-12-25 15:16:08,686 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 15:16:08] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:11:03,080 - __main__ - INFO - Successfully loaded summarization model
+2024-12-25 19:11:03,089 - __main__ - INFO - Starting application...
+2024-12-25 19:11:03,089 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 19:11:03,089 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 19:11:03,090 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 19:11:03,157 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 19:11:03,158 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 19:11:03,163 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 19:11:25,169 - __main__ - INFO - Successfully loaded summarization model
+2024-12-25 19:11:25,171 - __main__ - INFO - Starting application...
+2024-12-25 19:11:25,171 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 19:11:25,172 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 19:11:25,172 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 19:11:25,180 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 19:11:25,187 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 19:11:25,273 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:11:25] "GET / HTTP/1.1" 200 -
+2024-12-25 19:11:25,502 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:11:25] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-12-25 19:11:25,503 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:11:25] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-25 19:11:34,781 - __main__ - INFO - File saved successfully: ee6333e18c8005f5adfaaa455fb4c8f62f402c955f3810608d554a61a124f833.pdf
+2024-12-25 19:11:34,821 - __main__ - INFO - Temporary file removed: ee6333e18c8005f5adfaaa455fb4c8f62f402c955f3810608d554a61a124f833.pdf
+2024-12-25 19:11:34,821 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:11:34] "POST /upload HTTP/1.1" 200 -
+2024-12-25 19:11:46,578 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:11:46] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:11:57,165 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:11:57] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:11:57,183 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:11:57] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:12:32,200 - __main__ - INFO - File saved successfully: c81e30e6d0e6bf43308b10cc8f292582f495e0f23ac130ca26a7a96ae50afd52.pdf
+2024-12-25 19:12:32,205 - __main__ - INFO - Temporary file removed: c81e30e6d0e6bf43308b10cc8f292582f495e0f23ac130ca26a7a96ae50afd52.pdf
+2024-12-25 19:12:32,206 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:12:32] "POST /upload HTTP/1.1" 200 -
+2024-12-25 19:12:33,758 - __main__ - INFO - File saved successfully: 29663f1e767aba98faccf0665235b9ca64ee266cf5781899c2baea439ac1e759.pdf
+2024-12-25 19:12:33,768 - __main__ - INFO - Temporary file removed: 29663f1e767aba98faccf0665235b9ca64ee266cf5781899c2baea439ac1e759.pdf
+2024-12-25 19:12:33,768 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:12:33] "POST /upload HTTP/1.1" 200 -
+2024-12-25 19:12:45,130 - __main__ - INFO - File saved successfully: 4c7b8b014fae8208d1ef9051e157de1c1f03baf1ef167e9dab4853f17c81b1ab.pdf
+2024-12-25 19:12:45,295 - __main__ - INFO - Temporary file removed: 4c7b8b014fae8208d1ef9051e157de1c1f03baf1ef167e9dab4853f17c81b1ab.pdf
+2024-12-25 19:12:45,296 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:12:45] "POST /upload HTTP/1.1" 200 -
+2024-12-25 19:13:03,684 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:13:03] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:13:03,702 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:13:03] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:13:31,982 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:13:31] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:13:32,020 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:13:32] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:13:48,122 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:13:48] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:13:48,231 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:13:48] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:14:02,733 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:14:02] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:14:02,734 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:14:02] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:14:24,132 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:14:24] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:25:13,704 - werkzeug - INFO -  * Detected change in 'C:\\Users\\nanda\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-25 19:25:16,818 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 19:26:42,050 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 19:26:42,051 - __main__ - INFO - Starting application...
+2024-12-25 19:26:42,051 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 19:26:42,051 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 19:26:42,051 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 19:26:42,057 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 19:26:42,059 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 19:27:13,543 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:27:13] "[33mGET / HTTP/1.1[0m" 404 -
+2024-12-25 19:27:31,442 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:27:31] "[33mGET / HTTP/1.1[0m" 404 -
+2024-12-25 19:27:33,067 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:27:33] "[33mGET / HTTP/1.1[0m" 404 -
+2024-12-25 19:28:59,655 - werkzeug - INFO -  * Detected change in 'C:\\Users\\nanda\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-25 19:29:00,418 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 19:29:14,983 - __main__ - INFO - Successfully loaded summarization model
+2024-12-25 19:29:15,004 - __main__ - INFO - Starting application...
+2024-12-25 19:29:15,004 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 19:29:15,005 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 19:29:15,005 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 19:29:15,093 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 19:29:15,106 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 19:29:20,892 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:29:20] "GET / HTTP/1.1" 200 -
+2024-12-25 19:29:21,116 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:29:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 19:29:21,117 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:29:21] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-25 19:29:28,188 - __main__ - INFO - File saved successfully: cb39e94ca871a4a13127626972535d0199b1aeda63ba0fafb660a926b4b8e540.pdf
+2024-12-25 19:29:28,232 - __main__ - INFO - Temporary file removed: cb39e94ca871a4a13127626972535d0199b1aeda63ba0fafb660a926b4b8e540.pdf
+2024-12-25 19:29:28,234 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:29:28] "POST /upload HTTP/1.1" 200 -
+2024-12-25 19:29:56,924 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:29:56] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:29:57,332 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:29:57] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:30:36,197 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:30:36] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:30:36,632 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:30:36] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:32:10,918 - werkzeug - INFO -  * Detected change in 'C:\\Users\\nanda\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-25 19:32:12,643 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 19:32:23,482 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 19:32:23,485 - __main__ - INFO - Starting application...
+2024-12-25 19:32:23,485 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 19:32:23,487 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 19:32:23,487 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 19:32:23,497 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 19:32:23,500 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 19:32:35,624 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:32:35] "GET / HTTP/1.1" 200 -
+2024-12-25 19:32:35,734 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:32:35] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-25 19:32:35,734 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:32:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 19:32:42,246 - __main__ - INFO - File saved successfully: 3e3c5177e97e3504f8252503eb8568a6cb885e2b1f1bd6810614c5c4c9799df2.pdf
+2024-12-25 19:32:42,268 - __main__ - INFO - Temporary file removed: 3e3c5177e97e3504f8252503eb8568a6cb885e2b1f1bd6810614c5c4c9799df2.pdf
+2024-12-25 19:32:42,269 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:32:42] "POST /upload HTTP/1.1" 200 -
+2024-12-25 19:32:46,556 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:32:46] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:32:46,557 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:32:46] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:32:56,382 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:32:56] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:32:56,383 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:32:56] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:33:03,398 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:33:03] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:33:03,402 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:33:03] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:33:09,906 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:33:09] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:33:09,912 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:33:09] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:33:24,736 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:33:24] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:33:24,739 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:33:24] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:33:35,148 - __main__ - INFO - File saved successfully: ce6d9d770bbb2f8061b79a84144e96a4fae24ed6230ee9c146765111b91ad857.pdf
+2024-12-25 19:33:35,918 - __main__ - INFO - Temporary file removed: ce6d9d770bbb2f8061b79a84144e96a4fae24ed6230ee9c146765111b91ad857.pdf
+2024-12-25 19:33:35,921 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:33:35] "POST /upload HTTP/1.1" 200 -
+2024-12-25 19:33:58,270 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:33:58] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:33:58,422 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:33:58] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:34:09,328 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:34:09] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:34:09,376 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:34:09] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:34:38,067 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:34:38] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:34:38,103 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:34:38] "POST /ask HTTP/1.1" 200 -
+2024-12-25 19:37:05,437 - __main__ - INFO - Starting application...
+2024-12-25 19:37:05,437 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 19:37:05,438 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 19:37:05,438 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 19:37:05,537 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 19:37:05,538 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 19:37:05,540 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 19:37:06,241 - __main__ - INFO - Starting application...
+2024-12-25 19:37:06,241 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 19:37:06,242 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 19:37:06,242 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 19:37:06,249 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 19:37:06,250 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 19:37:09,761 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:37:09] "GET / HTTP/1.1" 200 -
+2024-12-25 19:37:09,824 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:37:09] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-25 19:37:09,824 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:37:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 19:37:14,483 - __main__ - INFO - File saved successfully: ebbdb0a83a022b99fed48a83823bbbfeb723bfef7c7cbf481f4a82bb0a989bbd.pdf
+2024-12-25 19:37:14,503 - __main__ - INFO - Temporary file removed: ebbdb0a83a022b99fed48a83823bbbfeb723bfef7c7cbf481f4a82bb0a989bbd.pdf
+2024-12-25 19:37:14,504 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:37:14] "POST /upload HTTP/1.1" 200 -
+2024-12-25 19:37:23,073 - __main__ - ERROR - Model error: HTTPSConnectionPool(host='api.ollama.com', port=443): Max retries exceeded with url: /v1/question-answering (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000244BF1058B0>: Failed to resolve 'api.ollama.com' ([Errno 11001] getaddrinfo failed)"))
+2024-12-25 19:37:23,074 - __main__ - ERROR - Model error: HTTPSConnectionPool(host='api.ollama.com', port=443): Max retries exceeded with url: /v1/question-answering (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000244BF104B30>: Failed to resolve 'api.ollama.com' ([Errno 11001] getaddrinfo failed)"))
+2024-12-25 19:37:23,076 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:37:23] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2024-12-25 19:37:23,078 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 19:37:23] "[35m[1mPOST /ask HTTP/1.1[0m" 500 -
+2024-12-25 19:42:13,246 - werkzeug - INFO -  * Detected change in 'C:\\Users\\nanda\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-25 19:42:13,391 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 19:56:44,717 - __main__ - INFO - Starting application...
+2024-12-25 19:56:44,719 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 19:56:44,719 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 19:56:44,719 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 19:56:46,760 - __main__ - WARNING - Ollama service is not available. Please ensure Ollama is running and the mistral model is installed.
+2024-12-25 19:56:46,760 - __main__ - INFO - To install Ollama, visit: https://ollama.ai/download
+2024-12-25 19:56:46,760 - __main__ - INFO - After installation, run: 'ollama pull mistral' to download the required model
+2024-12-25 19:56:46,783 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 19:56:46,783 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 19:56:46,786 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 19:57:03,431 - __main__ - INFO - Starting application...
+2024-12-25 19:57:03,432 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 19:57:03,432 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 19:57:03,432 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 19:57:05,460 - __main__ - WARNING - Ollama service is not available. Please ensure Ollama is running and the mistral model is installed.
+2024-12-25 19:57:05,460 - __main__ - INFO - To install Ollama, visit: https://ollama.ai/download
+2024-12-25 19:57:05,460 - __main__ - INFO - After installation, run: 'ollama pull mistral' to download the required model
+2024-12-25 19:57:05,466 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 19:57:05,466 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 19:59:21,677 - werkzeug - INFO -  * Detected change in 'C:\\Users\\nanda\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-25 19:59:22,727 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 19:59:37,306 - __main__ - INFO - Starting application...
+2024-12-25 19:59:39,351 - __main__ - WARNING - Ollama service issue: Mistral model not found. Please run 'ollama pull mistral'
+2024-12-25 19:59:39,351 - __main__ - INFO - To install Ollama, visit: https://ollama.ai/download
+2024-12-25 19:59:39,351 - __main__ - INFO - After installation, run: 'ollama pull mistral' to download the required model
+2024-12-25 19:59:39,352 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 19:59:39,352 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 19:59:39,352 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 19:59:39,357 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 19:59:39,360 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 20:09:35,699 - __main__ - INFO - Starting application...
+2024-12-25 20:09:37,743 - __main__ - WARNING - Ollama service issue: Mistral model not found. Please run 'ollama pull mistral'
+2024-12-25 20:09:37,744 - __main__ - INFO - To install Ollama, visit: https://ollama.ai/download
+2024-12-25 20:09:37,744 - __main__ - INFO - After installation, run: 'ollama pull mistral' to download the required model
+2024-12-25 20:09:37,744 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 20:09:37,744 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 20:09:37,744 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 20:09:37,769 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 20:09:37,769 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 20:09:37,773 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 20:09:55,816 - __main__ - INFO - Starting application...
+2024-12-25 20:09:57,867 - __main__ - WARNING - Ollama service issue: Mistral model not found. Please run 'ollama pull mistral'
+2024-12-25 20:09:57,868 - __main__ - INFO - To install Ollama, visit: https://ollama.ai/download
+2024-12-25 20:09:57,868 - __main__ - INFO - After installation, run: 'ollama pull mistral' to download the required model
+2024-12-25 20:09:57,868 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 20:09:57,868 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 20:09:57,869 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 20:09:57,874 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 20:09:57,886 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 20:09:57,985 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:09:57] "GET / HTTP/1.1" 200 -
+2024-12-25 20:09:58,264 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:09:58] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-25 20:09:58,270 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:09:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 20:10:04,553 - __main__ - INFO - File saved successfully: 09f8d861b8e76f6d19d1ae6427448c855788b07b204aec62c38a4c9363824677.pdf
+2024-12-25 20:10:04,567 - __main__ - INFO - Temporary file removed: 09f8d861b8e76f6d19d1ae6427448c855788b07b204aec62c38a4c9363824677.pdf
+2024-12-25 20:10:04,567 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:10:04] "POST /upload HTTP/1.1" 200 -
+2024-12-25 20:10:12,654 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:10:12] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 20:10:12,656 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:10:12] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 20:14:01,954 - werkzeug - INFO -  * Detected change in 'C:\\Users\\nanda\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-25 20:14:04,855 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 20:14:20,157 - __main__ - INFO - Starting application...
+2024-12-25 20:14:20,157 - __main__ - INFO - Checking Ollama health...
+2024-12-25 20:14:32,198 - __main__ - ERROR - Unexpected error checking Ollama health: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=10)
+2024-12-25 20:14:32,220 - __main__ - WARNING - Ollama service issue: Unexpected error checking Ollama health: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=10)
+2024-12-25 20:14:32,222 - __main__ - INFO - To install Ollama, visit: https://ollama.ai/download
+2024-12-25 20:14:32,223 - __main__ - INFO - After installation, run: 'ollama pull mistral' to download the required model
+2024-12-25 20:14:32,224 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 20:14:32,225 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 20:14:32,225 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 20:14:32,263 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 20:14:32,283 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 20:16:06,168 - werkzeug - INFO -  * Detected change in 'C:\\Users\\nanda\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-25 20:16:08,034 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 20:16:23,904 - __main__ - INFO - Starting application...
+2024-12-25 20:16:23,904 - __main__ - INFO - Verifying Ollama setup...
+2024-12-25 20:16:26,011 - __main__ - INFO - Ollama service status: 200
+2024-12-25 20:16:26,012 - __main__ - INFO - Available models: [{'name': 'mistral:latest', 'model': 'mistral:latest', 'modified_at': '2024-12-25T20:10:29.7226198+05:30', 'size': 4113301824, 'digest': 'f974a74358d62a017b37c6f424fcdf2744ca02926c4f952513ddf474b2fa5091', 'details': {'parent_model': '', 'format': 'gguf', 'family': 'llama', 'families': ['llama'], 'parameter_size': '7.2B', 'quantization_level': 'Q4_0'}}]
+2024-12-25 20:16:55,383 - __main__ - INFO - Successfully tested Mistral model
+2024-12-25 20:16:55,398 - __main__ - INFO - Ollama setup verified successfully
+2024-12-25 20:16:55,399 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 20:16:55,402 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 20:16:55,402 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 20:16:55,496 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 20:16:55,532 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 20:16:55,983 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:16:55] "GET / HTTP/1.1" 200 -
+2024-12-25 20:16:56,409 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:16:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 20:16:56,411 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:16:56] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-25 20:17:05,582 - __main__ - INFO - File saved successfully: d5b8cedc4743ef4a69ee918ce29f09a40be1f6762b018af9fe767517a6f87cbe.pdf
+2024-12-25 20:17:05,645 - __main__ - INFO - Temporary file removed: d5b8cedc4743ef4a69ee918ce29f09a40be1f6762b018af9fe767517a6f87cbe.pdf
+2024-12-25 20:17:05,645 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:17:05] "POST /upload HTTP/1.1" 200 -
+2024-12-25 20:17:11,304 - __main__ - INFO - Checking Ollama health...
+2024-12-25 20:17:11,321 - __main__ - INFO - Checking Ollama health...
+2024-12-25 20:17:23,425 - __main__ - ERROR - Unexpected error checking Ollama health: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=10)
+2024-12-25 20:17:23,426 - __main__ - ERROR - Unexpected error checking Ollama health: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=10)
+2024-12-25 20:17:23,427 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:17:23] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 20:17:23,427 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:17:23] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 20:17:43,929 - __main__ - INFO - Checking Ollama health...
+2024-12-25 20:17:43,932 - __main__ - INFO - Checking Ollama health...
+2024-12-25 20:17:54,624 - __main__ - INFO - Health check response status: 200
+2024-12-25 20:17:54,624 - __main__ - INFO - Ollama is healthy and responding
+2024-12-25 20:17:54,947 - __main__ - INFO - Attempting to connect to Ollama...
+2024-12-25 20:17:55,974 - __main__ - ERROR - Unexpected error checking Ollama health: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=10)
+2024-12-25 20:17:55,976 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:17:55] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 20:18:03,164 - __main__ - INFO - Ollama response status: 200
+2024-12-25 20:18:03,164 - __main__ - INFO - Successfully received response from Ollama
+2024-12-25 20:18:04,586 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:18:04] "POST /ask HTTP/1.1" 200 -
+2024-12-25 20:18:20,522 - __main__ - INFO - Checking Ollama health...
+2024-12-25 20:18:20,522 - __main__ - INFO - Checking Ollama health...
+2024-12-25 20:18:30,134 - __main__ - INFO - Health check response status: 200
+2024-12-25 20:18:30,134 - __main__ - INFO - Ollama is healthy and responding
+2024-12-25 20:18:30,162 - __main__ - INFO - Attempting to connect to Ollama...
+2024-12-25 20:18:30,504 - __main__ - INFO - Health check response status: 200
+2024-12-25 20:18:30,504 - __main__ - INFO - Ollama is healthy and responding
+2024-12-25 20:18:30,533 - __main__ - INFO - Attempting to connect to Ollama...
+2024-12-25 20:18:48,284 - __main__ - INFO - Ollama response status: 200
+2024-12-25 20:18:48,285 - __main__ - INFO - Ollama response status: 200
+2024-12-25 20:18:48,285 - __main__ - INFO - Successfully received response from Ollama
+2024-12-25 20:18:48,286 - __main__ - INFO - Successfully received response from Ollama
+2024-12-25 20:18:48,367 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:18:48] "POST /ask HTTP/1.1" 200 -
+2024-12-25 20:18:48,367 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:18:48] "POST /ask HTTP/1.1" 200 -
+2024-12-25 20:19:35,082 - __main__ - INFO - File saved successfully: 3465e714435591f0a75a91cdf852458536bf8a68c8217e416ccc2a34bef0722a.pdf
+2024-12-25 20:19:35,305 - __main__ - INFO - Temporary file removed: 3465e714435591f0a75a91cdf852458536bf8a68c8217e416ccc2a34bef0722a.pdf
+2024-12-25 20:19:35,305 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:19:35] "POST /upload HTTP/1.1" 200 -
+2024-12-25 20:20:03,578 - __main__ - INFO - Checking Ollama health...
+2024-12-25 20:20:15,620 - __main__ - ERROR - Unexpected error checking Ollama health: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=10)
+2024-12-25 20:20:15,624 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:20:15] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 20:20:46,369 - __main__ - INFO - Checking Ollama health...
+2024-12-25 20:20:46,371 - __main__ - INFO - Checking Ollama health...
+2024-12-25 20:20:58,422 - __main__ - ERROR - Unexpected error checking Ollama health: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=10)
+2024-12-25 20:20:58,424 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:20:58] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 20:20:58,438 - __main__ - ERROR - Unexpected error checking Ollama health: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=10)
+2024-12-25 20:20:58,440 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:20:58] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 20:21:19,713 - __main__ - INFO - File saved successfully: 5d34298bfb6362a43f4318dd3f782744adff37aa37737deaa3759785a4fbb33f.pdf
+2024-12-25 20:21:19,743 - __main__ - INFO - Temporary file removed: 5d34298bfb6362a43f4318dd3f782744adff37aa37737deaa3759785a4fbb33f.pdf
+2024-12-25 20:21:19,745 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:21:19] "POST /upload HTTP/1.1" 200 -
+2024-12-25 20:21:22,659 - __main__ - INFO - Checking Ollama health...
+2024-12-25 20:21:34,680 - __main__ - ERROR - Unexpected error checking Ollama health: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=10)
+2024-12-25 20:21:34,683 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:21:34] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 20:21:49,415 - __main__ - INFO - Checking Ollama health...
+2024-12-25 20:21:49,422 - __main__ - INFO - Checking Ollama health...
+2024-12-25 20:22:00,383 - __main__ - INFO - Health check response status: 200
+2024-12-25 20:22:00,383 - __main__ - INFO - Ollama is healthy and responding
+2024-12-25 20:22:00,566 - __main__ - INFO - Attempting to connect to Ollama...
+2024-12-25 20:22:01,469 - __main__ - ERROR - Unexpected error checking Ollama health: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=10)
+2024-12-25 20:22:01,470 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:22:01] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 20:22:11,282 - __main__ - INFO - Ollama response status: 200
+2024-12-25 20:22:11,285 - __main__ - INFO - Successfully received response from Ollama
+2024-12-25 20:22:11,852 - __main__ - WARNING - Hallucinated entities detected: {'France'}
+2024-12-25 20:22:11,854 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:22:11] "POST /ask HTTP/1.1" 200 -
+2024-12-25 20:22:37,496 - __main__ - INFO - Checking Ollama health...
+2024-12-25 20:22:37,498 - __main__ - INFO - Checking Ollama health...
+2024-12-25 20:22:47,903 - __main__ - INFO - Health check response status: 200
+2024-12-25 20:22:47,903 - __main__ - INFO - Ollama is healthy and responding
+2024-12-25 20:22:47,940 - __main__ - INFO - Attempting to connect to Ollama...
+2024-12-25 20:22:49,577 - __main__ - ERROR - Unexpected error checking Ollama health: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=10)
+2024-12-25 20:22:49,578 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:22:49] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 20:22:58,447 - __main__ - INFO - Ollama response status: 200
+2024-12-25 20:22:58,447 - __main__ - INFO - Successfully received response from Ollama
+2024-12-25 20:22:58,603 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:22:58] "POST /ask HTTP/1.1" 200 -
+2024-12-25 20:23:27,722 - __main__ - INFO - Checking Ollama health...
+2024-12-25 20:23:27,734 - __main__ - INFO - Checking Ollama health...
+2024-12-25 20:23:39,767 - __main__ - ERROR - Unexpected error checking Ollama health: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=10)
+2024-12-25 20:23:39,773 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:23:39] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 20:23:39,783 - __main__ - ERROR - Unexpected error checking Ollama health: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=10)
+2024-12-25 20:23:39,811 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 20:23:39] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 20:45:57,493 - __main__ - INFO - Loading NLP models...
+2024-12-25 20:45:57,979 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2024-12-25 20:45:57,979 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-12-25 20:46:01,303 - __main__ - INFO - NLP models loaded successfully
+2024-12-25 20:46:01,344 - __main__ - INFO - Starting application...
+2024-12-25 20:46:01,344 - __main__ - INFO - Warming up Ollama...
+2024-12-25 20:46:01,344 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 20:46:33,452 - __main__ - ERROR - Ollama request timed out
+2024-12-25 20:46:34,476 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 20:47:06,640 - __main__ - ERROR - Ollama request timed out
+2024-12-25 20:47:08,646 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 20:47:15,313 - __main__ - ERROR - Connection to Ollama failed
+2024-12-25 20:47:18,314 - __main__ - INFO - Ollama warmup completed
+2024-12-25 20:47:18,316 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 20:47:18,320 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 20:47:18,320 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 20:47:18,713 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 20:47:18,713 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 20:47:18,730 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 20:47:30,435 - __main__ - INFO - Loading NLP models...
+2024-12-25 20:47:31,080 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2024-12-25 20:47:31,080 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-12-25 20:47:34,590 - __main__ - INFO - NLP models loaded successfully
+2024-12-25 20:47:34,602 - __main__ - INFO - Starting application...
+2024-12-25 20:47:34,602 - __main__ - INFO - Warming up Ollama...
+2024-12-25 20:47:34,604 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 20:51:18,494 - __main__ - INFO - Loading NLP models...
+2024-12-25 20:51:18,997 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2024-12-25 20:51:18,997 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-12-25 20:51:23,785 - __main__ - INFO - NLP models loaded successfully
+2024-12-25 20:51:23,792 - __main__ - INFO - Starting application...
+2024-12-25 20:51:23,792 - __main__ - INFO - Warming up Ollama...
+2024-12-25 20:51:23,792 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 20:51:53,809 - __main__ - ERROR - Ollama request timed out
+2024-12-25 20:51:54,823 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 20:52:24,856 - __main__ - ERROR - Ollama request timed out
+2024-12-25 20:52:26,858 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 20:52:56,883 - __main__ - ERROR - Ollama request timed out
+2024-12-25 20:52:59,886 - __main__ - INFO - Ollama warmup completed
+2024-12-25 20:52:59,889 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 20:52:59,891 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 20:52:59,891 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 20:53:00,150 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 20:53:00,150 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 20:53:00,166 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 20:53:12,447 - __main__ - INFO - Loading NLP models...
+2024-12-25 20:53:13,169 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2024-12-25 20:53:13,169 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-12-25 20:53:17,726 - __main__ - INFO - NLP models loaded successfully
+2024-12-25 20:53:17,751 - __main__ - INFO - Starting application...
+2024-12-25 20:53:17,753 - __main__ - INFO - Warming up Ollama...
+2024-12-25 20:53:17,753 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:00:18,588 - __main__ - INFO - Loading NLP models...
+2024-12-25 21:00:19,230 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2024-12-25 21:00:19,230 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-12-25 21:00:23,862 - __main__ - INFO - NLP models loaded successfully
+2024-12-25 21:00:23,871 - __main__ - INFO - Starting application...
+2024-12-25 21:00:23,871 - __main__ - INFO - Warming up Ollama...
+2024-12-25 21:00:23,871 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:00:26,813 - __main__ - INFO - Ollama warmup completed successfully
+2024-12-25 21:00:26,814 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 21:00:26,814 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 21:00:26,814 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 21:00:26,834 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 21:00:26,839 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 21:00:26,841 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 21:00:34,654 - __main__ - INFO - Loading NLP models...
+2024-12-25 21:00:35,134 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2024-12-25 21:00:35,134 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-12-25 21:00:39,254 - __main__ - INFO - NLP models loaded successfully
+2024-12-25 21:00:39,266 - __main__ - INFO - Starting application...
+2024-12-25 21:00:39,266 - __main__ - INFO - Warming up Ollama...
+2024-12-25 21:00:39,266 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:00:46,381 - __main__ - INFO - Ollama warmup completed successfully
+2024-12-25 21:00:46,381 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 21:00:46,384 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 21:00:46,384 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 21:00:46,385 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 21:00:46,394 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 21:00:46,454 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:00:46] "GET / HTTP/1.1" 200 -
+2024-12-25 21:00:46,610 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:00:46] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-25 21:00:46,614 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:00:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 21:00:58,785 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:00:58] "POST /upload HTTP/1.1" 200 -
+2024-12-25 21:01:03,194 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:01:03,195 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:01:14,148 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:01:14] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:01:14,148 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:01:14] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:01:15,027 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:01:17,167 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:01:30,039 - __main__ - ERROR - Ollama request timed out
+2024-12-25 21:01:30,541 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:01:32,175 - __main__ - ERROR - Ollama request timed out
+2024-12-25 21:01:32,677 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:01:35,154 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:01:35,194 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:01:42,698 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:01:42] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:01:44,716 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:01:44] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:01:45,559 - __main__ - ERROR - Ollama request timed out
+2024-12-25 21:01:46,560 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:01:47,704 - __main__ - ERROR - Ollama request timed out
+2024-12-25 21:01:48,705 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:01:56,190 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:01:56] "POST /upload HTTP/1.1" 200 -
+2024-12-25 21:02:01,572 - __main__ - ERROR - Ollama request timed out
+2024-12-25 21:02:03,075 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:02:03] "[35m[1mGET /test-ollama HTTP/1.1[0m" 500 -
+2024-12-25 21:02:03,709 - __main__ - ERROR - Ollama request timed out
+2024-12-25 21:02:05,211 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:02:05] "[35m[1mGET /test-ollama HTTP/1.1[0m" 500 -
+2024-12-25 21:02:06,150 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:02:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-25 21:02:09,351 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:02:09,366 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:02:24,364 - __main__ - ERROR - Ollama request timed out
+2024-12-25 21:02:24,372 - __main__ - ERROR - Ollama request timed out
+2024-12-25 21:02:24,865 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:02:24,874 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:02:39,871 - __main__ - ERROR - Ollama request timed out
+2024-12-25 21:02:39,895 - __main__ - ERROR - Ollama request timed out
+2024-12-25 21:02:40,872 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:02:40,896 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:02:55,882 - __main__ - ERROR - Ollama request timed out
+2024-12-25 21:02:55,914 - __main__ - ERROR - Ollama request timed out
+2024-12-25 21:02:57,391 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:02:57] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 21:02:57,417 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:02:57] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 21:04:47,655 - werkzeug - INFO -  * Detected change in 'C:\\Users\\nanda\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-25 21:04:49,288 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 21:04:57,157 - __main__ - INFO - Loading NLP models...
+2024-12-25 21:04:57,577 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2024-12-25 21:04:57,577 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-12-25 21:05:01,312 - __main__ - INFO - NLP models loaded successfully
+2024-12-25 21:05:01,321 - __main__ - INFO - Starting application...
+2024-12-25 21:05:01,321 - __main__ - INFO - Warming up Ollama...
+2024-12-25 21:05:01,321 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:05:16,342 - __main__ - ERROR - Ollama request timed out
+2024-12-25 21:05:16,856 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:05:31,927 - __main__ - ERROR - Ollama request timed out
+2024-12-25 21:05:32,928 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:05:47,937 - __main__ - ERROR - Ollama request timed out
+2024-12-25 21:05:49,438 - __main__ - INFO - Ollama warmup completed successfully
+2024-12-25 21:05:49,440 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 21:05:49,442 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 21:05:49,443 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 21:05:49,564 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 21:05:49,605 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 21:06:30,959 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:06:30] "GET / HTTP/1.1" 200 -
+2024-12-25 21:06:31,682 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:06:31] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-25 21:06:31,684 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:06:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 21:06:43,795 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:06:43] "POST /upload HTTP/1.1" 200 -
+2024-12-25 21:06:53,591 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:06:53,594 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:07:08,607 - __main__ - ERROR - Ollama request timed out
+2024-12-25 21:07:08,608 - __main__ - ERROR - Ollama request timed out
+2024-12-25 21:07:09,109 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:07:09,109 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:07:24,114 - __main__ - ERROR - Ollama request timed out
+2024-12-25 21:07:24,115 - __main__ - ERROR - Ollama request timed out
+2024-12-25 21:07:25,116 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:07:25,116 - __main__ - INFO - Sending request to Ollama...
+2024-12-25 21:07:40,118 - __main__ - ERROR - Ollama request timed out
+2024-12-25 21:07:40,119 - __main__ - ERROR - Ollama request timed out
+2024-12-25 21:07:41,629 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:07:41] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 21:07:41,630 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:07:41] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 21:09:01,879 - werkzeug - INFO -  * Detected change in 'C:\\Users\\nanda\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-25 21:09:05,614 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 21:09:19,255 - __main__ - INFO - Loading NLP models...
+2024-12-25 21:09:19,877 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2024-12-25 21:09:19,881 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-12-25 21:09:23,414 - __main__ - INFO - NLP models loaded successfully
+2024-12-25 21:09:23,426 - __main__ - INFO - Starting application...
+2024-12-25 21:09:23,426 - __main__ - INFO - Warming up Ollama...
+2024-12-25 21:09:28,875 - __main__ - INFO - Ollama warmup completed successfully
+2024-12-25 21:09:28,875 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 21:09:28,876 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 21:09:28,876 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 21:09:28,884 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 21:09:28,890 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 21:09:44,946 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:09:44] "GET / HTTP/1.1" 200 -
+2024-12-25 21:09:45,085 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:09:45] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-25 21:09:45,085 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:09:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 21:09:55,343 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:09:55] "POST /upload HTTP/1.1" 200 -
+2024-12-25 21:10:20,429 - __main__ - ERROR - Request timed out
+2024-12-25 21:10:20,429 - __main__ - ERROR - Request timed out
+2024-12-25 21:10:35,934 - __main__ - ERROR - Request timed out
+2024-12-25 21:10:35,934 - __main__ - ERROR - Request timed out
+2024-12-25 21:10:49,384 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:10:49] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:10:50,536 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:10:50] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:11:21,136 - __main__ - ERROR - Request timed out
+2024-12-25 21:11:21,144 - __main__ - ERROR - Request timed out
+2024-12-25 21:11:36,656 - __main__ - ERROR - Request timed out
+2024-12-25 21:11:36,656 - __main__ - ERROR - Request timed out
+2024-12-25 21:11:52,173 - __main__ - ERROR - Request timed out
+2024-12-25 21:11:52,173 - __main__ - ERROR - Request timed out
+2024-12-25 21:12:07,677 - __main__ - ERROR - Request timed out
+2024-12-25 21:12:07,685 - __main__ - ERROR - Request timed out
+2024-12-25 21:12:22,802 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:12:22] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:12:23,196 - __main__ - ERROR - Request timed out
+2024-12-25 21:12:33,589 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:12:33] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:12:59,399 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:12:59] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:13:01,486 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:13:01] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:13:18,846 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:13:18] "POST /upload HTTP/1.1" 200 -
+2024-12-25 21:13:28,150 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:13:28] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:13:31,907 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:13:31] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:13:44,629 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:13:44] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:13:44,783 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:13:44] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:13:54,487 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:13:54] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:13:57,927 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:13:57] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:14:11,181 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:14:11] "POST /upload HTTP/1.1" 200 -
+2024-12-25 21:14:35,968 - __main__ - ERROR - Request timed out
+2024-12-25 21:14:36,017 - __main__ - ERROR - Request timed out
+2024-12-25 21:14:51,475 - __main__ - ERROR - Request timed out
+2024-12-25 21:14:51,524 - __main__ - ERROR - Request timed out
+2024-12-25 21:15:06,983 - __main__ - ERROR - Request timed out
+2024-12-25 21:15:07,032 - __main__ - ERROR - Request timed out
+2024-12-25 21:15:22,489 - __main__ - ERROR - Request timed out
+2024-12-25 21:15:22,537 - __main__ - ERROR - Request timed out
+2024-12-25 21:15:29,884 - werkzeug - INFO -  * Detected change in 'C:\\Users\\nanda\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-25 21:15:31,544 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 21:15:42,834 - __main__ - INFO - Loading NLP models...
+2024-12-25 21:15:43,514 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2024-12-25 21:15:43,514 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-12-25 21:15:48,759 - __main__ - INFO - NLP models loaded successfully
+2024-12-25 21:15:48,764 - __main__ - INFO - Starting application...
+2024-12-25 21:15:48,764 - __main__ - INFO - Warming up Ollama...
+2024-12-25 21:15:48,774 - __main__ - ERROR - Ollama error response: {"error":"model 'phi' not found"}
+2024-12-25 21:15:49,281 - __main__ - ERROR - Ollama error response: {"error":"model 'phi' not found"}
+2024-12-25 21:15:49,789 - __main__ - ERROR - Ollama error response: {"error":"model 'phi' not found"}
+2024-12-25 21:15:50,291 - __main__ - INFO - Ollama warmup completed successfully
+2024-12-25 21:15:50,291 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 21:15:50,291 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 21:15:50,292 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 21:15:50,357 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 21:15:50,357 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 21:27:15,106 - __main__ - INFO - Loading QA model...
+2024-12-25 21:27:15,106 - __main__ - INFO - Initializing FastQA...
+2024-12-25 21:27:25,926 - __main__ - INFO - FastQA initialized successfully
+2024-12-25 21:27:25,926 - __main__ - INFO - QA model loaded successfully
+2024-12-25 21:27:25,936 - __main__ - INFO - Starting application...
+2024-12-25 21:27:25,961 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 21:27:25,961 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 21:27:25,966 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 21:27:31,021 - __main__ - INFO - Loading QA model...
+2024-12-25 21:27:31,021 - __main__ - INFO - Initializing FastQA...
+2024-12-25 21:27:35,986 - __main__ - INFO - FastQA initialized successfully
+2024-12-25 21:27:35,990 - __main__ - INFO - QA model loaded successfully
+2024-12-25 21:27:35,998 - __main__ - INFO - Starting application...
+2024-12-25 21:27:36,018 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 21:27:36,030 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 21:27:36,408 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:27:36] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-12-25 21:27:36,764 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:27:36] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-12-25 21:27:36,764 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:27:36] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-12-25 21:27:36,922 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:27:36] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-12-25 21:27:36,937 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:27:36] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-25 21:32:17,226 - werkzeug - INFO -  * Detected change in 'C:\\Users\\nanda\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-25 21:32:17,867 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 21:32:22,031 - __main__ - INFO - Loading QA model...
+2024-12-25 21:32:22,031 - __main__ - INFO - Initializing FastQA...
+2024-12-25 21:32:25,599 - __main__ - INFO - FastQA initialized successfully
+2024-12-25 21:32:25,599 - __main__ - INFO - QA model loaded successfully
+2024-12-25 21:32:25,606 - __main__ - INFO - Starting application...
+2024-12-25 21:32:25,606 - __main__ - INFO - Root directory: C:\Users\nanda\Chatbot\chatbot_system
+2024-12-25 21:32:25,606 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 21:32:25,606 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 21:32:25,606 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 21:32:25,618 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 21:32:25,622 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 21:32:46,767 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:32:46] "GET / HTTP/1.1" 200 -
+2024-12-25 21:32:46,889 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:32:46] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-25 21:32:46,890 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:32:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 21:32:54,847 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:32:54] "POST /upload HTTP/1.1" 200 -
+2024-12-25 21:33:20,117 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:33:20] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:33:20,120 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:33:20] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:33:30,287 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:33:30] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:33:30,287 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:33:30] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:33:53,727 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:33:53] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:33:53,730 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:33:53] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:34:11,942 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:34:11] "POST /upload HTTP/1.1" 200 -
+2024-12-25 21:34:19,640 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:34:19] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 21:34:19,640 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:34:19] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 21:34:34,101 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:34:34] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 21:34:34,103 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:34:34] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 21:37:32,216 - __main__ - INFO - Loading QA model...
+2024-12-25 21:37:32,216 - __main__ - INFO - Initializing FastQA...
+2024-12-25 21:37:33,597 - __main__ - INFO - FastQA initialized successfully
+2024-12-25 21:37:33,597 - __main__ - INFO - QA model loaded successfully
+2024-12-25 21:37:33,600 - __main__ - INFO - Starting application...
+2024-12-25 21:37:33,600 - __main__ - INFO - Root directory: C:\Users\nanda\Chatbot\chatbot_system
+2024-12-25 21:37:33,600 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 21:37:33,607 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 21:37:33,607 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 21:37:33,618 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.16.72:5000
+2024-12-25 21:37:33,627 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 21:37:33,630 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 21:37:40,618 - __main__ - INFO - Loading QA model...
+2024-12-25 21:37:40,618 - __main__ - INFO - Initializing FastQA...
+2024-12-25 21:37:42,787 - __main__ - INFO - FastQA initialized successfully
+2024-12-25 21:37:42,787 - __main__ - INFO - QA model loaded successfully
+2024-12-25 21:37:42,800 - __main__ - INFO - Starting application...
+2024-12-25 21:37:42,800 - __main__ - INFO - Root directory: C:\Users\nanda\Chatbot\chatbot_system
+2024-12-25 21:37:42,802 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 21:37:42,802 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 21:37:42,802 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 21:37:42,820 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 21:37:42,835 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 21:37:42,951 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:37:42] "GET / HTTP/1.1" 200 -
+2024-12-25 21:37:43,117 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:37:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 21:37:43,126 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:37:43] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-25 21:37:49,847 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:37:49] "POST /upload HTTP/1.1" 200 -
+2024-12-25 21:37:52,997 - __main__ - ERROR - Answer generation error: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\nanda/nltk_data'
+    - 'C:\\Python312\\nltk_data'
+    - 'C:\\Python312\\share\\nltk_data'
+    - 'C:\\Python312\\lib\\nltk_data'
+    - 'C:\\Users\\nanda\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2024-12-25 21:37:52,997 - __main__ - ERROR - Answer generation error: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\nanda/nltk_data'
+    - 'C:\\Python312\\nltk_data'
+    - 'C:\\Python312\\share\\nltk_data'
+    - 'C:\\Python312\\lib\\nltk_data'
+    - 'C:\\Users\\nanda\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2024-12-25 21:37:53,007 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:37:53] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 21:37:53,014 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:37:53] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 21:38:42,557 - __main__ - INFO - Loading QA model...
+2024-12-25 21:38:42,557 - __main__ - INFO - Initializing FastQA...
+2024-12-25 21:38:43,993 - __main__ - INFO - FastQA initialized successfully
+2024-12-25 21:38:43,993 - __main__ - INFO - QA model loaded successfully
+2024-12-25 21:38:44,001 - __main__ - INFO - Starting application...
+2024-12-25 21:38:44,001 - __main__ - INFO - Root directory: C:\Users\nanda\Chatbot\chatbot_system
+2024-12-25 21:38:44,001 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 21:38:44,006 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 21:38:44,006 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 21:38:44,018 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.16.72:5000
+2024-12-25 21:38:44,027 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 21:38:44,029 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 21:38:54,246 - __main__ - INFO - Loading QA model...
+2024-12-25 21:38:54,247 - __main__ - INFO - Initializing FastQA...
+2024-12-25 21:38:55,155 - __main__ - INFO - FastQA initialized successfully
+2024-12-25 21:38:55,155 - __main__ - INFO - QA model loaded successfully
+2024-12-25 21:38:55,157 - __main__ - INFO - Starting application...
+2024-12-25 21:38:55,157 - __main__ - INFO - Root directory: C:\Users\nanda\Chatbot\chatbot_system
+2024-12-25 21:38:55,157 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 21:38:55,157 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 21:38:55,157 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 21:38:55,169 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 21:38:55,174 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 21:38:55,227 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:38:55] "GET / HTTP/1.1" 200 -
+2024-12-25 21:38:55,337 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:38:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 21:38:55,365 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:38:55] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-25 21:39:01,172 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:39:01] "POST /upload HTTP/1.1" 200 -
+2024-12-25 21:39:04,737 - __main__ - ERROR - Answer generation error: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\nanda/nltk_data'
+    - 'C:\\Python312\\nltk_data'
+    - 'C:\\Python312\\share\\nltk_data'
+    - 'C:\\Python312\\lib\\nltk_data'
+    - 'C:\\Users\\nanda\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2024-12-25 21:39:04,737 - __main__ - ERROR - Answer generation error: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\nanda/nltk_data'
+    - 'C:\\Python312\\nltk_data'
+    - 'C:\\Python312\\share\\nltk_data'
+    - 'C:\\Python312\\lib\\nltk_data'
+    - 'C:\\Users\\nanda\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2024-12-25 21:39:04,737 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:39:04] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 21:39:04,747 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:39:04] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 21:39:50,827 - werkzeug - INFO -  * Detected change in 'C:\\Users\\nanda\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-25 21:39:51,779 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 21:40:02,217 - __main__ - INFO - Loading QA model...
+2024-12-25 21:40:02,217 - __main__ - INFO - Initializing FastQA...
+2024-12-25 21:40:03,448 - __main__ - INFO - FastQA initialized successfully
+2024-12-25 21:40:03,448 - __main__ - INFO - QA model loaded successfully
+2024-12-25 21:40:03,457 - __main__ - INFO - Starting application...
+2024-12-25 21:40:03,457 - __main__ - INFO - Root directory: C:\Users\nanda\Chatbot\chatbot_system
+2024-12-25 21:40:03,457 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 21:40:03,457 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 21:40:03,464 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 21:40:03,477 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 21:40:03,483 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 21:40:03,570 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:40:03] "GET / HTTP/1.1" 200 -
+2024-12-25 21:40:03,756 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:40:03] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-25 21:40:03,759 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:40:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 21:40:11,568 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:40:11] "POST /upload HTTP/1.1" 200 -
+2024-12-25 21:40:14,604 - __main__ - ERROR - Answer generation error: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\nanda/nltk_data'
+    - 'C:\\Python312\\nltk_data'
+    - 'C:\\Python312\\share\\nltk_data'
+    - 'C:\\Python312\\lib\\nltk_data'
+    - 'C:\\Users\\nanda\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2024-12-25 21:40:14,607 - __main__ - ERROR - Answer generation error: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\nanda/nltk_data'
+    - 'C:\\Python312\\nltk_data'
+    - 'C:\\Python312\\share\\nltk_data'
+    - 'C:\\Python312\\lib\\nltk_data'
+    - 'C:\\Users\\nanda\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2024-12-25 21:40:14,607 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:40:14] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 21:40:14,612 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:40:14] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 21:41:50,022 - werkzeug - INFO -  * Detected change in 'C:\\Users\\nanda\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-25 21:41:51,402 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 21:42:07,392 - __main__ - INFO - Loading QA model...
+2024-12-25 21:42:07,392 - __main__ - INFO - Initializing FastQA...
+2024-12-25 21:42:08,667 - __main__ - INFO - FastQA initialized successfully
+2024-12-25 21:42:08,667 - __main__ - INFO - QA model loaded successfully
+2024-12-25 21:42:08,679 - __main__ - INFO - Starting application...
+2024-12-25 21:42:08,679 - __main__ - INFO - Root directory: C:\Users\nanda\Chatbot\chatbot_system
+2024-12-25 21:42:08,679 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 21:42:08,685 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 21:42:08,687 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 21:42:08,701 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 21:42:08,710 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 21:42:08,897 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:42:08] "GET / HTTP/1.1" 200 -
+2024-12-25 21:42:09,127 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:42:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 21:42:09,127 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:42:09] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-25 21:42:16,377 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:42:16] "POST /upload HTTP/1.1" 200 -
+2024-12-25 21:42:22,167 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:42:22] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 21:42:22,170 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:42:22] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 21:42:36,077 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:42:36] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 21:42:36,114 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:42:36] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 21:44:51,053 - __main__ - INFO - Loading QA model...
+2024-12-25 21:44:51,053 - __main__ - INFO - Initializing FastQA with DistilBERT...
+2024-12-25 21:44:52,027 - __main__ - INFO - FastQA initialized successfully
+2024-12-25 21:44:52,027 - __main__ - INFO - QA model loaded successfully
+2024-12-25 21:44:52,037 - __main__ - INFO - Starting application...
+2024-12-25 21:44:52,097 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 21:44:52,099 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 21:44:52,100 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 21:45:06,667 - __main__ - INFO - Loading QA model...
+2024-12-25 21:45:06,671 - __main__ - INFO - Initializing FastQA with DistilBERT...
+2024-12-25 21:45:08,127 - __main__ - INFO - FastQA initialized successfully
+2024-12-25 21:45:08,127 - __main__ - INFO - QA model loaded successfully
+2024-12-25 21:45:08,137 - __main__ - INFO - Starting application...
+2024-12-25 21:45:08,151 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 21:45:08,159 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 21:45:08,267 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:45:08] "GET / HTTP/1.1" 200 -
+2024-12-25 21:45:08,479 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:45:08] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-25 21:45:08,479 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:45:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 21:45:16,557 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:45:16] "POST /upload HTTP/1.1" 200 -
+2024-12-25 21:45:28,680 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:45:28] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:45:28,680 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:45:28] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:45:46,121 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:45:46] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:45:46,127 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:45:46] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:45:53,372 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:45:53] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:45:53,442 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 21:45:53] "POST /ask HTTP/1.1" 200 -
+2024-12-25 21:55:30,121 - __main__ - INFO - Loading Enhanced QA model...
+2024-12-25 21:55:30,121 - __main__ - INFO - Initializing Enhanced QA System...
+2024-12-25 22:00:52,178 - __main__ - INFO - Enhanced QA System initialized successfully
+2024-12-25 22:00:52,206 - __main__ - INFO - Enhanced QA model loaded successfully
+2024-12-25 22:00:52,268 - __main__ - INFO - Starting application...
+2024-12-25 22:00:52,270 - __main__ - INFO - Root directory: C:\Users\nanda\Chatbot\chatbot_system
+2024-12-25 22:00:52,272 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 22:00:52,273 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 22:00:52,275 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 22:00:52,848 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.16.72:5000
+2024-12-25 22:00:52,852 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 22:00:52,897 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 22:00:59,602 - __main__ - INFO - Loading Enhanced QA model...
+2024-12-25 22:00:59,602 - __main__ - INFO - Initializing Enhanced QA System...
+2024-12-25 22:01:14,636 - __main__ - INFO - Enhanced QA System initialized successfully
+2024-12-25 22:01:14,645 - __main__ - INFO - Enhanced QA model loaded successfully
+2024-12-25 22:01:14,666 - __main__ - INFO - Starting application...
+2024-12-25 22:01:14,668 - __main__ - INFO - Root directory: C:\Users\nanda\Chatbot\chatbot_system
+2024-12-25 22:01:14,668 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 22:01:14,669 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 22:01:14,670 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 22:01:14,788 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 22:01:14,817 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 22:01:32,168 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:01:32] "GET / HTTP/1.1" 200 -
+2024-12-25 22:01:32,317 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:01:32] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-25 22:01:32,319 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:01:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 22:01:38,997 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:01:38] "POST /upload HTTP/1.1" 200 -
+2024-12-25 22:02:05,299 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:02:05] "POST /ask HTTP/1.1" 200 -
+2024-12-25 22:02:05,315 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:02:05] "POST /ask HTTP/1.1" 200 -
+2024-12-25 22:02:42,777 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:02:42] "POST /ask HTTP/1.1" 200 -
+2024-12-25 22:02:42,802 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:02:42] "POST /ask HTTP/1.1" 200 -
+2024-12-25 22:03:08,065 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:03:08] "POST /ask HTTP/1.1" 200 -
+2024-12-25 22:03:08,149 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:03:08] "POST /ask HTTP/1.1" 200 -
+2024-12-25 22:03:49,828 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:03:49] "POST /upload HTTP/1.1" 200 -
+2024-12-25 22:03:59,698 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:03:59] "POST /ask HTTP/1.1" 200 -
+2024-12-25 22:03:59,705 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:03:59] "POST /ask HTTP/1.1" 200 -
+2024-12-25 22:04:11,627 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:04:11] "POST /ask HTTP/1.1" 200 -
+2024-12-25 22:04:11,629 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:04:11] "POST /ask HTTP/1.1" 200 -
+2024-12-25 22:04:19,921 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:04:19] "POST /ask HTTP/1.1" 200 -
+2024-12-25 22:04:19,937 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:04:19] "POST /ask HTTP/1.1" 200 -
+2024-12-25 22:04:33,594 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:04:33] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 22:04:33,619 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:04:33] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 22:04:44,708 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:04:44] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 22:04:44,748 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:04:44] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 22:05:05,864 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:05:05] "POST /upload HTTP/1.1" 200 -
+2024-12-25 22:05:08,798 - __main__ - ERROR - Summarization error: index out of range in self
+2024-12-25 22:09:19,098 - werkzeug - INFO -  * Detected change in 'C:\\Users\\nanda\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-25 22:09:22,789 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 22:09:32,157 - __main__ - INFO - Loading Enhanced QA model...
+2024-12-25 22:09:32,158 - __main__ - INFO - Initializing Enhanced QA System...
+2024-12-25 22:09:33,182 - __main__ - INFO - Enhanced QA System initialized successfully
+2024-12-25 22:09:33,183 - __main__ - INFO - Enhanced QA model loaded successfully
+2024-12-25 22:09:33,184 - __main__ - INFO - Starting application...
+2024-12-25 22:09:33,185 - __main__ - INFO - Root directory: C:\Users\nanda\Chatbot\chatbot_system
+2024-12-25 22:09:33,185 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 22:09:33,192 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 22:09:33,192 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 22:09:33,203 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 22:09:33,207 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 22:09:59,045 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:09:59] "GET / HTTP/1.1" 200 -
+2024-12-25 22:09:59,207 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:09:59] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-25 22:09:59,207 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:09:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 22:10:05,436 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:10:05] "POST /upload HTTP/1.1" 200 -
+2024-12-25 22:10:10,954 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:10:10] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 22:10:10,955 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:10:10] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 22:10:20,007 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:10:20] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 22:10:20,014 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:10:20] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 22:10:34,278 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:10:34] "POST /upload HTTP/1.1" 200 -
+2024-12-25 22:11:29,886 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 22:11:29] "[35m[1mPOST /ask HTTP/1.1[0m" 503 -
+2024-12-25 22:14:57,041 - __main__ - INFO - Loading DocumentQA model...
+2024-12-25 22:14:57,041 - __main__ - INFO - Initializing DocumentQA with google/flan-t5-large on cpu...
+2024-12-25 22:23:48,155 - __main__ - INFO - Loading RAG Document QA model...
+2024-12-25 22:23:48,157 - __main__ - INFO - Initializing RAG Document QA System...
+2024-12-25 22:23:48,160 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2024-12-25 22:23:48,160 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-12-25 22:28:53,119 - __main__ - INFO - RAG System initialized successfully
+2024-12-25 22:28:53,121 - __main__ - INFO - RAG Document QA model loaded successfully
+2024-12-25 22:28:53,127 - __main__ - INFO - Starting application...
+2024-12-25 22:28:53,128 - __main__ - INFO - Root directory: C:\Users\nanda\Chatbot\chatbot_system
+2024-12-25 22:28:53,129 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 22:28:53,130 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 22:28:53,131 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 22:28:53,203 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.16.72:5000
+2024-12-25 22:28:53,205 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 22:28:53,211 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 22:29:05,499 - __main__ - INFO - Loading RAG Document QA model...
+2024-12-25 22:29:05,499 - __main__ - INFO - Initializing RAG Document QA System...
+2024-12-25 22:29:05,513 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2024-12-25 22:29:05,513 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-12-25 22:33:59,779 - __main__ - INFO - Loading RAG Document QA model...
+2024-12-25 22:33:59,781 - __main__ - INFO - Initializing RAG Document QA System...
+2024-12-25 22:33:59,782 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2024-12-25 22:33:59,782 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2024-12-25 22:34:04,992 - __main__ - INFO - RAG System initialized successfully
+2024-12-25 22:34:04,992 - __main__ - INFO - RAG Document QA model loaded successfully
+2024-12-25 22:34:04,992 - __main__ - INFO - Starting application...
+2024-12-25 22:34:04,994 - __main__ - INFO - Root directory: C:\Users\nanda\Chatbot\chatbot_system
+2024-12-25 22:34:04,994 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 22:34:04,994 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 22:34:04,994 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 22:34:05,028 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.16.72:5000
+2024-12-25 22:34:05,028 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 22:34:05,031 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 22:34:11,914 - __main__ - INFO - Loading RAG Document QA model...
+2024-12-25 22:34:11,914 - __main__ - INFO - Initializing RAG Document QA System...
+2024-12-25 22:34:11,923 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2024-12-25 22:34:11,923 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
