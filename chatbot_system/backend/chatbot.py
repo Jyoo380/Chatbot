@@ -10,6 +10,19 @@ import hashlib
 import secrets
 import logging
 from datetime import datetime
+import spacy
+
+#load spacy english model
+nlp = spacy.load("en_core_web_sm")
+
+def extract_entities(text):
+    doc = nlp(text)
+    return set(ent.text for ent in doc.ents)
+
+def detect_hallucinations(answer, context_entities):
+    answer_entities = extract_entities(answer)
+    hallucinated = answer_entities - context_entities
+    return hallucinated
 
 # Configure logging
 logging.basicConfig(
@@ -165,6 +178,8 @@ def ask_question():
         if not question or not context:
             return jsonify({"error": "Question and context are required"}), 400
 
+        context_entities = extract_entities(context)
+
         # Validate input lengths
         if len(question) > 1000:
             return jsonify({"error": "Question too long (max 1000 characters)"}), 400
@@ -176,11 +191,22 @@ def ask_question():
         # Get answer from model
         try:
             answer = qa_pipeline(question=question, context=context)
+            generated_answer = answer['answer']
+            confidence_score = round(answer['score'], 4)
+
+            hallucinated_entities = detect_hallucinations(generated_answer, context_entities)
+            if hallucinated_entities:
+                logger.warning(f"Hallucinations detected: {hallucinated_entities}")
+                hallucination_warning = f"Warning: Answer might be hallucinated"
+            else:
+                hallucination_warning = None
+            
             logger.debug(f"Generated answer: {answer}")
             
             return jsonify({
                 "answer": answer['answer'],
-                "confidence": round(answer['score'], 4)
+                "confidence": round(answer['score'], 4),
+                "hallucination_warning": hallucination_warning
             }), 200
             
         except Exception as e:

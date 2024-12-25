@@ -120,3 +120,33 @@
 2024-12-25 12:50:02,940 - __main__ - INFO - Temporary file removed: b70fe5dc461eeb82b5ed198c9900c3c58d43222525ce84ba602201e986c1292f.pdf
 2024-12-25 12:50:02,947 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 12:50:02] "POST /upload HTTP/1.1" 200 -
 2024-12-25 12:50:23,334 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 12:50:23] "POST /ask HTTP/1.1" 200 -
+2024-12-25 13:40:11,633 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 13:40:11,634 - __main__ - INFO - Starting application...
+2024-12-25 13:40:11,634 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 13:40:11,635 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 13:40:11,635 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 13:40:11,649 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 13:40:11,649 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 13:40:11,651 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 13:40:19,076 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 13:40:19,081 - __main__ - INFO - Starting application...
+2024-12-25 13:40:19,081 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 13:40:19,082 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 13:40:19,083 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 13:40:19,099 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 13:40:19,108 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 13:40:19,256 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 13:40:19] "GET / HTTP/1.1" 200 -
+2024-12-25 13:40:19,573 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 13:40:19] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-25 13:40:19,585 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 13:40:19] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-12-25 13:40:32,196 - __main__ - INFO - File saved successfully: 1f48d4f1b8d7e3667c2948542099c82e037a459bc05fc6cc2b8105c83bc49846.pdf
+2024-12-25 13:40:32,989 - __main__ - INFO - Temporary file removed: 1f48d4f1b8d7e3667c2948542099c82e037a459bc05fc6cc2b8105c83bc49846.pdf
+2024-12-25 13:40:32,991 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 13:40:32] "POST /upload HTTP/1.1" 200 -
+2024-12-25 13:41:08,071 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 13:41:08] "POST /ask HTTP/1.1" 200 -
+2024-12-25 13:41:08,223 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 13:41:08] "POST /ask HTTP/1.1" 200 -
+2024-12-25 13:46:42,535 - __main__ - INFO - File saved successfully: 49ee9d5933fc9b6b11090367b8b87b7751a9bb02ddc7351c19d3d8146a3505ce.pdf
+2024-12-25 13:46:42,559 - __main__ - INFO - Temporary file removed: 49ee9d5933fc9b6b11090367b8b87b7751a9bb02ddc7351c19d3d8146a3505ce.pdf
+2024-12-25 13:46:42,559 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 13:46:42] "POST /upload HTTP/1.1" 200 -
+2024-12-25 13:46:53,270 - __main__ - WARNING - Hallucinations detected: {'Eiffel Tower'}
+2024-12-25 13:46:53,271 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 13:46:53] "POST /ask HTTP/1.1" 200 -
+2024-12-25 13:47:23,561 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 13:47:23] "POST /ask HTTP/1.1" 200 -

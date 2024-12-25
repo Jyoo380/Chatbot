@@ -122,13 +122,19 @@ async function askQuestion() {
         
         if (response.ok) {
             answerDiv.className = 'answer-section';
-            const confidencePercentage = (data.confidence * 100).toFixed(1);
-            answerDiv.innerHTML = `
+            let answerHTML = `
                 <div class="answer-content">
                     <p class="answer-text">${data.answer}</p>
-                    <div class="confidence-score">Confidence: ${confidencePercentage}%</div>
-                </div>
+                    <div class="confidence-score">Confidence: ${(data.confidence * 100).toFixed(1)}%</div>
             `;
+
+            if (data.hallucination_warning) {
+                answerHTML += `<div class="hallucination-warning">${data.hallucination_warning}</div>`;
+            }
+
+            answerHTML += `</div>`;
+            
+            answerDiv.innerHTML = answerHTML;
             questionInput.value = '';
             questionInput.focus();
             answerDiv.scrollIntoView({ behavior: 'smooth' });
