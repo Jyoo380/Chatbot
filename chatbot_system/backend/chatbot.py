@@ -171,6 +171,16 @@ def ask_question():
         if len(context) > 100000:
             return jsonify({"error": "Context too long (max 100000 characters)"}), 400
 
+        # Validate for potentially malicious characters
+        injection_characters = [
+            "'", "\"", "--", "/*", "*/", ";", "(", ")", "=", "<", ">", "!=", 
+            "LIKE", "UNION", "||", "\\", "|", "&", "`", "$", "*", "?", "[", "]", 
+            "&&", ">", ">>", "\r", "\n", "{", "}", ":", ","
+        ]
+        if any(char in question for char in injection_characters):
+            logger.warning(f"Malicious input detected in question: {question}")
+            return jsonify({"error": "The given text may contain malicious content. Please revise your question."}), 400
+
         logger.debug(f"Processing question: {question}")
         
         # Get answer from model
@@ -230,4 +240,4 @@ if __name__ == '__main__':
     logger.info(f"Static folder: {app.static_folder}")
     logger.info(f"Upload folder: {app.config['UPLOAD_FOLDER']}")
     
-    app.run(debug=True)  # Set to False in production
+    app.run(debug=True)

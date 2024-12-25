@@ -81,7 +81,7 @@ async function uploadPDF() {
             chatSection.style.opacity = '1';
         }, 10);
 
-        showSuccess('File uploaded successfully!');
+        showSuccess('Files uploaded successfully!');
         document.getElementById('questionInput').focus();
         
     } catch (error) {
