@@ -132,6 +132,10 @@ async function askQuestion() {
                 answerHTML += `<div class="hallucination-warning">${data.hallucination_warning}</div>`;
             }
 
+            if (data.inconsistency_warning) {
+                answerHTML += `<div class="inconsistency-warning">${data.inconsistency_warning}</div>`;
+            }
+
             answerHTML += `</div>`;
             
             answerDiv.innerHTML = answerHTML;

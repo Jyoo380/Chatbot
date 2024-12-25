@@ -221,3 +221,11 @@ input[type="file"] {
     margin-top: 10px;
     border-radius: 4px;
 }
+.inconsistency-warning {
+    color: #f0ad4e; /* Bootstrap's warning color */
+    background-color: #fcf8e3;
+    border: 1px solid #faebcc;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+}

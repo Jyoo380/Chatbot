@@ -150,3 +150,159 @@
 2024-12-25 13:46:53,270 - __main__ - WARNING - Hallucinations detected: {'Eiffel Tower'}
 2024-12-25 13:46:53,271 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 13:46:53] "POST /ask HTTP/1.1" 200 -
 2024-12-25 13:47:23,561 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 13:47:23] "POST /ask HTTP/1.1" 200 -
+2024-12-25 14:40:00,492 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 14:40:00,492 - __main__ - INFO - Starting application...
+2024-12-25 14:40:00,492 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 14:40:00,492 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 14:40:00,492 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 14:40:00,515 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-25 14:40:00,515 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-25 14:40:00,525 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 14:40:14,325 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 14:40:14,333 - __main__ - INFO - Starting application...
+2024-12-25 14:40:14,333 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 14:40:14,333 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 14:40:14,333 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 14:40:14,333 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 14:40:14,342 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 14:40:57,689 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:40:57] "GET / HTTP/1.1" 200 -
+2024-12-25 14:40:57,828 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:40:57] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-25 14:40:57,828 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:40:57] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-12-25 14:41:05,344 - __main__ - INFO - File saved successfully: 1838d4f25f652a84cb1d1bbc0bb05388202931cae1eb59bcaf81fa39d9963db7.pdf
+2024-12-25 14:41:05,368 - __main__ - INFO - Temporary file removed: 1838d4f25f652a84cb1d1bbc0bb05388202931cae1eb59bcaf81fa39d9963db7.pdf
+2024-12-25 14:41:05,377 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:41:05] "POST /upload HTTP/1.1" 200 -
+2024-12-25 14:41:15,587 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:41:15] "POST /ask HTTP/1.1" 200 -
+2024-12-25 14:41:29,415 - __main__ - WARNING - Warning: The answer may be inconsistent with the supporting text (Similarity Score: 0.15).
+2024-12-25 14:41:29,455 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:41:29] "POST /ask HTTP/1.1" 200 -
+2024-12-25 14:41:47,595 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:41:47] "POST /ask HTTP/1.1" 200 -
+2024-12-25 14:46:19,361 - __main__ - WARNING - Warning: The answer may be inconsistent with the supporting text (Similarity Score: 0.08).
+2024-12-25 14:46:19,394 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:46:19] "POST /ask HTTP/1.1" 200 -
+2024-12-25 14:48:01,364 - werkzeug - INFO -  * Detected change in 'C:\\Users\\nanda\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-25 14:48:03,368 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 14:48:25,207 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 14:48:25,212 - __main__ - INFO - Starting application...
+2024-12-25 14:48:25,212 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 14:48:25,220 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 14:48:25,224 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 14:48:25,254 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 14:48:25,261 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 14:48:25,464 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:48:25] "GET / HTTP/1.1" 200 -
+2024-12-25 14:48:25,871 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:48:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 14:48:25,903 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:48:25] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-25 14:48:33,030 - __main__ - INFO - File saved successfully: 0fe0a4afda26389f75f46acba2432f8e56ce6a0830c66ad483141c01debb90bc.pdf
+2024-12-25 14:48:33,038 - __main__ - INFO - Temporary file removed: 0fe0a4afda26389f75f46acba2432f8e56ce6a0830c66ad483141c01debb90bc.pdf
+2024-12-25 14:48:33,038 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:48:33] "POST /upload HTTP/1.1" 200 -
+2024-12-25 14:48:40,651 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:48:40] "POST /ask HTTP/1.1" 200 -
+2024-12-25 14:48:40,651 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:48:40] "POST /ask HTTP/1.1" 200 -
+2024-12-25 14:48:53,624 - __main__ - WARNING - Warning: The answer may be inconsistent with the supporting text (Similarity Score: 0.07).
+2024-12-25 14:48:53,632 - __main__ - WARNING - Hallucinated entities detected: {'one'}
+2024-12-25 14:48:53,640 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:48:53] "POST /ask HTTP/1.1" 200 -
+2024-12-25 14:49:26,747 - werkzeug - INFO -  * Detected change in 'C:\\Users\\nanda\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-25 14:49:27,701 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 14:49:42,198 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 14:49:42,206 - __main__ - INFO - Starting application...
+2024-12-25 14:49:42,206 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 14:49:42,206 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 14:49:42,214 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 14:49:42,254 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 14:49:42,264 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 14:49:42,402 - chatbot - WARNING - Forbidden (CSRF token missing or incorrect.): /ask
+2024-12-25 14:49:42,402 - chatbot - WARNING - Forbidden (CSRF token missing or incorrect.): /ask
+2024-12-25 14:49:42,410 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:49:42] "[31m[1mPOST /ask HTTP/1.1[0m" 403 -
+2024-12-25 14:49:42,418 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:49:42] "[31m[1mPOST /ask HTTP/1.1[0m" 403 -
+2024-12-25 14:49:53,769 - chatbot - WARNING - Forbidden (CSRF token missing or incorrect.): /upload
+2024-12-25 14:49:53,776 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:49:53] "[31m[1mPOST /upload HTTP/1.1[0m" 403 -
+2024-12-25 14:49:55,985 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:49:55] "GET / HTTP/1.1" 200 -
+2024-12-25 14:49:56,260 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:49:56] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-25 14:49:56,303 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:49:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 14:50:02,596 - __main__ - INFO - File saved successfully: 4e2169daac2f80d3c75786635a391eb004e4f3f6bb4834f37f3902340fc12985.pdf
+2024-12-25 14:50:02,620 - __main__ - INFO - Temporary file removed: 4e2169daac2f80d3c75786635a391eb004e4f3f6bb4834f37f3902340fc12985.pdf
+2024-12-25 14:50:02,623 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:50:02] "POST /upload HTTP/1.1" 200 -
+2024-12-25 14:50:14,682 - __main__ - WARNING - Warning: The answer may be inconsistent with the supporting text (Similarity Score: 0.08).
+2024-12-25 14:50:14,756 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:50:14] "POST /ask HTTP/1.1" 200 -
+2024-12-25 14:50:29,374 - __main__ - WARNING - Warning: The answer may be inconsistent with the supporting text (Similarity Score: 0.15).
+2024-12-25 14:50:29,399 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:50:29] "POST /ask HTTP/1.1" 200 -
+2024-12-25 14:51:09,363 - werkzeug - INFO -  * Detected change in 'C:\\Users\\nanda\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-25 14:51:10,363 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 14:51:29,392 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 14:51:29,398 - __main__ - INFO - Starting application...
+2024-12-25 14:51:29,403 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 14:51:29,403 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 14:51:29,403 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 14:51:29,425 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 14:51:29,441 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 14:51:29,579 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:51:29] "GET / HTTP/1.1" 200 -
+2024-12-25 14:51:29,921 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:51:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 14:51:29,929 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:51:29] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-25 14:52:01,029 - __main__ - INFO - File saved successfully: 5ece430ec34a1ced3377d5e6c765550b540218304d11931fc0d91862f328e5ae.pdf
+2024-12-25 14:52:01,053 - __main__ - INFO - Temporary file removed: 5ece430ec34a1ced3377d5e6c765550b540218304d11931fc0d91862f328e5ae.pdf
+2024-12-25 14:52:01,053 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:52:01] "POST /upload HTTP/1.1" 200 -
+2024-12-25 14:52:11,485 - __main__ - WARNING - Warning: The answer may be inconsistent with the supporting text (Similarity Score: 0.08).
+2024-12-25 14:52:11,501 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:52:11] "POST /ask HTTP/1.1" 200 -
+2024-12-25 14:52:22,696 - __main__ - WARNING - Warning: The answer may be inconsistent with the supporting text (Similarity Score: 0.15).
+2024-12-25 14:52:22,718 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:52:22] "POST /ask HTTP/1.1" 200 -
+2024-12-25 14:52:38,286 - werkzeug - INFO -  * Detected change in 'C:\\Users\\nanda\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-25 14:52:38,929 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 14:52:56,883 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 14:52:56,891 - __main__ - INFO - Starting application...
+2024-12-25 14:52:56,891 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 14:52:56,891 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 14:52:56,891 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 14:52:56,918 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 14:52:56,932 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 14:52:57,123 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:52:57] "GET / HTTP/1.1" 200 -
+2024-12-25 14:52:57,509 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:52:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 14:52:57,536 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:52:57] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-25 14:53:07,363 - __main__ - INFO - File saved successfully: c490f702e9f550855b9c30f5103c6dba0e76a136b3909e8b4de0c0dcf02c5191.pdf
+2024-12-25 14:53:07,384 - __main__ - INFO - Temporary file removed: c490f702e9f550855b9c30f5103c6dba0e76a136b3909e8b4de0c0dcf02c5191.pdf
+2024-12-25 14:53:07,384 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:53:07] "POST /upload HTTP/1.1" 200 -
+2024-12-25 14:53:17,379 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:53:17] "POST /ask HTTP/1.1" 200 -
+2024-12-25 14:53:17,459 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:53:17] "POST /ask HTTP/1.1" 200 -
+2024-12-25 14:53:18,614 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:53:18] "POST /ask HTTP/1.1" 200 -
+2024-12-25 14:53:18,670 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:53:18] "POST /ask HTTP/1.1" 200 -
+2024-12-25 14:53:24,340 - __main__ - WARNING - Warning: The answer may be inconsistent with the supporting text (Similarity Score: 0.08).
+2024-12-25 14:53:24,361 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:53:24] "POST /ask HTTP/1.1" 200 -
+2024-12-25 14:53:24,385 - __main__ - WARNING - Warning: The answer may be inconsistent with the supporting text (Similarity Score: 0.08).
+2024-12-25 14:53:24,418 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:53:24] "POST /ask HTTP/1.1" 200 -
+2024-12-25 14:53:38,512 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:53:38] "POST /ask HTTP/1.1" 200 -
+2024-12-25 14:53:38,553 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:53:38] "POST /ask HTTP/1.1" 200 -
+2024-12-25 14:53:51,289 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:53:51] "POST /ask HTTP/1.1" 200 -
+2024-12-25 14:53:51,371 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:53:51] "POST /ask HTTP/1.1" 200 -
+2024-12-25 14:56:54,455 - werkzeug - INFO -  * Detected change in 'C:\\Users\\nanda\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-25 14:56:55,412 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 14:57:14,934 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 14:57:14,938 - __main__ - INFO - Starting application...
+2024-12-25 14:57:14,938 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 14:57:14,938 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 14:57:14,938 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 14:57:14,971 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 14:57:14,987 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 14:57:15,132 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:57:15] "GET / HTTP/1.1" 200 -
+2024-12-25 14:57:15,456 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:57:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 14:57:15,458 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:57:15] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-25 14:57:31,061 - __main__ - INFO - File saved successfully: 8bb9f96db248a8fd25315ffb6843733b8afb41eea97d274eda42e70894d233a5.pdf
+2024-12-25 14:57:31,085 - __main__ - INFO - Temporary file removed: 8bb9f96db248a8fd25315ffb6843733b8afb41eea97d274eda42e70894d233a5.pdf
+2024-12-25 14:57:31,090 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:57:31] "POST /upload HTTP/1.1" 200 -
+2024-12-25 14:57:40,545 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:57:40] "POST /ask HTTP/1.1" 200 -
+2024-12-25 14:57:40,586 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:57:40] "POST /ask HTTP/1.1" 200 -
+2024-12-25 14:58:17,088 - werkzeug - INFO -  * Detected change in 'C:\\Users\\nanda\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-25 14:58:18,036 - werkzeug - INFO -  * Restarting with stat
+2024-12-25 14:58:35,475 - __main__ - INFO - Successfully loaded QA model
+2024-12-25 14:58:35,483 - __main__ - INFO - Starting application...
+2024-12-25 14:58:35,489 - __main__ - INFO - Template folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\templates
+2024-12-25 14:58:35,493 - __main__ - INFO - Static folder: C:\Users\nanda\Chatbot\chatbot_system\frontend\static
+2024-12-25 14:58:35,493 - __main__ - INFO - Upload folder: C:\Users\nanda\Chatbot\chatbot_system\temp
+2024-12-25 14:58:35,516 - werkzeug - WARNING -  * Debugger is active!
+2024-12-25 14:58:35,532 - werkzeug - INFO -  * Debugger PIN: 134-061-009
+2024-12-25 14:58:35,671 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:58:35] "GET / HTTP/1.1" 200 -
+2024-12-25 14:58:36,003 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:58:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-25 14:58:36,043 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:58:36] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-25 14:58:48,170 - __main__ - INFO - File saved successfully: 9390d7f5faf7557362f366998264a9a3b81fcb37c92d3315972e380f3978572b.pdf
+2024-12-25 14:58:48,182 - __main__ - INFO - Temporary file removed: 9390d7f5faf7557362f366998264a9a3b81fcb37c92d3315972e380f3978572b.pdf
+2024-12-25 14:58:48,182 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:58:48] "POST /upload HTTP/1.1" 200 -
+2024-12-25 14:58:57,006 - __main__ - WARNING - Warning: The answer may be inconsistent with the supporting text (Similarity Score: 0.02).
+2024-12-25 14:58:57,037 - __main__ - WARNING - Warning: The answer may be inconsistent with the supporting text (Similarity Score: 0.02).
+2024-12-25 14:58:57,046 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:58:57] "POST /ask HTTP/1.1" 200 -
+2024-12-25 14:58:57,080 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:58:57] "POST /ask HTTP/1.1" 200 -
+2024-12-25 14:59:11,507 - werkzeug - INFO - 127.0.0.1 - - [25/Dec/2024 14:59:11] "POST /ask HTTP/1.1" 200 -

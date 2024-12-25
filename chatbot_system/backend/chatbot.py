@@ -11,18 +11,37 @@ import secrets
 import logging
 from datetime import datetime
 import spacy
+from sentence_transformers import SentenceTransformer, util
 
-#load spacy english model
+# Load spaCy English model
 nlp = spacy.load("en_core_web_sm")
 
+# Load SentenceTransformer model
+similarity_model = SentenceTransformer('all-MiniLM-L6-v2')
+
+def calculate_semantic_similarity(text1, text2):
+    """Calculate cosine similarity between two texts."""
+    embeddings1 = similarity_model.encode(text1, convert_to_tensor=True)
+    embeddings2 = similarity_model.encode(text2, convert_to_tensor=True)
+    cosine_sim = util.pytorch_cos_sim(embeddings1, embeddings2)
+    return cosine_sim.item()
+
 def extract_entities(text):
+    """Extract named entities from text using spaCy."""
     doc = nlp(text)
     return set(ent.text for ent in doc.ents)
 
 def detect_hallucinations(answer, context_entities):
+    """Detect hallucinated entities in the answer."""
     answer_entities = extract_entities(answer)
     hallucinated = answer_entities - context_entities
     return hallucinated
+
+def detect_semantic_inconsistency(answer, context):
+    """Detect if the answer is semantically inconsistent with the context."""
+    similarity_score = calculate_semantic_similarity(answer, context)
+    threshold = 0.1
+    return similarity_score < threshold, similarity_score
 
 # Configure logging
 logging.basicConfig(
@@ -53,7 +72,6 @@ app.config.update(
     SESSION_COOKIE_HTTPONLY=True,
     SESSION_COOKIE_SAMESITE='Lax',
     PERMANENT_SESSION_LIFETIME=1800,  # 30 minutes
-    # Add CSRF settings
     WTF_CSRF_ENABLED=True,
     WTF_CSRF_SSL_STRICT=True
 )
@@ -101,7 +119,6 @@ def validate_file(file):
     if not file or file.filename == '':
         return False, "No file selected"
     
-    # Check file extension
     if not file.filename.lower().endswith('.pdf'):
         return False, "Only PDF files are supported"
     
@@ -130,13 +147,11 @@ def upload_file():
         return jsonify({"error": error_message}), 400
 
     try:
-        # Generate secure filename and save
         secure_name = secure_temp_file(file.filename)
         pdf_path = os.path.join(app.config['UPLOAD_FOLDER'], secure_name)
         file.save(pdf_path)
         logger.info(f"File saved successfully: {secure_name}")
 
-        # Extract text from the PDF
         text = extract_text_from_pdf(pdf_path)
         
         if not text.strip():
@@ -152,7 +167,6 @@ def upload_file():
         return jsonify({"error": str(e)}), 500
 
     finally:
-        # Clean up the temporary file
         if 'pdf_path' in locals() and os.path.exists(pdf_path):
             try:
                 os.remove(pdf_path)
@@ -180,34 +194,44 @@ def ask_question():
 
         context_entities = extract_entities(context)
 
-        # Validate input lengths
-        if len(question) > 1000:
-            return jsonify({"error": "Question too long (max 1000 characters)"}), 400
-        if len(context) > 100000:
-            return jsonify({"error": "Context too long (max 100000 characters)"}), 400
-
         logger.debug(f"Processing question: {question}")
         
-        # Get answer from model
         try:
-            answer = qa_pipeline(question=question, context=context)
-            generated_answer = answer['answer']
-            confidence_score = round(answer['score'], 4)
+            answer = qa_pipeline(question=question, context=context, handle_impossible_answer=True)
+            generated_answer = answer.get('answer', '')
+            supporting_text = answer.get('context', '')
+            confidence_score = round(answer.get('score', 0.0), 4)
+            if not generated_answer:
+                generated_answer = "I'm sorry, I couldn't find the answer to your question. We prevent HALLUCINATIONS"
+
+            similarity_with_support = calculate_semantic_similarity(generated_answer, supporting_text)
+            threshold_support = 0.1
+            is_support_inconsistent = similarity_with_support < threshold_support
+
+            if is_support_inconsistent:
+                inconsistency_warning = f"Warning: The answer may be inconsistent with the supporting text (Similarity Score: {similarity_with_support:.2f})."
+                logger.warning(inconsistency_warning)
+            else:
+                inconsistency_warning = None
 
             hallucinated_entities = detect_hallucinations(generated_answer, context_entities)
             if hallucinated_entities:
-                logger.warning(f"Hallucinations detected: {hallucinated_entities}")
-                hallucination_warning = f"Warning: Answer might be hallucinated"
+                logger.warning(f"Hallucinated entities detected: {hallucinated_entities}")
+                hallucination_warning = f"Warning: The answer contains entities not found in the document: {', '.join(hallucinated_entities)}"
             else:
                 hallucination_warning = None
-            
-            logger.debug(f"Generated answer: {answer}")
-            
-            return jsonify({
-                "answer": answer['answer'],
-                "confidence": round(answer['score'], 4),
-                "hallucination_warning": hallucination_warning
-            }), 200
+
+            response = {
+                "answer": generated_answer,
+                "confidence": confidence_score
+            }
+
+            if hallucination_warning:
+                response["hallucination_warning"] = hallucination_warning
+            if inconsistency_warning:
+                response["inconsistency_warning"] = inconsistency_warning
+
+            return jsonify(response), 200
             
         except Exception as e:
             logger.error(f"Model error: {str(e)}")
