@@ -153,6 +153,19 @@ async function askQuestion() {
     }
 }
 
+// Dynamic Background
+let currentBackground = 0;
+const backgrounds = ['background-1', 'background-2'];
+
+function changeBackground() {
+    document.body.classList.remove(...backgrounds);
+    currentBackground = (currentBackground + 1) % backgrounds.length;
+    document.body.classList.add(backgrounds[currentBackground]);
+}
+
+// Change background every 5 seconds
+setInterval(changeBackground, 50000);
+
 document.addEventListener('DOMContentLoaded', function() {
     const savedTheme = localStorage.getItem('theme') || 'light';
     setTheme(savedTheme);

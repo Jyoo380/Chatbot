@@ -229,3 +229,17 @@ input[type="file"] {
     margin-top: 10px;
     border-radius: 4px;
 }
+/* Default background */
+body {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    transition: background 0.5s ease;
+}
+
+/* Additional backgrounds */
+body.background-1 {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+body.background-2 {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+}
