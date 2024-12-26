@@ -4,7 +4,8 @@ from flask_limiter.util import get_remote_address
 from flask_seasurf import SeaSurf
 from werkzeug.utils import secure_filename
 from document_processor import extract_text_from_pdf
-from transformers import pipeline, RagTokenizer, RagRetriever, RagSequenceForGeneration
+from transformers import pipeline
+from docx import Document
 import os
 import hashlib
 import secrets
@@ -22,7 +23,6 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Get the absolute path to the project root directory
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 app = Flask(__name__,
@@ -35,7 +35,7 @@ app.config.update(
     MAX_CONTENT_LENGTH=16 * 1024 * 1024,  # 16MB max file size
     SECRET_KEY=secrets.token_hex(32),
     UPLOAD_FOLDER=os.path.join(ROOT_DIR, "temp"),
-    ALLOWED_EXTENSIONS={'pdf'},
+    ALLOWED_EXTENSIONS={'pdf', 'docx'},
     SESSION_COOKIE_SECURE=False,
     SESSION_COOKIE_HTTPONLY=True,
     SESSION_COOKIE_SAMESITE='Lax',
@@ -44,7 +44,6 @@ app.config.update(
     WTF_CSRF_SSL_STRICT=True
 )
 
-# Initialize security extensions
 csrf = SeaSurf(app)
 
 # Add CSRF error handler
@@ -55,7 +54,6 @@ def csrf_error(reason):
         "error": "CSRF validation failed. Please refresh the page and try again."
     }), 400
 
-# Initialize rate limiter
 limiter = Limiter(
     app=app,
     key_func=get_remote_address,
@@ -63,12 +61,11 @@ limiter = Limiter(
     storage_uri="memory://"
 )
 
-# Create temp directory if it doesn't exist
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
-# Load the question-answering model
+# Load a lightweight question-answering model
 try:
-    qa_pipeline = pipeline("question-answering", model="deepset/roberta-base-squad2")
+    qa_pipeline = pipeline("question-answering", model="distilbert-base-uncased-distilled-squad")
     logger.info("Successfully loaded QA model")
 except Exception as e:
     logger.error(f"Error loading QA model: {str(e)}")
@@ -82,48 +79,28 @@ except Exception as e:
     logger.error(f"Error loading summarization model: {str(e)}")
     summarizer = None
 
-# Load RAG components
-try:
-    tokenizer = RagTokenizer.from_pretrained("facebook/rag-sequence-nq")
-    retriever = RagRetriever.from_pretrained("facebook/rag-sequence-nq", index_name="exact", passages_path="path/to/passages")
-    rag_model = RagSequenceForGeneration.from_pretrained("facebook/rag-sequence-nq", retriever=retriever)
-    logger.info("Successfully loaded RAG model")
-except Exception as e:
-    logger.error(f"Error loading RAG model: {str(e)}")
-    rag_model = None
-
 def secure_temp_file(filename):
     """Generate secure temporary filename."""
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     hash_name = hashlib.sha256(
         f"{filename}{secrets.token_hex(16)}{timestamp}".encode()
     ).hexdigest()
-    return f"{hash_name}.pdf"
+    return f"{hash_name}"
 
 def validate_file(file):
     """Validate file type and content."""
     if not file or file.filename == '':
         return False, "No file selected"
     
-    # Check file extension
-    if not file.filename.lower().endswith('.pdf'):
-        return False, "Only PDF files are supported"
+    if not file.filename.lower().endswith(('.pdf', '.docx')):
+        return False, "Only PDF and DOCX files are supported"
     
     return True, None
 
-def detect_hallucination_rag(question, context):
-    """Detect hallucination using RAG."""
-    if not rag_model:
-        logger.error("RAG model not available")
-        return False
-
-    inputs = tokenizer(question, return_tensors="pt")
-    outputs = rag_model.generate(**inputs, num_return_sequences=1, num_beams=2)
-    generated_answer = tokenizer.batch_decode(outputs, skip_special_tokens=True)[0]
-
-    # Compare generated answer with context
-    similarity = util.pytorch_cos_sim(generated_answer, context).item()
-    return similarity < 0.5  # Threshold for hallucination
+def extract_text_from_docx(docx_path):
+    """Extract text from a DOCX file."""
+    doc = Document(docx_path)
+    return "\n".join([para.text for para in doc.paragraphs])
 
 @app.route('/')
 def index():
@@ -137,7 +114,7 @@ def index():
 @app.route('/upload', methods=['POST'])
 @limiter.limit("10 per minute")
 def upload_file():
-    """Handle file upload and process the PDF."""
+    """Handle file upload and process the PDF or DOCX."""
     if 'file' not in request.files:
         return jsonify({"error": "No file part"}), 400
 
@@ -148,17 +125,18 @@ def upload_file():
         return jsonify({"error": error_message}), 400
 
     try:
-        # Generate secure filename and save
         secure_name = secure_temp_file(file.filename)
-        pdf_path = os.path.join(app.config['UPLOAD_FOLDER'], secure_name)
-        file.save(pdf_path)
+        file_path = os.path.join(app.config['UPLOAD_FOLDER'], secure_name)
+        file.save(file_path)
         logger.info(f"File saved successfully: {secure_name}")
 
-        # Extract text from the PDF
-        text = extract_text_from_pdf(pdf_path)
+        if file.filename.lower().endswith('.pdf'):
+            text = extract_text_from_pdf(file_path)
+        else:
+            text = extract_text_from_docx(file_path)
         
         if not text.strip():
-            return jsonify({"error": "No text could be extracted from the PDF"}), 400
+            return jsonify({"error": "No text could be extracted from the document"}), 400
 
         return jsonify({
             "message": "File processed successfully",
@@ -170,10 +148,9 @@ def upload_file():
         return jsonify({"error": str(e)}), 500
 
     finally:
-        # Clean up the temporary file
-        if 'pdf_path' in locals() and os.path.exists(pdf_path):
+        if 'file_path' in locals() and os.path.exists(file_path):
             try:
-                os.remove(pdf_path)
+                os.remove(file_path)
                 logger.info(f"Temporary file removed: {secure_name}")
             except Exception as e:
                 logger.error(f"Error removing temporary file: {str(e)}")
@@ -196,13 +173,11 @@ def ask_question():
         if not question or not context:
             return jsonify({"error": "Question and context are required"}), 400
 
-        # Validate input lengths
         if len(question) > 1000:
             return jsonify({"error": "Question too long (max 1000 characters)"}), 400
         if len(context) > 100000:
             return jsonify({"error": "Context too long (max 100000 characters)"}), 400
 
-        # Validate for potentially malicious characters
         injection_characters = [
             "'", "\"", "--", "/*", "*/", ";", "(", ")", "=", "<", ">", "!=",
             "LIKE", "UNION", "||", "\\", "|", "&", "`", "$", "*", "[", "]",
@@ -214,13 +189,12 @@ def ask_question():
 
         logger.debug(f"Processing question: {question}")
         
-        # Get answer from model
         try:
             answer = qa_pipeline(question=question, context=context)
             logger.debug(f"Generated answer: {answer}")
 
-            # Check for hallucination using RAG
-            if detect_hallucination_rag(question, context):
+            # Simple consistency check
+            if answer['score'] < 0.2:
                 logger.warning("Potential hallucination detected.")
                 return jsonify({
                     "answer": answer['answer'],
@@ -258,7 +232,6 @@ def summarize_document():
         if not context:
             return jsonify({"error": "Context is required for summarization"}), 400
 
-        # Summarize the document
         summary = summarizer(context, max_length=130, min_length=30, do_sample=False)
         logger.debug(f"Generated summary: {summary}")
 
@@ -278,7 +251,6 @@ def health_check():
         "model": "loaded"
     }), 200
 
-# Error handlers
 @app.errorhandler(404)
 def not_found_error(error):
     return jsonify({"error": "Resource not found"}), 404
