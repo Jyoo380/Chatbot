@@ -47,8 +47,8 @@ async function uploadPDF() {
         return;
     }
 
-    if (!file.name.toLowerCase().endsWith('.pdf')) {
-        showError('Please select a PDF file');
+    if (!file.name.toLowerCase().endsWith('.pdf') && !file.name.toLowerCase().endsWith('.docx')) {
+        showError('Please select a PDF or DOCX file');
         return;
     }
 

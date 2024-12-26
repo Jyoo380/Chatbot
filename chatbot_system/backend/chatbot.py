@@ -65,7 +65,7 @@ os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
 # Load a lightweight question-answering model
 try:
-    qa_pipeline = pipeline("question-answering", model="distilbert-base-uncased-distilled-squad")
+    qa_pipeline = pipeline("question-answering", model="deepset/roberta-base-squad2")
     logger.info("Successfully loaded QA model")
 except Exception as e:
     logger.error(f"Error loading QA model: {str(e)}")
@@ -92,7 +92,8 @@ def validate_file(file):
     if not file or file.filename == '':
         return False, "No file selected"
     
-    if not file.filename.lower().endswith(('.pdf', '.docx')):
+    # Ensure the file extension check is correct
+    if not file.filename.lower().endswith(tuple(app.config['ALLOWED_EXTENSIONS'])):
         return False, "Only PDF and DOCX files are supported"
     
     return True, None
