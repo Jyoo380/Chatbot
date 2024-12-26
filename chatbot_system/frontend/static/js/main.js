@@ -199,6 +199,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+
+function changeBackground() {
+    const randomNumber = Math.floor(Math.random() * 6) + 1; // Update the number based on the total number of backgrounds
+    document.body.className = `background-${randomNumber}`;
+}
+
+// Call the changeBackground function every 10 seconds to change the background dynamically
+setInterval(changeBackground, 30000); // Change every 10 seconds (10000 milliseconds)
+
 async function summarizeDocument() {
     const summaryDiv = document.getElementById('summary');
     summaryDiv.className = 'summary-section loading';

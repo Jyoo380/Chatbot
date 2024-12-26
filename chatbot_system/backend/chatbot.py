@@ -182,7 +182,7 @@ def ask_question():
         injection_characters = [
             "'", "\"", "--", "/*", "*/", ";", "(", ")", "=", "<", ">", "!=",
             "LIKE", "UNION", "||", "\\", "|", "&", "`", "$", "*", "[", "]",
-            "&&", ">", ">>", "\r", "\n", "{", "}", ":", ","
+            "&&", ">", ">>", "\r", "\n", "{", "}", ":"
         ]
         if any(char in question for char in injection_characters):
             logger.warning(f"Malicious input detected in question: {question}")
@@ -193,6 +193,7 @@ def ask_question():
         try:
             answer = qa_pipeline(question=question, context=context)
             logger.debug(f"Generated answer: {answer}")
+            print(answer['score'], "score check!")
 
             # Simple consistency check
             if answer['score'] < 0.2:
