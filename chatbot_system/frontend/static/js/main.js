@@ -41,7 +41,7 @@ function showLoading(message = 'Processing...') {
 async function uploadPDF() {
     const fileInput = document.getElementById('pdfFile');
     const file = fileInput.files[0];
-   
+
     if (!file) {
         showError('Please select a file first!');
         return;
@@ -61,7 +61,7 @@ async function uploadPDF() {
         const response = await fetch('/upload', {
             method: 'POST',
             headers: {
-                'X-CSRFToken': getCSRFToken()
+                'X-CSRFToken': getCSRFToken()  // Ensure this function retrieves the correct token
             },
             body: formData,
             credentials: 'same-origin'
@@ -69,10 +69,10 @@ async function uploadPDF() {
 
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         const data = await response.json();
-       
+
         documentText = data.text;
         document.getElementById('documentContent').textContent = documentText;
-       
+
         const chatSection = document.querySelector('.chat-section');
         chatSection.style.opacity = '0';
         chatSection.style.display = 'block';
@@ -83,12 +83,13 @@ async function uploadPDF() {
 
         showSuccess('File uploaded successfully!');
         document.getElementById('questionInput').focus();
-       
+
     } catch (error) {
         showError('Upload failed: ' + error.message);
         console.error('Upload error:', error);
     }
 }
+
 
 async function askQuestion() {
     const questionInput = document.getElementById('questionInput');
@@ -123,10 +124,12 @@ async function askQuestion() {
         if (response.ok) {
             answerDiv.className = 'answer-section';
             const confidencePercentage = (data.confidence * 100).toFixed(1);
+            let warningMessage = data.warning ? `<p class="warning-text">${data.warning}</p>` : '';
             answerDiv.innerHTML = `
                 <div class="answer-content">
                     <p class="answer-text">${data.answer}</p>
                     <div class="confidence-score">Confidence: ${confidencePercentage}%</div>
+                    ${warningMessage}
                 </div>
             `;
             questionInput.value = '';
