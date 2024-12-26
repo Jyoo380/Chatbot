@@ -47,8 +47,8 @@ async function uploadPDF() {
         return;
     }
 
-    if (!file.name.toLowerCase().endsWith('.pdf')) {
-        showError('Please select a PDF file');
+    if (!file.name.toLowerCase().endsWith('.pdf') && !file.name.toLowerCase().endsWith('.docx')) {
+        showError('Please select a PDF or DOCX file');
         return;
     }
 
@@ -199,3 +199,40 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+async function summarizeDocument() {
+    const summaryDiv = document.getElementById('summary');
+    summaryDiv.className = 'summary-section loading';
+    summaryDiv.textContent = 'Summarizing...';
+
+    try {
+        const response = await fetch('/summarize', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': getCSRFToken()
+            },
+            body: JSON.stringify({
+                context: documentText
+            })
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            summaryDiv.className = 'summary-section';
+            summaryDiv.innerHTML = `
+                <div class="summary-content">
+                    <p class="summary-text">${data.summary}</p>
+                </div>
+            `;
+            summaryDiv.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            summaryDiv.className = 'summary-section error-message';
+            summaryDiv.textContent = data.error || 'Error getting summary';
+        }
+    } catch (error) {
+        summaryDiv.className = 'summary-section error-message';
+        summaryDiv.textContent = 'Error getting summary: ' + error.message;
+        console.error('Summary error:', error);
+    }
+}

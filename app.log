@@ -2052,3 +2052,1478 @@ A detailed migration guide is available here: https://github.com/openai/openai-p
 2024-12-26 02:11:57,012 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:11:57] "POST /ask HTTP/1.1" 200 -
 2024-12-26 02:12:07,808 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:12:07] "POST /ask HTTP/1.1" 200 -
 2024-12-26 02:12:14,992 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:12:14] "POST /ask HTTP/1.1" 200 -
+2024-12-26 07:52:28,937 - __main__ - INFO - Successfully loaded QA model
+2024-12-26 07:59:26,145 - __main__ - INFO - Successfully loaded QA model
+2024-12-26 08:02:15,735 - __main__ - INFO - Successfully loaded summarization model
+2024-12-26 08:02:15,738 - __main__ - INFO - Starting application...
+2024-12-26 08:02:15,738 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 08:02:15,738 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 08:02:15,738 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 08:02:15,758 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-26 08:02:15,758 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-26 08:02:15,761 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 08:02:17,165 - __mp_main__ - INFO - Successfully loaded QA model
+2024-12-26 08:02:18,986 - __mp_main__ - ERROR - Error loading summarization model: Could not load model sshleifer/distilbart-cnn-12-6 with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForSeq2SeqLM'>, <class 'transformers.models.bart.modeling_bart.BartForConditionalGeneration'>). See the original errors:
+
+while loading with AutoModelForSeq2SeqLM, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3897, in from_pretrained
+    ).start()
+      ^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 337, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 164, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 140, in _check_not_importing_main
+    raise RuntimeError('''
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+
+        To fix this issue, refer to the "Safe importing of main module"
+        section in https://docs.python.org/3/library/multiprocessing.html
+        
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\base.py", line 289, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\models\auto\auto_factory.py", line 564, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3941, in from_pretrained
+    raise EnvironmentError(
+OSError: Can't load the model for 'sshleifer/distilbart-cnn-12-6'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sshleifer/distilbart-cnn-12-6' is the correct path to a directory containing a file named pytorch_model.bin, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+while loading with BartForConditionalGeneration, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3897, in from_pretrained
+    ).start()
+      ^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 337, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 164, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 140, in _check_not_importing_main
+    raise RuntimeError('''
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+
+        To fix this issue, refer to the "Safe importing of main module"
+        section in https://docs.python.org/3/library/multiprocessing.html
+        
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\base.py", line 289, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3941, in from_pretrained
+    raise EnvironmentError(
+OSError: Can't load the model for 'sshleifer/distilbart-cnn-12-6'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sshleifer/distilbart-cnn-12-6' is the correct path to a directory containing a file named pytorch_model.bin, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+
+
+2024-12-26 08:02:20,786 - __main__ - INFO - Successfully loaded QA model
+2024-12-26 08:02:22,254 - __main__ - INFO - Successfully loaded summarization model
+2024-12-26 08:02:22,256 - __main__ - INFO - Starting application...
+2024-12-26 08:02:22,256 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 08:02:22,256 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 08:02:22,256 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 08:02:22,261 - werkzeug - WARNING -  * Debugger is active!
+2024-12-26 08:02:22,265 - werkzeug - INFO -  * Debugger PIN: 921-300-071
+2024-12-26 08:02:26,585 - __mp_main__ - INFO - Successfully loaded QA model
+2024-12-26 08:02:27,562 - __mp_main__ - ERROR - Error loading summarization model: Could not load model sshleifer/distilbart-cnn-12-6 with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForSeq2SeqLM'>, <class 'transformers.models.bart.modeling_bart.BartForConditionalGeneration'>). See the original errors:
+
+while loading with AutoModelForSeq2SeqLM, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3897, in from_pretrained
+    ).start()
+      ^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 337, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 164, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 140, in _check_not_importing_main
+    raise RuntimeError('''
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+
+        To fix this issue, refer to the "Safe importing of main module"
+        section in https://docs.python.org/3/library/multiprocessing.html
+        
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\base.py", line 289, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\models\auto\auto_factory.py", line 564, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3941, in from_pretrained
+    raise EnvironmentError(
+OSError: Can't load the model for 'sshleifer/distilbart-cnn-12-6'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sshleifer/distilbart-cnn-12-6' is the correct path to a directory containing a file named pytorch_model.bin, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+while loading with BartForConditionalGeneration, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3897, in from_pretrained
+    ).start()
+      ^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 337, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 164, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 140, in _check_not_importing_main
+    raise RuntimeError('''
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+
+        To fix this issue, refer to the "Safe importing of main module"
+        section in https://docs.python.org/3/library/multiprocessing.html
+        
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\base.py", line 289, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3941, in from_pretrained
+    raise EnvironmentError(
+OSError: Can't load the model for 'sshleifer/distilbart-cnn-12-6'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sshleifer/distilbart-cnn-12-6' is the correct path to a directory containing a file named pytorch_model.bin, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+
+
+2024-12-26 08:17:09,447 - __main__ - INFO - Successfully loaded QA model
+2024-12-26 08:17:11,671 - __main__ - INFO - Successfully loaded summarization model
+2024-12-26 08:17:16,466 - __main__ - ERROR - Error loading RAG model: The repository for wiki_dpr contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/wiki_dpr.
+Please pass the argument `trust_remote_code=True` to allow custom code to be run.
+2024-12-26 08:17:16,474 - __main__ - INFO - Starting application...
+2024-12-26 08:17:16,475 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 08:17:16,475 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 08:17:16,475 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 08:17:16,485 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-26 08:17:16,486 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-26 08:17:16,487 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 08:17:17,037 - __mp_main__ - INFO - Successfully loaded QA model
+2024-12-26 08:17:18,435 - __mp_main__ - ERROR - Error loading summarization model: Could not load model sshleifer/distilbart-cnn-12-6 with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForSeq2SeqLM'>, <class 'transformers.models.bart.modeling_bart.BartForConditionalGeneration'>). See the original errors:
+
+while loading with AutoModelForSeq2SeqLM, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3897, in from_pretrained
+    ).start()
+      ^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 337, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 164, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 140, in _check_not_importing_main
+    raise RuntimeError('''
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+
+        To fix this issue, refer to the "Safe importing of main module"
+        section in https://docs.python.org/3/library/multiprocessing.html
+        
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\base.py", line 289, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\models\auto\auto_factory.py", line 564, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3941, in from_pretrained
+    raise EnvironmentError(
+OSError: Can't load the model for 'sshleifer/distilbart-cnn-12-6'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sshleifer/distilbart-cnn-12-6' is the correct path to a directory containing a file named pytorch_model.bin, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+while loading with BartForConditionalGeneration, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3897, in from_pretrained
+    ).start()
+      ^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 337, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 164, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 140, in _check_not_importing_main
+    raise RuntimeError('''
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+
+        To fix this issue, refer to the "Safe importing of main module"
+        section in https://docs.python.org/3/library/multiprocessing.html
+        
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\base.py", line 289, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3941, in from_pretrained
+    raise EnvironmentError(
+OSError: Can't load the model for 'sshleifer/distilbart-cnn-12-6'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sshleifer/distilbart-cnn-12-6' is the correct path to a directory containing a file named pytorch_model.bin, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+
+
+2024-12-26 08:17:23,369 - __main__ - INFO - Successfully loaded QA model
+2024-12-26 08:17:23,511 - __mp_main__ - ERROR - Error loading RAG model: The repository for wiki_dpr contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/wiki_dpr.
+Please pass the argument `trust_remote_code=True` to allow custom code to be run.
+2024-12-26 08:17:26,298 - __main__ - INFO - Successfully loaded summarization model
+2024-12-26 08:17:30,927 - __main__ - ERROR - Error loading RAG model: The repository for wiki_dpr contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/wiki_dpr.
+Please pass the argument `trust_remote_code=True` to allow custom code to be run.
+2024-12-26 08:17:30,936 - __main__ - INFO - Starting application...
+2024-12-26 08:17:30,936 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 08:17:30,936 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 08:17:30,936 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 08:17:30,941 - werkzeug - WARNING -  * Debugger is active!
+2024-12-26 08:17:30,944 - werkzeug - INFO -  * Debugger PIN: 921-300-071
+2024-12-26 08:17:31,383 - __mp_main__ - INFO - Successfully loaded QA model
+2024-12-26 08:17:33,571 - __mp_main__ - ERROR - Error loading summarization model: Could not load model sshleifer/distilbart-cnn-12-6 with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForSeq2SeqLM'>, <class 'transformers.models.bart.modeling_bart.BartForConditionalGeneration'>). See the original errors:
+
+while loading with AutoModelForSeq2SeqLM, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3897, in from_pretrained
+    ).start()
+      ^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 337, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 164, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 140, in _check_not_importing_main
+    raise RuntimeError('''
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+
+        To fix this issue, refer to the "Safe importing of main module"
+        section in https://docs.python.org/3/library/multiprocessing.html
+        
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\base.py", line 289, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\models\auto\auto_factory.py", line 564, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3941, in from_pretrained
+    raise EnvironmentError(
+OSError: Can't load the model for 'sshleifer/distilbart-cnn-12-6'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sshleifer/distilbart-cnn-12-6' is the correct path to a directory containing a file named pytorch_model.bin, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+while loading with BartForConditionalGeneration, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3897, in from_pretrained
+    ).start()
+      ^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 337, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 164, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 140, in _check_not_importing_main
+    raise RuntimeError('''
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+
+        To fix this issue, refer to the "Safe importing of main module"
+        section in https://docs.python.org/3/library/multiprocessing.html
+        
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\base.py", line 289, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3941, in from_pretrained
+    raise EnvironmentError(
+OSError: Can't load the model for 'sshleifer/distilbart-cnn-12-6'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sshleifer/distilbart-cnn-12-6' is the correct path to a directory containing a file named pytorch_model.bin, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+
+
+2024-12-26 08:17:37,590 - __mp_main__ - ERROR - Error loading RAG model: The repository for wiki_dpr contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/wiki_dpr.
+Please pass the argument `trust_remote_code=True` to allow custom code to be run.
+2024-12-26 08:26:50,737 - __main__ - INFO - Successfully loaded QA model
+2024-12-26 08:26:53,265 - __main__ - INFO - Successfully loaded summarization model
+2024-12-26 08:26:53,267 - __main__ - INFO - Starting application...
+2024-12-26 08:26:53,267 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 08:26:53,267 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 08:26:53,267 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 08:26:53,276 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-26 08:26:53,276 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-26 08:26:53,278 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 08:26:57,344 - __mp_main__ - INFO - Successfully loaded QA model
+2024-12-26 08:26:58,305 - __mp_main__ - ERROR - Error loading summarization model: Could not load model sshleifer/distilbart-cnn-12-6 with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForSeq2SeqLM'>, <class 'transformers.models.bart.modeling_bart.BartForConditionalGeneration'>). See the original errors:
+
+while loading with AutoModelForSeq2SeqLM, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3897, in from_pretrained
+    ).start()
+      ^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 337, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 164, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 140, in _check_not_importing_main
+    raise RuntimeError('''
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+
+        To fix this issue, refer to the "Safe importing of main module"
+        section in https://docs.python.org/3/library/multiprocessing.html
+        
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\base.py", line 289, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\models\auto\auto_factory.py", line 564, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3941, in from_pretrained
+    raise EnvironmentError(
+OSError: Can't load the model for 'sshleifer/distilbart-cnn-12-6'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sshleifer/distilbart-cnn-12-6' is the correct path to a directory containing a file named pytorch_model.bin, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+while loading with BartForConditionalGeneration, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3897, in from_pretrained
+    ).start()
+      ^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 337, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 164, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 140, in _check_not_importing_main
+    raise RuntimeError('''
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+
+        To fix this issue, refer to the "Safe importing of main module"
+        section in https://docs.python.org/3/library/multiprocessing.html
+        
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\base.py", line 289, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3941, in from_pretrained
+    raise EnvironmentError(
+OSError: Can't load the model for 'sshleifer/distilbart-cnn-12-6'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sshleifer/distilbart-cnn-12-6' is the correct path to a directory containing a file named pytorch_model.bin, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+
+
+2024-12-26 08:26:59,089 - __main__ - INFO - Successfully loaded QA model
+2024-12-26 08:27:01,351 - __main__ - INFO - Successfully loaded summarization model
+2024-12-26 08:27:01,353 - __main__ - INFO - Starting application...
+2024-12-26 08:27:01,353 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 08:27:01,353 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 08:27:01,354 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 08:27:01,358 - werkzeug - WARNING -  * Debugger is active!
+2024-12-26 08:27:01,361 - werkzeug - INFO -  * Debugger PIN: 921-300-071
+2024-12-26 08:27:05,244 - __mp_main__ - INFO - Successfully loaded QA model
+2024-12-26 08:27:06,233 - __mp_main__ - ERROR - Error loading summarization model: Could not load model sshleifer/distilbart-cnn-12-6 with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForSeq2SeqLM'>, <class 'transformers.models.bart.modeling_bart.BartForConditionalGeneration'>). See the original errors:
+
+while loading with AutoModelForSeq2SeqLM, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3897, in from_pretrained
+    ).start()
+      ^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 337, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 164, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 140, in _check_not_importing_main
+    raise RuntimeError('''
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+
+        To fix this issue, refer to the "Safe importing of main module"
+        section in https://docs.python.org/3/library/multiprocessing.html
+        
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\base.py", line 289, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\models\auto\auto_factory.py", line 564, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3941, in from_pretrained
+    raise EnvironmentError(
+OSError: Can't load the model for 'sshleifer/distilbart-cnn-12-6'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sshleifer/distilbart-cnn-12-6' is the correct path to a directory containing a file named pytorch_model.bin, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+while loading with BartForConditionalGeneration, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3897, in from_pretrained
+    ).start()
+      ^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 337, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 164, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 140, in _check_not_importing_main
+    raise RuntimeError('''
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+
+        To fix this issue, refer to the "Safe importing of main module"
+        section in https://docs.python.org/3/library/multiprocessing.html
+        
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\base.py", line 289, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3941, in from_pretrained
+    raise EnvironmentError(
+OSError: Can't load the model for 'sshleifer/distilbart-cnn-12-6'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sshleifer/distilbart-cnn-12-6' is the correct path to a directory containing a file named pytorch_model.bin, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+
+
+2024-12-26 08:32:31,181 - __main__ - INFO - Successfully loaded QA model
+2024-12-26 08:32:32,856 - __main__ - INFO - Successfully loaded summarization model
+2024-12-26 08:32:32,858 - __main__ - INFO - Starting application...
+2024-12-26 08:32:32,858 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 08:32:32,858 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 08:32:32,858 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 08:32:32,873 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-26 08:32:32,873 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-26 08:32:32,874 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 08:32:37,245 - __mp_main__ - INFO - Successfully loaded QA model
+2024-12-26 08:32:38,229 - __mp_main__ - ERROR - Error loading summarization model: Could not load model sshleifer/distilbart-cnn-12-6 with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForSeq2SeqLM'>, <class 'transformers.models.bart.modeling_bart.BartForConditionalGeneration'>). See the original errors:
+
+while loading with AutoModelForSeq2SeqLM, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3897, in from_pretrained
+    ).start()
+      ^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 337, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 164, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 140, in _check_not_importing_main
+    raise RuntimeError('''
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+
+        To fix this issue, refer to the "Safe importing of main module"
+        section in https://docs.python.org/3/library/multiprocessing.html
+        
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\base.py", line 289, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\models\auto\auto_factory.py", line 564, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3941, in from_pretrained
+    raise EnvironmentError(
+OSError: Can't load the model for 'sshleifer/distilbart-cnn-12-6'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sshleifer/distilbart-cnn-12-6' is the correct path to a directory containing a file named pytorch_model.bin, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+while loading with BartForConditionalGeneration, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3897, in from_pretrained
+    ).start()
+      ^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 337, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 164, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 140, in _check_not_importing_main
+    raise RuntimeError('''
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+
+        To fix this issue, refer to the "Safe importing of main module"
+        section in https://docs.python.org/3/library/multiprocessing.html
+        
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\base.py", line 289, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3941, in from_pretrained
+    raise EnvironmentError(
+OSError: Can't load the model for 'sshleifer/distilbart-cnn-12-6'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sshleifer/distilbart-cnn-12-6' is the correct path to a directory containing a file named pytorch_model.bin, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+
+
+2024-12-26 08:32:38,352 - __main__ - INFO - Successfully loaded QA model
+2024-12-26 08:32:40,317 - __main__ - INFO - Successfully loaded summarization model
+2024-12-26 08:32:40,319 - __main__ - INFO - Starting application...
+2024-12-26 08:32:40,320 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 08:32:40,320 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 08:32:40,320 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 08:32:40,326 - werkzeug - WARNING -  * Debugger is active!
+2024-12-26 08:32:40,330 - werkzeug - INFO -  * Debugger PIN: 921-300-071
+2024-12-26 08:32:40,348 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:32:40] "GET / HTTP/1.1" 200 -
+2024-12-26 08:32:40,461 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:32:40] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-26 08:32:40,464 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:32:40] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-12-26 08:32:40,519 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:32:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-26 08:32:44,384 - __main__ - INFO - File saved successfully: 9f6a949a5f2529d4dcbd12ea03214ca74c1918369c5ee69fe45d1e4afc1a8f99
+2024-12-26 08:32:44,411 - __main__ - INFO - Temporary file removed: 9f6a949a5f2529d4dcbd12ea03214ca74c1918369c5ee69fe45d1e4afc1a8f99
+2024-12-26 08:32:44,411 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:32:44] "POST /upload HTTP/1.1" 200 -
+2024-12-26 08:32:45,303 - __mp_main__ - INFO - Successfully loaded QA model
+2024-12-26 08:32:46,768 - __mp_main__ - ERROR - Error loading summarization model: Could not load model sshleifer/distilbart-cnn-12-6 with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForSeq2SeqLM'>, <class 'transformers.models.bart.modeling_bart.BartForConditionalGeneration'>). See the original errors:
+
+while loading with AutoModelForSeq2SeqLM, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3897, in from_pretrained
+    ).start()
+      ^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 337, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 164, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 140, in _check_not_importing_main
+    raise RuntimeError('''
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+
+        To fix this issue, refer to the "Safe importing of main module"
+        section in https://docs.python.org/3/library/multiprocessing.html
+        
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\base.py", line 289, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\models\auto\auto_factory.py", line 564, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3941, in from_pretrained
+    raise EnvironmentError(
+OSError: Can't load the model for 'sshleifer/distilbart-cnn-12-6'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sshleifer/distilbart-cnn-12-6' is the correct path to a directory containing a file named pytorch_model.bin, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+while loading with BartForConditionalGeneration, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3897, in from_pretrained
+    ).start()
+      ^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 337, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 164, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 140, in _check_not_importing_main
+    raise RuntimeError('''
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+
+        To fix this issue, refer to the "Safe importing of main module"
+        section in https://docs.python.org/3/library/multiprocessing.html
+        
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\base.py", line 289, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3941, in from_pretrained
+    raise EnvironmentError(
+OSError: Can't load the model for 'sshleifer/distilbart-cnn-12-6'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sshleifer/distilbart-cnn-12-6' is the correct path to a directory containing a file named pytorch_model.bin, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+
+
+2024-12-26 08:32:55,497 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:32:55] "POST /summarize HTTP/1.1" 200 -
+2024-12-26 08:33:29,919 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:33:29] "POST /ask HTTP/1.1" 200 -
+2024-12-26 08:33:43,169 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:33:43] "POST /ask HTTP/1.1" 200 -
+2024-12-26 08:33:47,079 - __main__ - WARNING - Potential hallucination detected.
+2024-12-26 08:33:47,079 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:33:47] "POST /ask HTTP/1.1" 200 -
+2024-12-26 08:33:47,082 - __main__ - WARNING - Potential hallucination detected.
+2024-12-26 08:33:47,082 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:33:47] "POST /ask HTTP/1.1" 200 -
+2024-12-26 08:34:01,863 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:34:01] "POST /ask HTTP/1.1" 200 -
+2024-12-26 08:34:01,865 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:34:01] "POST /ask HTTP/1.1" 200 -
+2024-12-26 08:34:12,468 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:34:12] "POST /ask HTTP/1.1" 200 -
+2024-12-26 08:34:12,476 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:34:12] "POST /ask HTTP/1.1" 200 -
+2024-12-26 08:35:18,557 - __main__ - INFO - File saved successfully: 9aed9200426ae7e1cba349afc05d7bf424a370f72027381f47567059939c0d0b
+2024-12-26 08:35:18,885 - __main__ - INFO - Temporary file removed: 9aed9200426ae7e1cba349afc05d7bf424a370f72027381f47567059939c0d0b
+2024-12-26 08:35:18,885 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:35:18] "POST /upload HTTP/1.1" 200 -
+2024-12-26 08:35:28,342 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:35:28] "POST /ask HTTP/1.1" 200 -
+2024-12-26 08:35:28,344 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:35:28] "POST /ask HTTP/1.1" 200 -
+2024-12-26 08:35:39,992 - __main__ - WARNING - Potential hallucination detected.
+2024-12-26 08:35:39,994 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:35:39] "POST /ask HTTP/1.1" 200 -
+2024-12-26 08:35:40,039 - __main__ - WARNING - Potential hallucination detected.
+2024-12-26 08:35:40,040 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:35:40] "POST /ask HTTP/1.1" 200 -
+2024-12-26 08:38:50,002 - werkzeug - INFO -  * Detected change in 'D:\\Chatbot\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-26 08:38:51,173 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 08:39:00,181 - __main__ - INFO - Successfully loaded QA model
+2024-12-26 08:39:03,303 - __main__ - INFO - Successfully loaded summarization model
+2024-12-26 08:39:03,308 - __main__ - INFO - Starting application...
+2024-12-26 08:39:03,309 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 08:39:03,309 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 08:39:03,310 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 08:39:03,318 - werkzeug - WARNING -  * Debugger is active!
+2024-12-26 08:39:03,324 - werkzeug - INFO -  * Debugger PIN: 921-300-071
+2024-12-26 08:39:04,296 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:39:04] "GET / HTTP/1.1" 200 -
+2024-12-26 08:39:04,533 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:39:04] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-26 08:39:04,536 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:39:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 08:39:08,997 - __main__ - INFO - File saved successfully: ee51ed760ff7f894da378e5cfeaa24a81697de10d64e7d47eaf1115dd151cf01
+2024-12-26 08:39:09,394 - __main__ - INFO - Temporary file removed: ee51ed760ff7f894da378e5cfeaa24a81697de10d64e7d47eaf1115dd151cf01
+2024-12-26 08:39:09,395 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:39:09] "POST /upload HTTP/1.1" 200 -
+2024-12-26 08:39:10,928 - __mp_main__ - INFO - Successfully loaded QA model
+2024-12-26 08:39:11,758 - __main__ - ERROR - Summarization error: index out of range in self
+2024-12-26 08:39:11,762 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:39:11] "[35m[1mPOST /summarize HTTP/1.1[0m" 500 -
+2024-12-26 08:39:11,923 - __mp_main__ - ERROR - Error loading summarization model: Could not load model sshleifer/distilbart-cnn-12-6 with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForSeq2SeqLM'>, <class 'transformers.models.bart.modeling_bart.BartForConditionalGeneration'>). See the original errors:
+
+while loading with AutoModelForSeq2SeqLM, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3897, in from_pretrained
+    ).start()
+      ^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 337, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 164, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 140, in _check_not_importing_main
+    raise RuntimeError('''
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+
+        To fix this issue, refer to the "Safe importing of main module"
+        section in https://docs.python.org/3/library/multiprocessing.html
+        
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\base.py", line 289, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\models\auto\auto_factory.py", line 564, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3941, in from_pretrained
+    raise EnvironmentError(
+OSError: Can't load the model for 'sshleifer/distilbart-cnn-12-6'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sshleifer/distilbart-cnn-12-6' is the correct path to a directory containing a file named pytorch_model.bin, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+while loading with BartForConditionalGeneration, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3897, in from_pretrained
+    ).start()
+      ^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 337, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 164, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 140, in _check_not_importing_main
+    raise RuntimeError('''
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+
+        To fix this issue, refer to the "Safe importing of main module"
+        section in https://docs.python.org/3/library/multiprocessing.html
+        
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\base.py", line 289, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3941, in from_pretrained
+    raise EnvironmentError(
+OSError: Can't load the model for 'sshleifer/distilbart-cnn-12-6'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sshleifer/distilbart-cnn-12-6' is the correct path to a directory containing a file named pytorch_model.bin, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+
+
+2024-12-26 08:39:22,858 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:39:22] "POST /ask HTTP/1.1" 200 -
+2024-12-26 08:39:33,455 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:39:33] "POST /ask HTTP/1.1" 200 -
+2024-12-26 08:39:41,999 - __main__ - INFO - File saved successfully: eb9d405514bfe12067ed456dce9d21a80664f96f907946afb0505d6180403329
+2024-12-26 08:39:42,050 - __main__ - INFO - Temporary file removed: eb9d405514bfe12067ed456dce9d21a80664f96f907946afb0505d6180403329
+2024-12-26 08:39:42,051 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:39:42] "POST /upload HTTP/1.1" 200 -
+2024-12-26 08:39:51,834 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:39:51] "POST /summarize HTTP/1.1" 200 -
+2024-12-26 08:44:13,150 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:44:13] "GET / HTTP/1.1" 200 -
+2024-12-26 08:44:13,245 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:44:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 08:44:13,245 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:44:13] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-26 08:45:17,498 - werkzeug - INFO -  * Detected change in 'D:\\Chatbot\\Chatbot\\chatbot_system\\backend\\chatbot.py', reloading
+2024-12-26 08:45:18,820 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 08:45:27,712 - __main__ - INFO - Successfully loaded QA model
+2024-12-26 08:45:30,263 - __main__ - INFO - Successfully loaded summarization model
+2024-12-26 08:45:30,266 - __main__ - INFO - Starting application...
+2024-12-26 08:45:30,266 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 08:45:30,267 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 08:45:30,267 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 08:45:30,295 - werkzeug - WARNING -  * Debugger is active!
+2024-12-26 08:45:30,301 - werkzeug - INFO -  * Debugger PIN: 921-300-071
+2024-12-26 08:45:30,333 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:45:30] "GET / HTTP/1.1" 200 -
+2024-12-26 08:45:30,515 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:45:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 08:45:30,523 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:45:30] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-26 08:45:36,743 - __mp_main__ - INFO - Successfully loaded QA model
+2024-12-26 08:45:37,837 - __mp_main__ - ERROR - Error loading summarization model: Could not load model sshleifer/distilbart-cnn-12-6 with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForSeq2SeqLM'>, <class 'transformers.models.bart.modeling_bart.BartForConditionalGeneration'>). See the original errors:
+
+while loading with AutoModelForSeq2SeqLM, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3897, in from_pretrained
+    ).start()
+      ^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 337, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 164, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 140, in _check_not_importing_main
+    raise RuntimeError('''
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+
+        To fix this issue, refer to the "Safe importing of main module"
+        section in https://docs.python.org/3/library/multiprocessing.html
+        
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\base.py", line 289, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\models\auto\auto_factory.py", line 564, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3941, in from_pretrained
+    raise EnvironmentError(
+OSError: Can't load the model for 'sshleifer/distilbart-cnn-12-6'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sshleifer/distilbart-cnn-12-6' is the correct path to a directory containing a file named pytorch_model.bin, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+while loading with BartForConditionalGeneration, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3897, in from_pretrained
+    ).start()
+      ^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 337, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 164, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 140, in _check_not_importing_main
+    raise RuntimeError('''
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+
+        To fix this issue, refer to the "Safe importing of main module"
+        section in https://docs.python.org/3/library/multiprocessing.html
+        
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\base.py", line 289, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3941, in from_pretrained
+    raise EnvironmentError(
+OSError: Can't load the model for 'sshleifer/distilbart-cnn-12-6'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sshleifer/distilbart-cnn-12-6' is the correct path to a directory containing a file named pytorch_model.bin, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+
+
+2024-12-26 08:46:45,624 - __main__ - INFO - Successfully loaded QA model
+2024-12-26 08:46:48,021 - __main__ - INFO - Successfully loaded summarization model
+2024-12-26 08:46:48,025 - __main__ - INFO - Starting application...
+2024-12-26 08:46:48,026 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 08:46:48,026 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 08:46:48,027 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 08:46:48,059 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-26 08:46:48,059 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-26 08:46:48,061 - werkzeug - INFO -  * Restarting with stat
+2024-12-26 08:46:55,775 - __mp_main__ - INFO - Successfully loaded QA model
+2024-12-26 08:46:56,415 - __main__ - INFO - Successfully loaded QA model
+2024-12-26 08:46:56,929 - __mp_main__ - ERROR - Error loading summarization model: Could not load model sshleifer/distilbart-cnn-12-6 with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForSeq2SeqLM'>, <class 'transformers.models.bart.modeling_bart.BartForConditionalGeneration'>). See the original errors:
+
+while loading with AutoModelForSeq2SeqLM, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3897, in from_pretrained
+    ).start()
+      ^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 337, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 164, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 140, in _check_not_importing_main
+    raise RuntimeError('''
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+
+        To fix this issue, refer to the "Safe importing of main module"
+        section in https://docs.python.org/3/library/multiprocessing.html
+        
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\base.py", line 289, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\models\auto\auto_factory.py", line 564, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3941, in from_pretrained
+    raise EnvironmentError(
+OSError: Can't load the model for 'sshleifer/distilbart-cnn-12-6'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sshleifer/distilbart-cnn-12-6' is the correct path to a directory containing a file named pytorch_model.bin, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+while loading with BartForConditionalGeneration, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3897, in from_pretrained
+    ).start()
+      ^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 337, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 164, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 140, in _check_not_importing_main
+    raise RuntimeError('''
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+
+        To fix this issue, refer to the "Safe importing of main module"
+        section in https://docs.python.org/3/library/multiprocessing.html
+        
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\base.py", line 289, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3941, in from_pretrained
+    raise EnvironmentError(
+OSError: Can't load the model for 'sshleifer/distilbart-cnn-12-6'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sshleifer/distilbart-cnn-12-6' is the correct path to a directory containing a file named pytorch_model.bin, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+
+
+2024-12-26 08:46:58,580 - __main__ - INFO - Successfully loaded summarization model
+2024-12-26 08:46:58,584 - __main__ - INFO - Starting application...
+2024-12-26 08:46:58,584 - __main__ - INFO - Template folder: D:\Chatbot\Chatbot\chatbot_system\frontend\templates
+2024-12-26 08:46:58,584 - __main__ - INFO - Static folder: D:\Chatbot\Chatbot\chatbot_system\frontend\static
+2024-12-26 08:46:58,584 - __main__ - INFO - Upload folder: D:\Chatbot\Chatbot\chatbot_system\temp
+2024-12-26 08:46:58,593 - werkzeug - WARNING -  * Debugger is active!
+2024-12-26 08:46:58,597 - werkzeug - INFO -  * Debugger PIN: 921-300-071
+2024-12-26 08:46:58,623 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:46:58] "GET / HTTP/1.1" 200 -
+2024-12-26 08:46:58,772 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:46:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 08:46:58,774 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:46:58] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-26 08:47:05,344 - __mp_main__ - INFO - Successfully loaded QA model
+2024-12-26 08:47:07,265 - __mp_main__ - ERROR - Error loading summarization model: Could not load model sshleifer/distilbart-cnn-12-6 with any of the following classes: (<class 'transformers.models.auto.modeling_auto.AutoModelForSeq2SeqLM'>, <class 'transformers.models.bart.modeling_bart.BartForConditionalGeneration'>). See the original errors:
+
+while loading with AutoModelForSeq2SeqLM, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3897, in from_pretrained
+    ).start()
+      ^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 337, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 164, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 140, in _check_not_importing_main
+    raise RuntimeError('''
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+
+        To fix this issue, refer to the "Safe importing of main module"
+        section in https://docs.python.org/3/library/multiprocessing.html
+        
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\base.py", line 289, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\models\auto\auto_factory.py", line 564, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3941, in from_pretrained
+    raise EnvironmentError(
+OSError: Can't load the model for 'sshleifer/distilbart-cnn-12-6'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sshleifer/distilbart-cnn-12-6' is the correct path to a directory containing a file named pytorch_model.bin, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+while loading with BartForConditionalGeneration, an error is thrown:
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3897, in from_pretrained
+    ).start()
+      ^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 337, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\popen_spawn_win32.py", line 46, in __init__
+    prep_data = spawn.get_preparation_data(process_obj._name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 164, in get_preparation_data
+    _check_not_importing_main()
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 140, in _check_not_importing_main
+    raise RuntimeError('''
+RuntimeError: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable.
+
+        To fix this issue, refer to the "Safe importing of main module"
+        section in https://docs.python.org/3/library/multiprocessing.html
+        
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\pipelines\base.py", line 289, in infer_framework_load_model
+    model = model_class.from_pretrained(model, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksjyo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\modeling_utils.py", line 3941, in from_pretrained
+    raise EnvironmentError(
+OSError: Can't load the model for 'sshleifer/distilbart-cnn-12-6'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sshleifer/distilbart-cnn-12-6' is the correct path to a directory containing a file named pytorch_model.bin, tf_model.h5, model.ckpt or flax_model.msgpack.
+
+
+
+2024-12-26 08:48:39,423 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:48:39] "GET / HTTP/1.1" 200 -
+2024-12-26 08:48:39,502 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:48:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 08:48:39,502 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:48:39] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-26 08:49:16,860 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:49:16] "GET / HTTP/1.1" 200 -
+2024-12-26 08:49:16,946 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:49:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-26 08:49:16,946 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:49:16] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-26 08:49:21,124 - __main__ - INFO - File saved successfully: 5f4d0aa7b18d886fcbc9fd2053d2126fe1d74b2d57f45af48ac866dde75373c4
+2024-12-26 08:49:21,160 - __main__ - INFO - Temporary file removed: 5f4d0aa7b18d886fcbc9fd2053d2126fe1d74b2d57f45af48ac866dde75373c4
+2024-12-26 08:49:21,160 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:49:21] "POST /upload HTTP/1.1" 200 -
+2024-12-26 08:49:35,394 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 08:49:35] "POST /summarize HTTP/1.1" 200 -
