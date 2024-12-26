@@ -61,7 +61,7 @@ async function uploadPDF() {
         const response = await fetch('/upload', {
             method: 'POST',
             headers: {
-                'X-CSRFToken': getCSRFToken()  // Ensure this function retrieves the correct token
+                'X-CSRFToken': getCSRFToken()
             },
             body: formData,
             credentials: 'same-origin'
@@ -205,12 +205,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 function changeBackground() {
-    const randomNumber = Math.floor(Math.random() * 6) + 1; // Update the number based on the total number of backgrounds
+    const randomNumber = Math.floor(Math.random() * 6) + 1;
     document.body.className = `background-${randomNumber}`;
 }
 
-// Call the changeBackground function every 10 seconds to change the background dynamically
-setInterval(changeBackground, 30000); // Change every 10 seconds (10000 milliseconds)
+setInterval(changeBackground, 30000);
 
 async function summarizeDocument() {
     const summaryDiv = document.getElementById('summary');

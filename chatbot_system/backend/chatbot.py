@@ -12,7 +12,6 @@ import secrets
 import logging
 from datetime import datetime
 
-# Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -63,7 +62,6 @@ limiter = Limiter(
 
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
-# Load a lightweight question-answering model
 try:
     qa_pipeline = pipeline("question-answering", model="deepset/roberta-base-squad2")
     logger.info("Successfully loaded QA model")
@@ -71,7 +69,6 @@ except Exception as e:
     logger.error(f"Error loading QA model: {str(e)}")
     qa_pipeline = None
 
-# Load the summarization model
 try:
     summarizer = pipeline("summarization")
     logger.info("Successfully loaded summarization model")
@@ -92,7 +89,6 @@ def validate_file(file):
     if not file or file.filename == '':
         return False, "No file selected"
     
-    # Ensure the file extension check is correct
     if not file.filename.lower().endswith(tuple(app.config['ALLOWED_EXTENSIONS'])):
         return False, "Only PDF and DOCX files are supported"
     
@@ -194,8 +190,6 @@ def ask_question():
             answer = qa_pipeline(question=question, context=context)
             logger.debug(f"Generated answer: {answer}")
 
-
-            # Simple consistency check
             if answer['score'] < 0.3:
                 logger.warning("Potential hallucination detected.")
                 return jsonify({
