@@ -4,7 +4,7 @@ from flask_limiter.util import get_remote_address
 from flask_seasurf import SeaSurf
 from werkzeug.utils import secure_filename
 from document_processor import extract_text_from_pdf
-from transformers import pipeline
+from transformers import pipeline, RagTokenizer, RagRetriever, RagSequenceForGeneration
 import os
 import hashlib
 import secrets
@@ -82,6 +82,16 @@ except Exception as e:
     logger.error(f"Error loading summarization model: {str(e)}")
     summarizer = None
 
+# Load RAG components
+try:
+    tokenizer = RagTokenizer.from_pretrained("facebook/rag-sequence-nq")
+    retriever = RagRetriever.from_pretrained("facebook/rag-sequence-nq", index_name="exact", passages_path="path/to/passages")
+    rag_model = RagSequenceForGeneration.from_pretrained("facebook/rag-sequence-nq", retriever=retriever)
+    logger.info("Successfully loaded RAG model")
+except Exception as e:
+    logger.error(f"Error loading RAG model: {str(e)}")
+    rag_model = None
+
 def secure_temp_file(filename):
     """Generate secure temporary filename."""
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
@@ -100,6 +110,20 @@ def validate_file(file):
         return False, "Only PDF files are supported"
     
     return True, None
+
+def detect_hallucination_rag(question, context):
+    """Detect hallucination using RAG."""
+    if not rag_model:
+        logger.error("RAG model not available")
+        return False
+
+    inputs = tokenizer(question, return_tensors="pt")
+    outputs = rag_model.generate(**inputs, num_return_sequences=1, num_beams=2)
+    generated_answer = tokenizer.batch_decode(outputs, skip_special_tokens=True)[0]
+
+    # Compare generated answer with context
+    similarity = util.pytorch_cos_sim(generated_answer, context).item()
+    return similarity < 0.5  # Threshold for hallucination
 
 @app.route('/')
 def index():
@@ -194,6 +218,15 @@ def ask_question():
         try:
             answer = qa_pipeline(question=question, context=context)
             logger.debug(f"Generated answer: {answer}")
+
+            # Check for hallucination using RAG
+            if detect_hallucination_rag(question, context):
+                logger.warning("Potential hallucination detected.")
+                return jsonify({
+                    "answer": answer['answer'],
+                    "confidence": round(answer['score'], 4),
+                    "warning": "The answer may not be consistent with the document context."
+                }), 200
             
             return jsonify({
                 "answer": answer['answer'],
@@ -267,7 +300,7 @@ def ratelimit_handler(e):
 
 @app.errorhandler(500)
 def internal_error(error):
-    logger.error(f"Internal server error: {str(error)}")
+    logger.error(f"Internal server error: {str(e)}")
     return jsonify({"error": "Internal server error"}), 500
 
 if __name__ == '__main__':
