@@ -193,20 +193,21 @@ def ask_question():
         try:
             answer = qa_pipeline(question=question, context=context)
             logger.debug(f"Generated answer: {answer}")
-            print(answer['score'], "score check!")
+
 
             # Simple consistency check
-            if answer['score'] < 0.2:
+            if answer['score'] < 0.3:
                 logger.warning("Potential hallucination detected.")
                 return jsonify({
                     "answer": answer['answer'],
                     "confidence": round(answer['score'], 4),
-                    "warning": "The answer may not be consistent with the document context."
+                    "warning": "Potential Hallucination detected!"
                 }), 200
             
             return jsonify({
                 "answer": answer['answer'],
-                "confidence": round(answer['score'], 4)
+                "confidence": round(answer['score'], 4),
+                "warning": ""
             }), 200
 
         except Exception as e:
@@ -271,6 +272,20 @@ def ratelimit_handler(e):
         "error": "Rate limit exceeded",
         "retry_after": int(e.description.split('in')[1].split('seconds')[0].strip())
     }), 429
+
+@app.after_request
+def apply_security_headers(response):
+    response.headers['Content-Security-Policy'] = (
+        "default-src 'self'; "
+        "script-src 'self' 'unsafe-inline'; "
+        "style-src 'self' 'unsafe-inline'; "
+        "img-src 'self' data:; "
+    )
+    response.headers['Strict-Transport-Security'] = 'max-age=31536000; includeSubDomains'
+    response.headers['X-Content-Type-Options'] = 'nosniff'
+    response.headers['X-Frame-Options'] = 'DENY'
+    response.headers['X-XSS-Protection'] = '1; mode=block'
+    return response
 
 @app.errorhandler(500)
 def internal_error(error):
