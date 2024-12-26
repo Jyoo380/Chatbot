@@ -2052,3 +2052,4 @@ A detailed migration guide is available here: https://github.com/openai/openai-p
 2024-12-26 02:11:57,012 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:11:57] "POST /ask HTTP/1.1" 200 -
 2024-12-26 02:12:07,808 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:12:07] "POST /ask HTTP/1.1" 200 -
 2024-12-26 02:12:14,992 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2024 02:12:14] "POST /ask HTTP/1.1" 200 -
+2024-12-26 07:52:28,937 - __main__ - INFO - Successfully loaded QA model

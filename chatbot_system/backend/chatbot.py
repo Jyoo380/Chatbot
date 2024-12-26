@@ -40,7 +40,6 @@ app.config.update(
     SESSION_COOKIE_HTTPONLY=True,
     SESSION_COOKIE_SAMESITE='Lax',
     PERMANENT_SESSION_LIFETIME=1800,  # 30 minutes
-    # Add CSRF settings
     WTF_CSRF_ENABLED=True,
     WTF_CSRF_SSL_STRICT=True
 )
@@ -74,6 +73,14 @@ try:
 except Exception as e:
     logger.error(f"Error loading QA model: {str(e)}")
     qa_pipeline = None
+
+# Load the summarization model
+try:
+    summarizer = pipeline("summarization")
+    logger.info("Successfully loaded summarization model")
+except Exception as e:
+    logger.error(f"Error loading summarization model: {str(e)}")
+    summarizer = None
 
 def secure_temp_file(filename):
     """Generate secure temporary filename."""
@@ -173,8 +180,8 @@ def ask_question():
 
         # Validate for potentially malicious characters
         injection_characters = [
-            "'", "\"", "--", "/*", "*/", ";", "(", ")", "=", "<", ">", "!=", 
-            "LIKE", "UNION", "||", "\\", "|", "&", "`", "$", "*", "[", "]", 
+            "'", "\"", "--", "/*", "*/", ";", "(", ")", "=", "<", ">", "!=",
+            "LIKE", "UNION", "||", "\\", "|", "&", "`", "$", "*", "[", "]",
             "&&", ">", ">>", "\r", "\n", "{", "}", ":", ","
         ]
         if any(char in question for char in injection_characters):
@@ -192,13 +199,42 @@ def ask_question():
                 "answer": answer['answer'],
                 "confidence": round(answer['score'], 4)
             }), 200
-            
+
         except Exception as e:
-            logger.error(f"Model error: {str(e)}")
-            return jsonify({"error": "Error processing question"}), 500
+            logger.error(f"Error generating answer: {str(e)}")
+            return jsonify({"error": "Error generating answer"}), 500
 
     except Exception as e:
         logger.error(f"Ask question error: {str(e)}")
+        return jsonify({"error": "Internal server error"}), 500
+
+@app.route('/summarize', methods=['POST'])
+@limiter.limit("10 per minute")
+def summarize_document():
+    """Summarize the uploaded document's text."""
+    try:
+        if not summarizer:
+            return jsonify({"error": "Summarization model not available"}), 503
+
+        data = request.get_json()
+        if not data:
+            return jsonify({"error": "Invalid JSON"}), 400
+
+        context = data.get("context", "").strip()
+
+        if not context:
+            return jsonify({"error": "Context is required for summarization"}), 400
+
+        # Summarize the document
+        summary = summarizer(context, max_length=130, min_length=30, do_sample=False)
+        logger.debug(f"Generated summary: {summary}")
+
+        return jsonify({
+            "summary": summary[0]['summary_text']
+        }), 200
+
+    except Exception as e:
+        logger.error(f"Summarization error: {str(e)}")
         return jsonify({"error": "Internal server error"}), 500
 
 @app.route('/health')
@@ -206,7 +242,7 @@ def health_check():
     """Health check endpoint."""
     return jsonify({
         "status": "healthy",
-        "model": "loaded" if qa_pipeline else "not loaded"
+        "model": "loaded"
     }), 200
 
 # Error handlers
